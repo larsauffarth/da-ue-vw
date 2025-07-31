@@ -1332,10 +1332,7 @@
   max-width: 950px;
   margin: 2rem auto;
   box-sizing: border-box;
-  /* Remove display: flex here to avoid double-flexing */
 }
-
-/* Top-level: use flex to center align columns vertically */
 .columns.columns22 > div {
   display: flex;
   flex-direction: row;
@@ -1346,8 +1343,6 @@
   width: 100%;
   height: 100%;
 }
-
-/* Responsive: stack */
 @media (max-width: 900px) {
   .columns.columns22 {
     max-width: 100%;
@@ -1359,8 +1354,6 @@
     align-items: stretch;
   }
 }
-
-/* LEFT COLUMN */
 .columns.columns22 > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -1376,8 +1369,6 @@
 .columns.columns22 > div > div:first-child h2 {
   margin: 0;
 }
-
-/* Make image fill the entire width, align with heading */
 .columns.columns22 picture,
 .columns.columns22 img {
   display: block;
@@ -1389,8 +1380,6 @@
   margin-bottom: 1.4rem;
   box-shadow: none;
 }
-
-/* Heading styling: larger and bolder */
 .columns.columns22 h2,
 .columns.columns22 h2[id] {
   color: #fff;
@@ -1403,8 +1392,6 @@
   letter-spacing: -0.5px;
   align-self: flex-start;
 }
-
-/* Button right under heading with little gap */
 .columns.columns22 .button-container {
   margin: 0;
   width: 100%;
@@ -1434,8 +1421,6 @@
   background: #b0e600;
   color: #01222C;
 }
-
-/* RIGHT COLUMN */
 .columns.columns22 > div > div:last-child {
   background: #0CA49B;
   border-radius: 20px;
@@ -1450,8 +1435,6 @@
   box-sizing: border-box;
   gap: 0;
 }
-
-/* Card header: Aktien & Details button */
 .columns.columns22 > div > div:last-child > p:first-child {
   display: flex;
   flex-direction: row;
@@ -1486,8 +1469,6 @@
   background: #b0e600;
   color: #01222C;
 }
-
-/* Prices */
 .columns.columns22 > div > div:last-child > p:nth-child(2),
 .columns.columns22 > div > div:last-child > p:nth-child(5) {
   font-size: 2.12rem;
@@ -1496,8 +1477,6 @@
   margin: 0 0 0.06rem 0;
   line-height: 1.08;
 }
-
-/* Change indicators (negative values) and timestamps */
 .columns.columns22 > div > div:last-child > p:nth-child(3),
 .columns.columns22 > div > div:last-child > p:nth-child(6) {
   color: #FFADB0;
@@ -1508,8 +1487,6 @@
   line-height: 1.15;
   display: block;
 }
-
-/* Labels (VORZUGSAKTIE, STAMMAKTIE) */
 .columns.columns22 > div > div:last-child > p:nth-child(4),
 .columns.columns22 > div > div:last-child > p:nth-child(7) {
   color: #E6ECEC;
@@ -1521,13 +1498,9 @@
   line-height: 1.1;
   display: block;
 }
-
-/* Remove space under last label */
 .columns.columns22 > div > div:last-child > p:nth-child(7) {
   margin-bottom: 0;
 }
-
-/* Responsive adjustments */
 @media (max-width: 700px) {
   .columns.columns22 {
     padding: 1.2rem 0.2rem;
@@ -1556,4 +1529,224 @@
   .columns.columns22 > div > div:last-child > p:nth-child(7) {
     font-size: 0.97rem;
   }
+}
+
+
+.columns.columns23 {
+  background: #fff;
+  border: 2px solid #14726c;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 1100px;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.columns.columns23 > div {
+  display: grid;
+  grid-template-columns: 1.32fr 0.68fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .columns.columns23 {
+    padding: 16px;
+    margin: 24px 8px;
+  }
+  .columns.columns23 > div {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.columns.columns23 h2 {
+  color: #1a2824;
+  font-family: var(--heading-font-family);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+/* --- LEFT COLUMN: CONTACTS --- */
+.columns.columns23 > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.columns.columns23 > div > div:first-child > p {
+  margin: 0;
+  color: #4d6358;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Avatar + info side-by-side ROW for each contact */
+.columns.columns23 > div > div:first-child > p:has(picture) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 0;
+  margin-top: 0;
+  /* Add bottom margin only between contact blocks */
+  padding-bottom: 20px;
+}
+
+.columns.columns23 > div > div:first-child > p:has(picture):last-of-type {
+  padding-bottom: 0;
+}
+
+.columns.columns23 > div > div:first-child > p:has(picture) + p,
+.columns.columns23 > div > div:first-child > p:has(picture) + p + p,
+.columns.columns23 > div > div:first-child > p:has(picture) + p + p + p,
+.columns.columns23 > div > div:first-child > p:has(picture) + p + p + p + p {
+  margin-left: 64px;
+  margin-bottom: 1px;
+}
+
+.columns.columns23 > div > div:first-child > p:has(picture) + p {
+  font-weight: 600;
+  color: #1a2824;
+  font-size: 1.07rem;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.columns.columns23 > div > div:first-child > p:has(picture) + p + p {
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.columns.columns23 > div > div:first-child > p:has(picture) + p + p + p,
+.columns.columns23 > div > div:first-child > p:has(picture) + p + p + p + p {
+  margin-bottom: 3px;
+}
+
+.columns.columns23 > div > div:first-child > p:has(picture):not(:first-child) {
+  margin-top: 0;
+}
+
+.columns.columns23 > div > div:first-child picture img {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #e0e0e0;
+  display: block;
+  margin-right: 16px;
+  background: #f3f3f3;
+}
+
+.columns.columns23 > div > div:first-child a[href^="mailto"], 
+.columns.columns23 > div > div:first-child a[href^="tel"] {
+  color: #14726c;
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-right: 12px;
+}
+
+.columns.columns23 .button,
+.columns.columns23 a.button {
+  background: none;
+  color: #14726c;
+  border: none;
+  border-radius: 0;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  min-width: unset;
+  display: inline;
+}
+
+.columns.columns23 > div > div:first-child .button-container:last-of-type {
+  margin-top: 8px;
+}
+
+/* --- RIGHT COLUMN: CORPORATE DESIGN PORTAL --- */
+.columns.columns23 > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.columns.columns23 > div > div:last-child > p:first-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 97px;
+}
+.columns.columns23 > div > div:last-child > p:first-of-type > picture {
+  min-width: 180px;
+  min-height: 97px;
+  display: block;
+}
+.columns.columns23 > div > div:last-child > p:first-of-type picture img {
+  border-radius: 12px;
+  width: 180px;
+  max-width: 100%;
+  height: 97px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0;
+}
+.columns.columns23 > div > div:last-child > p:first-of-type > picture:empty::after {
+  /* If image missing, reserve space */
+  display: block;
+  content: '';
+  min-width: 180px;
+  min-height: 97px;
+  background: transparent;
+}
+
+/* Description text, always right of image space */
+.columns.columns23 > div > div:last-child > p:first-of-type > span,
+.columns.columns23 > div > div:last-child > p:first-of-type > br + span,
+.columns.columns23 > div > div:last-child > p:nth-of-type(2) {
+  color: #1a2824;
+  font-size: 1rem;
+  line-height: 1.6;
+  flex: 1 1 auto;
+  align-items: flex-start;
+  padding-top: 4px;
+  display: block;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .columns.columns23 > div > div:last-child > p:first-of-type {
+    flex-direction: column;
+    gap: 12px;
+    min-height: unset;
+  }
+  .columns.columns23 > div > div:last-child > p:first-of-type > picture {
+    min-width: 120px;
+    min-height: 70px;
+  }
+  .columns.columns23 > div > div:last-child > p:first-of-type picture img {
+    width: 120px;
+    height: 70px;
+  }
+}
+
+/* "Hier registrieren" link below, left aligned */
+.columns.columns23 > div > div:last-child .button-container {
+  margin: 0;
+  padding: 0;
+}
+.columns.columns23 > div > div:last-child .button-container a.button {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.columns.columns23 a:not(.button) {
+  color: #14726c;
+  text-decoration: underline;
+  font-size: 1rem;
 }
