@@ -1,20 +1,16 @@
 {
   "templates": [
     {
-      "name": "E-commerce Listing Page",
+      "name": "'Blog Listing'",
       "cluster": 1,
       "pages": [
-        {
-          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
-          "uuid": "598c4462778ab2203bd048d1518a80032383edd7"
-        },
         {
           "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
           "uuid": "28bcd12ea3a9072b6255038bb6849a1245739668"
         },
         {
-          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
-          "uuid": "8262a4798dd324367214668adab5ea008c9d04bc"
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "uuid": "598c4462778ab2203bd048d1518a80032383edd7"
         }
       ]
     },
@@ -39,12 +35,12 @@
       ]
     },
     {
-      "name": "'Magazine Homepage'",
+      "name": "'Product Showcase'",
       "cluster": 4,
       "pages": [
         {
-          "url": "https://www.volkswagen-group.com/de/medien-15771",
-          "uuid": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4"
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "uuid": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba"
         }
       ]
     },
@@ -59,7 +55,7 @@
       ]
     },
     {
-      "name": "'Landing Page'",
+      "name": "\"Hero Landing Page\"",
       "cluster": 6,
       "pages": [
         {
@@ -69,12 +65,22 @@
       ]
     },
     {
-      "name": "'Product Showcase'",
+      "name": "'Magazine Homepage'",
       "cluster": 7,
       "pages": [
         {
-          "url": "https://www.volkswagen-group.com/de/investoren-15766",
-          "uuid": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba"
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "uuid": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4"
+        }
+      ]
+    },
+    {
+      "name": "'Product Listing Page'",
+      "cluster": 8,
+      "pages": [
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "uuid": "8262a4798dd324367214668adab5ea008c9d04bc"
         }
       ]
     }
