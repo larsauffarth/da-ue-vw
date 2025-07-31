@@ -627,8 +627,6 @@
 .columns.columns10 {
   background: #fff;
 }
-
-/* Ensure the columns layout only applies to actual columns block, not to image/background-only areas */
 .columns.columns10 > div {
   display: flex;
   flex-direction: row;
@@ -648,8 +646,6 @@
   min-width: 0;
   display: block;
 }
-
-/* List and bullets styling for compact, clean look */
 .columns.columns10 ul {
   padding-left: 20px;
   margin: 0;
@@ -675,4 +671,252 @@
 .columns.columns10 li::marker {
   color: #00B1B0;
   font-size: 1.05em;
+}
+
+
+.columns.columns11 {
+  background: #fff;
+  padding: 56px 40px 56px 80px;
+  box-sizing: border-box;
+}
+
+.columns.columns11 > div {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .columns.columns11 {
+    padding: 32px 8px;
+  }
+  .columns.columns11 > div {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* LEFT COLUMN: vertical stack, align top */
+.columns.columns11 > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+  gap: 0;
+}
+
+/* Metadata/date */
+.columns.columns11 > div > div:first-child > p:first-child {
+  color: #94979f;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  margin: 0 0 18px 0;
+}
+
+/* Headline */
+.columns.columns11 > div > div:first-child h1 {
+  font-size: 2.35rem;
+  line-height: 1.09;
+  color: #22262a;
+  font-weight: 400;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.01em;
+}
+
+/* BUTTON ROW GROUPING: Flex row for the first three action items */
+.columns.columns11 > div > div:first-child .columns11-action-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0 0 28px 0;
+  align-items: flex-start;
+}
+
+/* Simulate action row if wrapper class isn't present (use nth-of-type) */
+@media (min-width: 600px) {
+  .columns.columns11 > div > div:first-child > p.button-container,
+  .columns.columns11 > div > div:first-child > p:nth-of-type(3),
+  .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 16px 0 0;
+    padding: 0;
+    max-width: none;
+    vertical-align: top;
+  }
+  .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+    margin-right: 0;
+  }
+  /* Group as a flex row */
+  .columns.columns11 > div > div:first-child > p.button-container,
+  .columns.columns11 > div > div:first-child > p:nth-of-type(3),
+  .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+    /* for visual grouping: wrap row in a parent if possible! */
+  }
+}
+
+/* Make all three action items green pill buttons, not full width */
+.columns.columns11 > div > div:first-child > p.button-container .button,
+.columns.columns11 > div > div:first-child > p:nth-of-type(3),
+.columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+  background: #d2fa1a;
+  color: #22262a;
+  border-radius: 999px;
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  box-shadow: none;
+  line-height: 1.25;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 0;
+  white-space: nowrap;
+  transition: background 0.2s;
+  width: auto;
+  margin: 0;
+}
+
+.columns.columns11 > div > div:first-child > p.button-container .button:hover,
+.columns.columns11 > div > div:first-child > p:nth-of-type(3):hover,
+.columns.columns11 > div > div:first-child > p:nth-of-type(4):hover {
+  background: #c6ec16;
+}
+
+/* Remove underline from all action links/buttons */
+.columns.columns11 > div > div:first-child > p.button-container .button,
+.columns.columns11 > div > div:first-child > p.button-container a.button {
+  text-decoration: none;
+}
+
+/* Remove default margin from action buttons group */
+.columns.columns11 > div > div:first-child > p.button-container,
+.columns.columns11 > div > div:first-child > p:nth-of-type(3),
+.columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Hide share URL paragraph */
+.columns.columns11 > div > div:first-child > p:nth-of-type(6) {
+  display: none;
+}
+
+/* Profile/contact block at bottom: compact, no green button */
+.columns.columns11 > div > div:first-child > p:nth-of-type(7) {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 32px 0 2px 0;
+}
+.columns.columns11 > div > div:first-child > p:nth-of-type(7) picture,
+.columns.columns11 > div > div:first-child > p:nth-of-type(7) img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  min-width: 48px;
+  min-height: 48px;
+  background: #ececec;
+  display: block;
+}
+
+/* Remove green button style from contact/download link at the bottom */
+.columns.columns11 > div > div:first-child > p.button-container:not(:first-child) .button {
+  background: transparent;
+  color: var(--link-color);
+  border-radius: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  box-shadow: none;
+  line-height: 1.25;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: underline;
+  display: inline;
+  min-width: 0;
+  white-space: normal;
+  transition: none;
+  margin: 0;
+}
+
+/* Name styling */
+.columns.columns11 > div > div:first-child > p:nth-of-type(8) {
+  font-weight: 600;
+  font-size: 1.07rem;
+  color: #22262a;
+  margin: 0 0 2px 0;
+}
+
+/* Role/description */
+.columns.columns11 > div > div:first-child > p:nth-of-type(10) {
+  font-size: 0.99rem;
+  color: #94979f;
+  margin: 2px 0 2px 0;
+}
+
+/* Contact info (phone/email) */
+.columns.columns11 > div > div:first-child > p:last-child {
+  font-size: 0.97rem;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+.columns.columns11 > div > div:first-child > p:last-child a[href^="tel:"] {
+  color: #009f4c;
+  text-decoration: none;
+  margin-right: 8px;
+  font-weight: 500;
+}
+.columns.columns11 > div > div:first-child > p:last-child a[href^="mailto:"] {
+  color: #0072ce;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* RIGHT COLUMN (image block) */
+.columns.columns11 .columns-img-col {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-width: 0;
+}
+.columns.columns11 .columns-img-col picture,
+.columns.columns11 .columns-img-col img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 2px 16px rgba(60,60,60,0.04);
+  background: #ededed;
+  display: block;
+  margin-left: auto;
+}
+
+/* Responsive: full width image in stacked mode */
+@media (max-width: 900px) {
+  .columns.columns11 .columns-img-col picture,
+  .columns.columns11 .columns-img-col img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Tighten vertical gaps for all left column children */
+.columns.columns11 > div > div:first-child > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Add vertical space after headline */
+.columns.columns11 > div > div:first-child h1 {
+  margin-bottom: 24px;
 }
