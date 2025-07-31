@@ -25,3 +25,134 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+
+.cards.cards1 {
+  background: #fff;
+  padding: 0;
+}
+
+/* Grid Layout: visually side-by-side, tight gap, top-aligned */
+.cards.cards1 > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 18px;
+  place-items: start start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (width <= 900px) {
+  .cards.cards1 > ul {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Card: slightly more top padding for perfect image alignment */
+.cards.cards1 > ul > li {
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 1.36rem 1rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+/* Card body: remove extra margin/padding */
+.cards.cards1 .cards-card-body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Image: increase width/height, add top margin for better centering, remove background */
+.cards.cards1 .cards-card-image {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 0.8rem;
+  width: 100%;
+}
+
+.cards.cards1 .cards-card-image img {
+  width: 184px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-top: 0.12rem;
+  margin-bottom: 0;
+  background: none;
+}
+
+/* Typography tweaks for compactness */
+.cards.cards1 .cards-card-body h3 {
+  color: #10232B;
+  font-size: 1.17rem;
+  font-weight: 700;
+  line-height: 1.19;
+  margin: 0 0 0.5rem;
+}
+
+.cards.cards1 .cards-card-body p {
+  color: #10232B;
+  font-size: 1rem;
+  line-height: 1.35;
+  margin: 0 0 1.1rem;
+  padding: 0;
+}
+
+/* Remove bottom margin from last paragraph if button container */
+.cards.cards1 .cards-card-body p.button-container {
+  margin-bottom: 0;
+}
+
+/* Button alignment and style refinements */
+.cards.cards1 .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.1rem;
+}
+
+.cards.cards1 .button-container .button {
+  background: #D6FF2A;
+  color: #10232B;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 0.48em 1.12em;
+  border: none;
+  margin: 0;
+  text-align: left;
+  box-shadow: none;
+  transition: background 0.2s;
+  min-width: unset;
+  max-width: 100%;
+  display: inline-block;
+  line-height: 1.3;
+}
+
+.cards.cards1 .button-container .button:hover,
+.cards.cards1 .button-container .button:focus {
+  background: #c0e925;
+  color: #10232B;
+  text-decoration: underline;
+}
+
+/* Responsive image sizing for mobile */
+@media (width <= 500px) {
+  .cards.cards1 .cards-card-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 40px;
+  }
+}
