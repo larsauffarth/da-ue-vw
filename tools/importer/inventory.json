@@ -514,7 +514,7 @@
       ]
     },
     {
-      "name": "Carousel",
+      "name": "Columns",
       "cluster": 12,
       "source": "Carousel",
       "target": "Carousel",
