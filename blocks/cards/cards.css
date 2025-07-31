@@ -1080,10 +1080,8 @@
 
 .cards.cards33 {
   background: #f2f4f8;
-  padding: 32px 24px; /* Adds edge padding for better alignment */
+  padding: 32px 24px;
 }
-
-/* Grid: uniform card heights in each row */
 .cards.cards33 > ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1092,7 +1090,7 @@
   margin: 0;
   list-style: none;
   align-items: stretch;
-  grid-auto-rows: 1fr; /* Ensures all cards in a row match the tallest card */
+  grid-auto-rows: 1fr;
 }
 
 @media (max-width: 1100px) {
@@ -1105,8 +1103,6 @@
     grid-template-columns: 1fr;
   }
 }
-
-/* Card appearance */
 .cards.cards33 > ul > li {
   background: #fff;
   border: none;
@@ -1119,8 +1115,6 @@
   height: 100%;
   transition: box-shadow 0.15s;
 }
-
-/* Always reserve image space, even if empty */
 .cards.cards33 .cards-card-image {
   width: 100%;
   height: 130px;
@@ -1131,8 +1125,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* Fill image area edge-to-edge */
 .cards.cards33 .cards-card-image img,
 .cards.cards33 .cards-card-image picture {
   width: 100%;
@@ -1143,14 +1135,10 @@
   padding: 0;
   border: none;
 }
-
-/* Remove unwanted padding/margin for special "image" backgrounds */
 .cards.cards33 .cards-card-image > * {
   margin: 0;
   padding: 0;
 }
-
-/* Card body */
 .cards.cards33 .cards-card-body {
   padding: 16px;
   margin: 0;
@@ -1161,8 +1149,6 @@
   justify-content: flex-start;
   background: transparent;
 }
-
-/* Metadata */
 .cards.cards33 .cards-card-body p:first-child {
   color: #7a899c;
   font-size: 12px;
@@ -1171,8 +1157,6 @@
   line-height: 1.4;
   letter-spacing: 0.01em;
 }
-
-/* Main text */
 .cards.cards33 .cards-card-body p:not(:first-child) {
   color: #23272f;
   font-size: 15px;
@@ -1180,14 +1164,189 @@
   margin: 0 0 8px 0;
   line-height: 1.5;
 }
-
-/* Remove last bottom margin */
 .cards.cards33 .cards-card-body p:last-child {
   margin-bottom: 0;
 }
-
-/* Fine-tune: Remove padding/margin on <ul> inside .cards33 for clean edge */
 .cards.cards33 > ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+.cards.cards40 {
+  width: 100%;
+  background: #fff;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Horizontal flex row, all cards fully visible, allow scroll for overflow */
+.cards.cards40 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 48px 24px 56px 24px;
+  margin: 0;
+  list-style: none;
+  scroll-snap-type: x mandatory;
+  align-items: stretch;
+  min-height: unset;
+  height: auto;
+}
+.cards.cards40 > ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each card: fixed width, height fits image + up to 3 lines of text */
+.cards.cards40 > ul > li {
+  flex: 0 0 312px;
+  width: 312px;
+  min-height: 400px;
+  height: auto;
+  background: #fff;
+  border: none;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  scroll-snap-align: start;
+  align-items: stretch;
+  justify-content: flex-start;
+  box-shadow: none;
+}
+
+/* Card image area */
+.cards.cards40 .cards-card-image {
+  position: relative;
+  width: 100%;
+  height: 172px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  overflow: hidden;
+  background: #f2f2f2;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.cards.cards40 .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* Card Body and Badge */
+.cards.cards40 .cards-card-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 18px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: var(--body-font-family);
+  color: #23323A;
+  background: #fff;
+  min-height: 120px;
+  box-sizing: border-box;
+}
+
+.cards.cards40 .cards-card-body p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Badge styling: Place first p as badge on image */
+.cards.cards40 > ul > li {
+  position: relative;
+}
+.cards.cards40 .cards-card-body p:first-child {
+  position: absolute;
+  top: -32px;
+  left: 20px;
+  background: #f2f2f2;
+  color: #23323A;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 14px 4px 14px;
+  border-radius: 8px;
+  line-height: 1.35;
+  z-index: 1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+/* Headline styling */
+.cards.cards40 .cards-card-body p + p {
+  margin-top: 12px;
+  font-size: 17px;
+  color: #23323A;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 3.75em; /* ensure up to 3 lines are visible */
+  max-height: 4.3em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  .cards.cards40 > ul > li {
+    flex-basis: 244px;
+    width: 244px;
+    min-height: 320px;
+  }
+  .cards.cards40 .cards-card-image {
+    height: 110px;
+  }
+  .cards.cards40 .cards-card-body {
+    min-height: 80px;
+    padding: 12px 12px 18px 12px;
+  }
+  .cards.cards40 .cards-card-body p:first-child {
+    left: 12px;
+    top: -20px;
+    font-size: 11px;
+    padding: 3px 8px 3px 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards.cards40 > ul > li {
+    flex-basis: 84vw;
+    width: 84vw;
+    min-width: 210px;
+    min-height: 210px;
+  }
+  .cards.cards40 .cards-card-image {
+    height: 80px;
+  }
+  .cards.cards40 .cards-card-body {
+    min-height: 58px;
+    padding: 8px 8px 14px 8px;
+  }
+  .cards.cards40 .cards-card-body p:first-child {
+    left: 8px;
+    top: -14px;
+    font-size: 10px;
+    padding: 2px 6px 2px 6px;
+  }
+}
+
+/* Prevent extra vertical space due to list styles or margins */
+.cards.cards40 ul, 
+.cards.cards40 ul li {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
