@@ -1,3 +1,6 @@
+/* Modified and linted CSS */
+
+/* Disabling no-descending-specificity globally */
 /* stylelint-disable no-descending-specificity */
 
 .columns > div {
@@ -257,5 +260,154 @@
     gap: 8px;
     max-width: 100vw;
     padding: 0 1vw;
+  }
+}
+
+.columns.columns6 .columns-2-cols {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+@media (width >= 900px) {
+  .columns.columns6 .columns-2-cols {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem;
+  }
+}
+
+/* Both columns: force equal width and ensure image column is visible */
+.columns.columns6 .columns-2-cols > div {
+  flex: 1 1 0;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Left (text) column: extra right padding on desktop */
+.columns.columns6 .columns-2-cols > div:first-child {
+  padding-right: 0;
+}
+
+@media (width >= 900px) {
+  .columns.columns6 .columns-2-cols > div:first-child {
+    padding-right: 2rem;
+  }
+}
+
+/* Right (image) column: padding and vertical centering */
+.columns.columns6 .columns-img-col {
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  min-height: 1px; /* triggers rendering even if content has no height */
+}
+
+@media (width >= 900px) {
+  .columns.columns6 .columns-img-col {
+    padding-left: 2rem;
+  }
+}
+
+/* Image: ensure it fills the column, is not collapsed, and has rounded corners */
+.columns.columns6 .columns-img-col picture,
+.columns.columns6 .columns-img-col img {
+  width: 100%;
+  max-width: 100%;
+  min-width: 200px;
+  min-height: 100px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  object-fit: cover;
+  background: #eee; /* fallback bg for debugging/empty images */
+}
+
+/* List and green bullets */
+.columns.columns6 ul {
+  list-style: disc inside;
+  margin: 1em 0 1.2em;
+  padding-left: 1.2em;
+}
+
+.columns.columns6 ul li {
+  margin-bottom: .35em;
+  color: #222;
+  font-size: 1em;
+}
+
+.columns.columns6 ul li::marker {
+  color: #009688;
+  font-size: 1.1em;
+}
+
+/* Headings */
+.columns.columns6 strong {
+  font-weight: bold;
+  color: #222;
+  font-size: 1.07em;
+}
+
+/* Paragraph spacing */
+.columns.columns6 p {
+  color: #222;
+  margin: 0 0 1em;
+  line-height: 1.6;
+}
+
+/* Styled green link */
+.columns.columns6 .button-container {
+  margin-top: 0.7em;
+}
+
+.columns.columns6 .button-container .button {
+  background: none;
+  color: #009688;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: underline;
+  text-align: left;
+  box-shadow: none;
+  display: inline;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.columns.columns6 .button-container .button:hover,
+.columns.columns6 .button-container .button:focus {
+  color: #00796b;
+  background: none;
+  text-decoration: underline;
+}
+
+/* Responsive mobile stacking */
+@media (width <= 899px) {
+  .columns.columns6 .columns-2-cols {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+
+  .columns.columns6 .columns-img-col {
+    margin-top: 1.5rem;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .columns.columns6 .columns-2-cols > div:first-child {
+    padding-right: 0;
   }
 }
