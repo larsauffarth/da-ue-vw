@@ -353,7 +353,7 @@
       ]
     },
     {
-      "name": "Columns",
+      "name": "unknown",
       "cluster": 4,
       "source": "Columns",
       "target": "Columns (columns4)",
@@ -584,7 +584,7 @@
       ]
     },
     {
-      "name": "Hero",
+      "name": "Columns",
       "cluster": 12,
       "source": "Hero",
       "target": "Hero (hero12)",
