@@ -584,7 +584,7 @@
       ]
     },
     {
-      "name": "Hero",
+      "name": "Columns",
       "cluster": 12,
       "source": "Hero",
       "target": "Hero (hero12)",
