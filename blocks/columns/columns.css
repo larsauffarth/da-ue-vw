@@ -2395,16 +2395,13 @@
 .columns.columns35 > div {
   display: flex;
   flex-direction: row;
-  align-items: center;        /* Key: vertical centering of columns */
+  align-items: center;
   justify-content: center;
   gap: 24px;
   max-width: 900px;
   margin: 48px auto;
   width: 100%;
-  /* Remove min-height and height to allow vertical centering based on content */
 }
-
-/* Responsive: columns stack on small screens */
 @media (max-width: 900px) {
   .columns.columns35 > div {
     flex-direction: column;
@@ -2414,8 +2411,6 @@
     margin: 32px 0;
   }
 }
-
-/* Left column: text and button */
 .columns.columns35 > div > div:first-child {
   max-width: 410px;
   flex: 1 1 0;
@@ -2424,11 +2419,8 @@
   align-items: center;
   text-align: center;
   min-width: 0;
-  justify-content: center;    /* vertical centering within column */
-  /* Remove height or min-height if present */
+  justify-content: center;
 }
-
-/* Headline */
 .columns.columns35 > div > div:first-child h2 {
   color: #162935;
   font-size: 2rem;
@@ -2436,21 +2428,15 @@
   margin: 0 0 20px 0;
   line-height: 1.18;
 }
-
-/* Description */
 .columns.columns35 > div > div:first-child p:not(.button-container) {
   color: #162935;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 0 24px 0;
 }
-
-/* Button container */
 .columns.columns35 > div > div:first-child p.button-container {
   margin: 0;
 }
-
-/* Button */
 .columns.columns35 > div > div:first-child .button-container .button {
   background: #C8FF00;
   color: #162935;
@@ -2473,15 +2459,13 @@
   color: #162935;
   text-decoration: none;
 }
-
-/* Right column: image + badge */
 .columns.columns35 > div > div:last-child {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   min-width: 0;
-  justify-content: center; /* vertical centering if needed */
+  justify-content: center;
 }
 
 @media (max-width: 900px) {
@@ -2492,8 +2476,6 @@
     justify-content: flex-start;
   }
 }
-
-/* Responsive image */
 .columns.columns35 > div > div:last-child picture,
 .columns.columns35 > div > div:last-child img {
   display: block;
@@ -2516,8 +2498,6 @@
     min-width: 0;
   }
 }
-
-/* "02" Badge styling: last <p> in image column */
 .columns.columns35 > div > div:last-child > p:last-child {
   position: absolute;
   top: 16px;
@@ -2539,4 +2519,157 @@
 
 .columns.columns35 > div > div:last-child > p:last-child:empty {
   display: none;
+}
+
+
+.columns.columns36 {
+  background: #fff;
+  padding: 30px 0 20px 0;
+  margin: 0 auto;
+  max-width: 1100px;
+  box-sizing: border-box;
+}
+
+.columns.columns36 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 38px; /* slightly increased for closer match */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 899px) {
+  .columns.columns36 > div {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+/* Image column */
+.columns.columns36 .columns-img-col {
+  flex: 0 0 416px;
+  max-width: 430px;
+  min-width: 260px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.columns.columns36 .columns-img-col picture,
+.columns.columns36 .columns-img-col img {
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  border-radius: 28px;
+  display: block;
+  object-fit: cover;
+  background: #eee;
+}
+
+@media (max-width: 899px) {
+  .columns.columns36 .columns-img-col {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .columns.columns36 .columns-img-col picture,
+  .columns.columns36 .columns-img-col img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+}
+
+/* Text column */
+.columns.columns36 > div > div:not(.columns-img-col) {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Headings styling */
+.columns.columns36 p {
+  font-size: 1rem;
+  color: #222;
+  margin: 0 0 13px 0;
+  line-height: 1.5;
+}
+
+.columns.columns36 strong {
+  font-weight: bold;
+  font-size: 1.13rem;
+  color: #222;
+  display: inline;
+}
+
+/* Extra vertical space below first heading */
+.columns.columns36 p:has(strong:only-child):first-of-type {
+  margin-bottom: 17px;
+}
+
+/* Extra vertical space above "Unser Weg:" and after the first paragraph */
+.columns.columns36 p:has(strong:only-child):nth-of-type(3) {
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+/* List styling: lighter, more vibrant teal and slightly more compact */
+.columns.columns36 ul {
+  margin: 0 0 13px 20px;
+  padding-left: 0;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+.columns.columns36 ul li {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 2px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.columns.columns36 ul li::marker {
+  color: #12c8a0;
+  font-size: 0.92em;
+}
+
+/* Remove extra bottom margin from last list item */
+.columns.columns36 ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Inline link (not button) */
+.columns.columns36 .button-container {
+  margin: 11px 0 0 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.columns.columns36 .button-container .button {
+  background: none;
+  border: none;
+  color: #009688;
+  font-size: 1.07rem;
+  font-weight: 500;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;
+  margin: 0;
+  line-height: normal;
+  box-sizing: border-box;
+  transition: color .18s;
+}
+
+.columns.columns36 .button-container .button:hover,
+.columns.columns36 .button-container .button:focus {
+  color: #12c8a0;
+  text-decoration: underline;
+  background: none;
 }
