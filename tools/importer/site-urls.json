@@ -1,0 +1,65 @@
+{
+  "originUrl": "https://www.volkswagen-group.com",
+  "urls": [
+    {
+      "url": "https://www.volkswagen-group.com/de",
+      "source": "MANUAL",
+      "targetPath": "/de",
+      "id": "d5ab3650bb0201ddf829eec6b07f87c22e26387d"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+      "source": "MANUAL",
+      "targetPath": "/de/event-highlights-18120",
+      "id": "8262a4798dd324367214668adab5ea008c9d04bc"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "source": "MANUAL",
+      "targetPath": "/de/hauptversammlung-2025-18801",
+      "id": "598c4462778ab2203bd048d1518a80032383edd7"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "source": "MANUAL",
+      "targetPath": "/de/investoren-15766",
+      "id": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "source": "MANUAL",
+      "targetPath": "/de/medien-15771",
+      "id": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "source": "MANUAL",
+      "targetPath": "/de/nachhaltigkeit-15772",
+      "id": "53d8cb3ea44d871bb59ac51c706cd625984f635a"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+      "source": "MANUAL",
+      "targetPath": "/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+      "id": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+      "source": "MANUAL",
+      "targetPath": "/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+      "id": "63c2134271190a563547a6296cf422928d876efb"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+      "source": "MANUAL",
+      "targetPath": "/de/unternehmen-15765",
+      "id": "28bcd12ea3a9072b6255038bb6849a1245739668"
+    }
+  ],
+  "crawlOptions": {
+    "strategy": "manual",
+    "strategiesAttempted": [
+      "MANUAL"
+    ]
+  }
+}
