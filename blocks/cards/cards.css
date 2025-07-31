@@ -1,4 +1,4 @@
-/* stylelint-disable no-descending-specificity */
+/* Fixed CSS Code */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -89,7 +89,7 @@
 }
 
 .cards.cards1 .cards-card-body h3 {
-  color: #10232B;
+  color: #10232b;
   font-size: 1.17rem;
   font-weight: 700;
   line-height: 1.19;
@@ -97,7 +97,7 @@
 }
 
 .cards.cards1 .cards-card-body p {
-  color: #10232B;
+  color: #10232b;
   font-size: 1rem;
   line-height: 1.35;
   margin: 0 0 1.1rem;
@@ -116,8 +116,8 @@
 }
 
 .cards.cards1 .button-container .button {
-  background: #D6FF2A;
-  color: #10232B;
+  background: #d6ff2a;
+  color: #10232b;
   font-weight: 700;
   font-size: 1rem;
   border-radius: 6px;
@@ -136,9 +136,12 @@
 .cards.cards1 .button-container .button:hover,
 .cards.cards1 .button-container .button:focus {
   background: #c0e925;
-  color: #10232B;
+  color: #10232b;
   text-decoration: underline;
 }
+
+/* Disable no-descending-specificity rule globally */
+/* stylelint-disable no-descending-specificity */
 
 @media (width <= 500px) {
   .cards.cards1 .cards-card-image img {
@@ -151,8 +154,6 @@
 
 .cards.cards8 {
   background: #006d5b;
-
-  /* Remove all horizontal padding/margins and force full viewport width */
   padding: 24px 0;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -270,5 +271,121 @@
   .cards.cards8 ul {
     grid-template-columns: 1fr;
     padding: 0;
+  }
+}
+
+.cards.cards1.block > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cards.cards1.block > ul > li {
+  background: #048c87;
+  border: none;
+  border-radius: 16px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  min-height: 340px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cards.cards1.block > ul > li .cards-card-image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 112px;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: none;
+}
+
+.cards.cards1.block > ul > li .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+
+.cards.cards1.block > ul > li .cards-card-body,
+.cards.cards1.block > ul > li .cards-card-body h3,
+.cards.cards1.block > ul > li .cards-card-body p {
+  color: #fff;
+  background: none;
+}
+
+.cards.cards1.block > ul > li .cards-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 14px 18px 12px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cards.cards1.block > ul > li .cards-card-body h3 {
+  font-size: 21px;
+  font-weight: 600;
+  font-family: var(--heading-font-family);
+  margin: 0 0 6px;
+  line-height: 1.2;
+}
+
+.cards.cards1.block > ul > li .cards-card-body p {
+  font-size: 16px;
+  font-family: var(--body-font-family);
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.cards.cards1.block > ul > li .cards-card-body .button-container {
+  margin-top: 4px;
+}
+
+.cards.cards1.block > ul > li .cards-card-body .button {
+  display: inline-block;
+  padding: 7px 24px;
+  background: #d6f100;
+  color: #233142;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.25;
+  border: none;
+  text-decoration: none;
+  margin: 0;
+  box-shadow: none;
+  transition: background 0.2s;
+}
+
+.cards.cards1.block > ul > li .cards-card-body .button:hover,
+.cards.cards1.block > ul > li .cards-card-body .button:focus {
+  background: #c0e000;
+  color: #233142;
+}
+
+@media (width <= 900px) {
+  .cards.cards1.block > ul {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cards.cards1.block > ul > li .cards-card-image {
+    height: 160px;
+  }
+
+  .cards.cards1.block > ul > li .cards-card-body {
+    padding: 12px 8px 10px;
   }
 }
