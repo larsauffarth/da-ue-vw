@@ -645,22 +645,18 @@
   padding: 0;
   position: relative;
 }
-
-/* Set image area as relative for absolute pill positioning */
 .cards.cards27 .cards-card-image {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  padding: 22px 24px 0 24px; /* reduced top padding for a more compact layout */
+  padding: 22px 24px 0 24px;
   min-height: 65px;
   background: #fff;
   border-radius: 28px 28px 0 0;
   margin-bottom: 0;
 }
-
-/* Absolutely position the pill above the logo */
 .cards.cards27 .cards-card-image + .cards-card-body p:first-child {
   position: absolute;
   top: 6px;
@@ -675,10 +671,7 @@
   min-width: unset;
   z-index: 2;
   pointer-events: none;
-  /* visually above logo in the card image area */
 }
-
-/* Prevent pill from appearing in body flow */
 .cards.cards27 .cards-card-body p:first-child {
   position: static;
   margin-top: 0;
@@ -687,8 +680,6 @@
   padding: 0;
   color: inherit;
 }
-
-/* Logo/image: smaller gap below and above */
 .cards.cards27 > ul > li img {
   max-width: 100%;
   max-height: 52px;
@@ -697,19 +688,15 @@
   margin: 0 auto 8px auto;
   display: block;
 }
-
-/* Card body with tighter vertical rhythm, left-aligned text */
 .cards.cards27 .cards-card-body {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10px 24px 22px 24px; /* top padding reduced for compact cluster */
+  padding: 10px 24px 22px 24px;
   background: #fff;
   margin-top: 0;
 }
-
-/* Headline styling: compact above headline */
 .cards.cards27 .cards-card-body p strong {
   display: block;
   color: #222;
@@ -720,8 +707,6 @@
   text-align: left;
   letter-spacing: 0.01em;
 }
-
-/* Responsive: Shrink cards and spacing for narrow screens */
 @media (max-width: 900px) {
   .cards.cards27 > ul {
     gap: 16px;
@@ -742,5 +727,108 @@
   .cards.cards27 .cards-card-body {
     padding-left: 14px;
     padding-right: 14px;
+  }
+}
+
+
+.cards.cards30 > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 18px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  max-width: 100vw;
+  list-style: none;
+}
+
+.cards.cards30 > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  height: 225px;
+  min-width: 0;
+  min-height: 0;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  background: none;
+  box-sizing: border-box;
+}
+
+.cards.cards30 .cards-card-image {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.cards.cards30 .cards-card-image picture,
+.cards.cards30 .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cards.cards30 .cards-card-body {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 18px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.cards.cards30 .cards-card-body .button-container {
+  margin: 0;
+  padding: 0;
+}
+
+.cards.cards30 .cards-card-body .button.primary {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  white-space: normal;
+  text-overflow: unset;
+  display: inline;
+  pointer-events: auto;
+  cursor: pointer;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  word-break: normal;
+}
+
+@media (max-width: 900px) {
+  .cards.cards30 > ul {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 98vw;
+  }
+  .cards.cards30 > ul > li {
+    width: 100%;
+    max-width: 340px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
