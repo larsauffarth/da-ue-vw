@@ -468,22 +468,6 @@
       ]
     },
     {
-      "name": "Cards",
-      "cluster": 9,
-      "source": "Cards",
-      "target": "Cards (cards9)",
-      "key": "cards9",
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/medien-15771",
-          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
-          "uuid": "2f5f0b1b-23-c9e18170c0f4a6c7a48af4526c054e0df4d0a17a",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[28]/div[1]/div[1]/div[1]/div[4]",
-          "section": "section-1"
-        }
-      ]
-    },
-    {
       "name": "Columns",
       "cluster": 10,
       "source": "Columns",
@@ -1214,6 +1198,19 @@
           "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
           "uuid": "2f5f0b1b-26-c341463fa9f3cea9e5435b882ac4ffb53d0e6b32",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[32]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 48,
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-23-c9e18170c0f4a6c7a48af4526c054e0df4d0a17a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[28]/div[1]/div[1]/div[1]/div[4]",
           "section": "section-1"
         }
       ]
