@@ -1746,16 +1746,12 @@
   align-items: stretch;
   gap: 64px;
 }
-
-/* Responsive: stack columns */
 @media (max-width: 899px) {
   .columns.columns26 > div {
     flex-direction: column;
     gap: 32px;
   }
 }
-
-/* --- LEFT CARD --- */
 .columns.columns26 .columns-img-col {
   background: #009688;
   border-radius: 20px;
@@ -1771,16 +1767,12 @@
   position: relative;
   height: 530px;
 }
-
-/* Vertically center yellow block */
 @media (min-width: 900px) {
   .columns.columns26 .columns-img-col {
     height: 530px;
     min-height: 530px;
   }
 }
-
-/* Simulate the yellow card as a flex child */
 .columns.columns26 .columns-img-col-inner,
 .columns.columns26 .columns-img-col > blockquote,
 .columns.columns26 .columns-img-col > p,
@@ -1800,8 +1792,6 @@
   position: relative;
   z-index: 1;
 }
-
-/* Remove background from blockquote so only one yellow block shows */
 .columns.columns26 .columns-img-col > blockquote {
   background: none;
   box-shadow: none;
@@ -1810,8 +1800,6 @@
   margin-bottom: 1.4rem;
   border: none;
 }
-
-/* Make sure only one yellow background (not on p/strong block) */
 .columns.columns26 .columns-img-col > p,
 .columns.columns26 .columns-img-col > p strong {
   background: none;
@@ -1819,8 +1807,6 @@
   padding: 0;
   margin: 0;
 }
-
-/* Quote text styling */
 .columns.columns26 .columns-img-col blockquote p {
   color: #009688;
   font-size: 1.15rem;
@@ -1828,8 +1814,6 @@
   line-height: 1.5;
   margin: 0 0 1.8rem 0;
 }
-
-/* Name and company styling */
 .columns.columns26 .columns-img-col p strong {
   color: #009688;
   font-size: 1.07rem;
@@ -1840,8 +1824,6 @@
   position: relative;
   display: block;
 }
-
-/* Divider line below name */
 .columns.columns26 .columns-img-col p strong::after {
   display: block;
   width: 44px;
@@ -1852,8 +1834,6 @@
   margin-bottom: 8px;
   content: "";
 }
-
-/* Company line (immediately after strong) */
 .columns.columns26 .columns-img-col p:not(:last-of-type):not(:has(strong)) {
   color: #009688;
   font-size: 1.02rem;
@@ -1861,8 +1841,6 @@
   margin-bottom: 0.7rem;
   margin-top: 0;
 }
-
-/* "Teilen" button style */
 .columns.columns26 .columns-img-col > p:last-of-type {
   margin-top: 1.6rem;
   margin-bottom: 0;
@@ -1878,13 +1856,9 @@
   cursor: pointer;
   box-shadow: 0 1px 8px rgba(0,0,0,0.04);
 }
-
-/* Hide share links */
 .columns.columns26 .columns-img-col a {
   display: none;
 }
-
-/* Profile image precisely on the yellow block's corner */
 .columns.columns26 .columns-img-col picture,
 .columns.columns26 .columns-img-col img {
   width: 64px;
@@ -1908,8 +1882,6 @@
     height: auto;
   }
 }
-
-/* --- RIGHT COLUMN --- */
 .columns.columns26 > div > div:not(.columns-img-col) {
   display: flex;
   flex-direction: column;
@@ -1919,8 +1891,6 @@
   margin-top: 0;
   justify-content: flex-start;
 }
-
-/* Heading */
 .columns.columns26 > div > div:not(.columns-img-col) > h3 {
   margin-top: 0;
   margin-bottom: 1.1rem;
@@ -1929,8 +1899,6 @@
   font-weight: 700;
   letter-spacing: -0.01em;
 }
-
-/* Finance card image styling */
 .columns.columns26 > div > div:not(.columns-img-col) picture:first-of-type img {
   display: block;
   width: 100%;
@@ -1941,16 +1909,12 @@
   min-height: 128px;
   margin-left: 0;
 }
-
-/* Finance text */
 .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(2) {
   color: #222;
   font-size: 1.01rem;
   margin-bottom: 1.1rem;
   margin-top: 0;
 }
-
-/* "Mehr erfahren" button */
 .columns.columns26 > div > div:not(.columns-img-col) .button-container {
   margin-bottom: 1.1rem;
   margin-top: 0;
@@ -1966,8 +1930,6 @@
   margin: 0;
   letter-spacing: 0.01em;
 }
-
-/* --- Aktien Card (Stock Prices) --- */
 .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(4) {
   display: flex;
   align-items: center;
@@ -1996,11 +1958,8 @@
   text-decoration: none;
   display: inline-block;
 }
-
-/* Aktien two-column grid for stock prices/cards */
 @media (min-width: 900px) {
   .columns.columns26 > div > div:not(.columns-img-col) {
-    /* For Aktien p5-7 and p8-10: two columns using float */
   }
   .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(5),
   .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(6),
@@ -2017,7 +1976,6 @@
     padding-left: 2.1rem;
     padding-right: 2.1rem;
   }
-  /* First three (p5-7) left, next three (p8-10) right */
   .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(5),
   .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(6),
   .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(7) {
@@ -2031,8 +1989,6 @@
     clear: none;
   }
 }
-
-/* Stock price and label styles */
 .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(5),
 .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(8) {
   font-size: 2.18rem;
@@ -2070,8 +2026,6 @@
   margin-top: 0;
   margin-bottom: 0.4rem;
 }
-
-/* Responsive: stack stock blocks vertically */
 @media (max-width: 899px) {
   .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(5),
   .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(6),
@@ -2088,8 +2042,84 @@
     margin-right: 0;
   }
 }
-
-/* Reduce vertical spacing between cards in right column */
 .columns.columns26 > div > div:not(.columns-img-col) > *:not(:last-child) {
   margin-bottom: 0.34rem;
+}
+
+
+.columns.columns29 {
+  background: #fff;
+  border-bottom: 1px solid #ECEFF1;
+  padding: 0.5rem 0;
+  min-height: 32px;
+}
+
+/* Flex container for horizontal grouping and centering */
+.columns.columns29 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure children do not stretch or shrink */
+.columns.columns29 > div > div {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+/* Remove margin and padding from button containers */
+.columns.columns29 .button-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Strongly override button styles for text-link look */
+.columns.columns29 > div > div > .button-container > .button,
+.columns.columns29 > div > div > .button-container a.button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #546E7A;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.2;
+  min-height: 24px;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  text-align: left;
+  transition: color 0.2s;
+  gap: 0.5rem;
+  text-decoration: none;
+  max-width: unset;
+  white-space: normal;
+}
+
+/* On hover/focus, change color and underline */
+.columns.columns29 > div > div > .button-container > .button:hover,
+.columns.columns29 > div > div > .button-container > .button:focus,
+.columns.columns29 > div > div > .button-container a.button:hover,
+.columns.columns29 > div > div > .button-container a.button:focus {
+  color: #263238;
+  text-decoration: underline;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 600px) {
+  .columns.columns29 > div {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
 }
