@@ -31,3 +31,134 @@
     order: unset;
   }
 }
+
+
+.columns.columns2 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 36px;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 56px 0;
+  background: none;
+}
+
+@media (width <= 900px) {
+  .columns.columns2 > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 32px 0;
+    max-width: 98vw;
+  }
+}
+
+.columns.columns2 > div > div:first-child {
+  max-width: 340px;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Order: Heading (0), Button (1), Text (2) */
+.columns.columns2 > div > div:first-child h2 {
+  order: 0;
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: #23292B;
+  margin: 0 0 16px;
+  line-height: 1.18;
+}
+
+.columns.columns2 > div > div:first-child p.button-container {
+  order: 1;
+  margin: 0 0 28px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.columns.columns2 > div > div:first-child p:not(.button-container) {
+  order: 2;
+  color: #23292B;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0;
+  max-width: 100%;
+}
+
+@media (width <= 900px) {
+  .columns.columns2 > div > div:first-child {
+    max-width: 98vw;
+    padding: 0 8vw;
+  }
+}
+
+.columns.columns2 .button {
+  background: #C6FF00;
+  color: #23292B;
+  border-radius: 8px;
+  padding: 12px 36px;
+  font-size: 1.07rem;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  transition: background 0.2s;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.columns.columns2 .button:hover,
+.columns.columns2 .button:focus {
+  background: #B4EB00;
+  color: #23292B;
+  text-decoration: none;
+}
+
+.columns.columns2 .columns-img-col {
+  flex: 1 1 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+.columns.columns2 .columns-img-col img {
+  width: 340px;
+  max-width: 100%;
+  border-radius: 20px;
+  display: block;
+  height: auto;
+  margin-top: 0;
+}
+
+@media (width <= 900px) {
+  .columns.columns2 .columns-img-col {
+    justify-content: center;
+    min-width: unset;
+  }
+
+  .columns.columns2 .columns-img-col img {
+    width: 90vw;
+    max-width: 380px;
+  }
+}
+
+@media (width <= 600px) {
+  .columns.columns2 > div > div:first-child {
+    padding: 0 2vw;
+  }
+
+  .columns.columns2 .columns-img-col img {
+    width: 97vw;
+  }
+}
