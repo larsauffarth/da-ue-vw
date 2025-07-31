@@ -584,29 +584,6 @@
       ]
     },
     {
-      "name": "Columns",
-      "cluster": 12,
-      "source": "Hero",
-      "target": "Hero (hero12)",
-      "key": "hero12",
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
-          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
-          "uuid": "8262a479-09-0db5e01347036cb165c815d5dcfdefb06e49c110",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[16]",
-          "section": "section-1"
-        },
-        {
-          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
-          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
-          "uuid": "8262a479-10-83c7ffb52d78b70c9e2267359c0a210afabf4866",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[18]",
-          "section": "section-1"
-        }
-      ]
-    },
-    {
       "name": "Cards (no images)",
       "cluster": 13,
       "source": "Cards",
@@ -662,6 +639,20 @@
         {
           "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
           "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-09-0db5e01347036cb165c815d5dcfdefb06e49c110",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[16]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-10-83c7ffb52d78b70c9e2267359c0a210afabf4866",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[18]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
           "uuid": "8262a479-04-aecdb8d52a0cceeaa4417b6b9b82fa8d24834a0d",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[6]",
           "section": "section-1"
@@ -678,6 +669,20 @@
           "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
           "uuid": "8262a479-08-12ce60854995d4d0ef74a27a287f2e265bd238bf",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[14]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-06-4ccc58b9be4249244b17765cc205dcfef859aa98",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[10]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-07-876909c57fd71642fdeb84ed3e0cf7ecacdb95c0",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[12]",
           "section": "section-1"
         }
       ]
@@ -823,48 +828,6 @@
           "uuid": "2f5f0b1b-21-26af95d4a26748a7d7fe2063730a01f7b6ea2f6c",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[26]/div[1]/div[1]/div[4]",
           "section": "section-1"
-        }
-      ]
-    },
-    {
-      "name": "unknown",
-      "cluster": 25,
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
-          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
-          "uuid": "28bcd12e-16-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
-          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
-        },
-        {
-          "url": "https://www.volkswagen-group.com/de/medien-15771",
-          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
-          "uuid": "2f5f0b1b-33-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
-          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
-        },
-        {
-          "url": "https://www.volkswagen-group.com/de/investoren-15766",
-          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
-          "uuid": "48bec51d-22-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
-          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
-        },
-        {
-          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
-          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
-          "uuid": "53d8cb3e-20-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
-          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
-        },
-        {
-          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
-          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
-          "uuid": "598c4462-19-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
-          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
-        },
-        {
-          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
-          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
-          "uuid": "dcd95cf2-09-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
-          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
         }
       ]
     },
@@ -1037,38 +1000,6 @@
           "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
           "uuid": "53d8cb3e-07-d9cc7292532c5d1f4d3ca25efaee3ebcb30340e0",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[12]",
-          "section": "section-1"
-        }
-      ]
-    },
-    {
-      "name": "Columns",
-      "cluster": 37,
-      "source": "Columns",
-      "target": "Columns (columns37)",
-      "key": "columns37",
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
-          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
-          "uuid": "8262a479-06-4ccc58b9be4249244b17765cc205dcfef859aa98",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[10]",
-          "section": "section-1"
-        }
-      ]
-    },
-    {
-      "name": "Columns",
-      "cluster": 38,
-      "source": "Columns",
-      "target": "Columns (columns38)",
-      "key": "columns38",
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
-          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
-          "uuid": "8262a479-07-876909c57fd71642fdeb84ed3e0cf7ecacdb95c0",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[12]",
           "section": "section-1"
         }
       ]
@@ -1687,27 +1618,6 @@
       "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
       "uuid": "d5ab3650-05-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
       "xpath": "/html[1]/body[1]/div[1]/div[8]"
-    },
-    {
-      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
-      "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
-      "uuid": "dcd95cf2-03-11a0235cfb98d43555c69945b76854c7e6854594",
-      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[4]",
-      "section": "section-1"
-    },
-    {
-      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
-      "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
-      "uuid": "dcd95cf2-04-7f8e3bbb330ed80bfc66006df784f967ca0286aa",
-      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]",
-      "section": "section-3"
-    },
-    {
-      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
-      "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
-      "uuid": "dcd95cf2-05-8413157914bc112b211c9c9080bbfa9bd1ec2631",
-      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[8]",
-      "section": "section-1"
     },
     {
       "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
