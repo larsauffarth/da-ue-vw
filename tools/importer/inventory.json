@@ -1,0 +1,1668 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+          "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+          "uuid": "63c21342-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de",
+          "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+          "uuid": "d5ab3650-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+          "uuid": "dcd95cf2-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        }
+      ],
+      "styles": {
+        "height": 62
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 4,
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-13-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-14-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-15-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-16-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
+          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-30-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-31-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-32-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-33-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
+          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-19-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-20-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-21-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-22-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
+          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-17-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-18-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-19-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-20-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
+          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-16-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-17-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-18-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-19-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
+          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+          "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+          "uuid": "63c21342-04-7f8e3bbb330ed80bfc66006df784f967ca0286aa",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+          "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+          "uuid": "63c21342-05-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+          "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+          "uuid": "63c21342-06-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+          "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+          "uuid": "63c21342-07-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-11-ffbb687e26d477823d8ab6070ec5645759fc4062",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[20]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-12-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-13-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-14-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de",
+          "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+          "uuid": "d5ab3650-02-396a96f7c278029bb3e176cd367d4468856a45e2",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de",
+          "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+          "uuid": "d5ab3650-03-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de",
+          "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+          "uuid": "d5ab3650-04-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de",
+          "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+          "uuid": "d5ab3650-05-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+          "uuid": "dcd95cf2-06-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+          "xpath": "/html[1]/body[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+          "uuid": "dcd95cf2-07-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+          "xpath": "/html[1]/body[1]/div[1]/div[6]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+          "uuid": "dcd95cf2-08-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+          "xpath": "/html[1]/body[1]/div[1]/div[8]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+          "uuid": "dcd95cf2-09-58ec5cd6ca0361512f0254bf2968da3c7c8b31d2",
+          "xpath": "/html[1]/body[1]/up-modal[1]/up-modal-viewport[1]"
+        }
+      ],
+      "styles": {}
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Cards",
+      "cluster": 1,
+      "source": "Cards",
+      "target": "Cards (cards1)",
+      "key": "cards1",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-05-cb9c014dffdbf983c30042152ca6addeda59168c",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]/div[1]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 2,
+      "source": "Columns",
+      "target": "Columns (columns2)",
+      "key": "columns2",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-05-7f8e3bbb330ed80bfc66006df784f967ca0286aa",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-09-9a1fde624b9cf69669a0808ccc3f3a6639af8ca9",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[14]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 3,
+      "source": "Columns",
+      "target": "Columns (columns3)",
+      "key": "columns3",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-18-e6e88f54002ab208c7a99c6aee05e3c1a5c88525",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[22]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-16-e6e88f54002ab208c7a99c6aee05e3c1a5c88525",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[22]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 4,
+      "source": "Columns",
+      "target": "Columns (columns4)",
+      "key": "columns4",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-26-c341463fa9f3cea9e5435b882ac4ffb53d0e6b32",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[32]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-27-bc571b61009d49edbc010f92a742ca607c94e1c0",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[32]/div[1]/div[1]/div[6]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-28-f398296a26d176433a8afd966c6a36a2c773b637",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[32]/div[1]/div[1]/div[8]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 5,
+      "source": "Hero",
+      "target": "Hero (hero5)",
+      "key": "hero5",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-01-a3ba83865713fcd3e742327c1b85dfdca9c82d9a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-01-a3ba83865713fcd3e742327c1b85dfdca9c82d9a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-01-a3ba83865713fcd3e742327c1b85dfdca9c82d9a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 6,
+      "source": "Columns",
+      "target": "Columns (columns6)",
+      "key": "columns6",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-08-9a1fde624b9cf69669a0808ccc3f3a6639af8ca9",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[14]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-09-89e54dff048b00dbdad4221df17a8e615d00e545",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[16]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 7,
+      "source": "Columns",
+      "target": "Columns (columns7)",
+      "key": "columns7",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-02-50470fe9f9949bf0219aa7e47e56d43143ab2620",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 8,
+      "source": "Cards",
+      "target": "Cards (cards8)",
+      "key": "cards8",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-16-94ebdbf2d7445117354305d9b4609045504a43c0",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[2]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-13-94ebdbf2d7445117354305d9b4609045504a43c0",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[2]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 9,
+      "source": "Header",
+      "target": "Header",
+      "key": "header9",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+          "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+          "uuid": "63c21342-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de",
+          "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+          "uuid": "d5ab3650-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+          "uuid": "dcd95cf2-00-10ff6870fe0e1e8555c1dab4170caa3e62155dbd",
+          "xpath": "/html[1]/body[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 10,
+      "source": "Columns",
+      "target": "Columns (columns10)",
+      "key": "columns10",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+          "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+          "uuid": "63c21342-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+          "uuid": "dcd95cf2-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 11,
+      "source": "Columns",
+      "target": "Columns (columns11)",
+      "key": "columns11",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+          "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+          "uuid": "63c21342-01-a3ba83865713fcd3e742327c1b85dfdca9c82d9a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+          "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+          "uuid": "dcd95cf2-01-a3ba83865713fcd3e742327c1b85dfdca9c82d9a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards (no images)",
+      "cluster": 13,
+      "source": "Cards",
+      "target": "Cards",
+      "key": "cardsNoImages13",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-11-89e54dff048b00dbdad4221df17a8e615d00e545",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[16]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 14,
+      "source": "Hero",
+      "target": "Hero (hero14)",
+      "key": "hero14",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-06-8413157914bc112b211c9c9080bbfa9bd1ec2631",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[8]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-08-d9cc7292532c5d1f4d3ca25efaee3ebcb30340e0",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[12]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-11-c8aab59f9a934489f7f7d65b43937c208158e886",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[18]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 15,
+      "source": "Columns",
+      "target": "Columns (columns15)",
+      "key": "columns15",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-09-0db5e01347036cb165c815d5dcfdefb06e49c110",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[16]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-10-83c7ffb52d78b70c9e2267359c0a210afabf4866",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[18]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-04-aecdb8d52a0cceeaa4417b6b9b82fa8d24834a0d",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[6]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-05-b502e46aec2d7e694475284f89230f3024a55868",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[8]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-08-12ce60854995d4d0ef74a27a287f2e265bd238bf",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[14]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-06-4ccc58b9be4249244b17765cc205dcfef859aa98",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[10]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+          "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+          "uuid": "8262a479-07-876909c57fd71642fdeb84ed3e0cf7ecacdb95c0",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[12]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 16,
+      "source": "Cards",
+      "target": "Cards (cards16)",
+      "key": "cards16",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-19-ab4df0eff0dd5d4450794978794c8a62406d1a2b",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[24]/div[1]/div[1]/section[1]/div[3]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 17,
+      "source": "Columns",
+      "target": "Columns (columns17)",
+      "key": "columns17",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-10-89e54dff048b00dbdad4221df17a8e615d00e545",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[16]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 18,
+      "source": "Columns",
+      "target": "Columns (columns18)",
+      "key": "columns18",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-06-ec43d5bc739e79b37f00fecedeb707b27149d552",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[8]/div[1]/div[1]/div[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 19,
+      "source": "Cards",
+      "target": "Cards (cards19)",
+      "key": "cards19",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-12-6c3b7c54e06bc47e9d70f28612b3ac2bcfc3e8de",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[20]/div[1]/div[1]/div[1]/div[2]/div[1]/section[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 20,
+      "source": "Hero",
+      "target": "Hero (hero20)",
+      "key": "hero20",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-09-d9cc7292532c5d1f4d3ca25efaee3ebcb30340e0",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[12]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 21,
+      "source": "Columns",
+      "target": "Columns (columns21)",
+      "key": "columns21",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-04-9e7b27f9786bf4fb35a297675b39d244dce5c70f",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 22,
+      "source": "Columns",
+      "target": "Columns (columns22)",
+      "key": "columns22",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+          "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+          "uuid": "598c4462-05-5d0b4ac377d2d258f448c4d034c4a0e02776f6b4",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[6]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 23,
+      "source": "Columns",
+      "target": "Columns (columns23)",
+      "key": "columns23",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-29-74cca775310a9ee854a3d25444224e1ef442a753",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[34]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "cluster": 24,
+      "source": "Tabs",
+      "target": "Tabs",
+      "key": "tabs24",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-21-26af95d4a26748a7d7fe2063730a01f7b6ea2f6c",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[26]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 26,
+      "source": "Columns",
+      "target": "Columns (columns26)",
+      "key": "columns26",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-03-11a0235cfb98d43555c69945b76854c7e6854594",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 27,
+      "source": "Cards",
+      "target": "Cards (cards27)",
+      "key": "cards27",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-24-a2cd022e594a4497836f91f8d03973e1a0e12dca",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[30]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 28,
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 29,
+      "source": "Columns",
+      "target": "Columns (columns29)",
+      "key": "columns29",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-02-5c885cf5c738bd5e23c7c066a6da356605921013",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 30,
+      "source": "Cards",
+      "target": "Cards (cards30)",
+      "key": "cards30",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-12-4eca8317be961f8bcf8bfcf3157ae08f30dac67a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[18]/div[1]/div[1]/div[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 31,
+      "source": "Cards",
+      "target": "Cards (cards31)",
+      "key": "cards31",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-23-c9e18170c0f4a6c7a48af4526c054e0df4d0a17a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[28]/div[1]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 32,
+      "source": "Cards",
+      "target": "Cards (cards32)",
+      "key": "cards32",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-10-9a1fde624b9cf69669a0808ccc3f3a6639af8ca9",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[14]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 33,
+      "source": "Cards",
+      "target": "Cards (cards33)",
+      "key": "cards33",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-15-d76b3c32d60a3758e042b10029aa4e20c64707f8",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[1]/section[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 34,
+      "source": "Columns",
+      "target": "Columns (columns34)",
+      "key": "columns34",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-08-bcea9653c476d09ebc79b6228885cae56f04e0ae",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 35,
+      "source": "Columns",
+      "target": "Columns (columns35)",
+      "key": "columns35",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-07-bcea9653c476d09ebc79b6228885cae56f04e0ae",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 36,
+      "source": "Columns",
+      "target": "Columns (columns36)",
+      "key": "columns36",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-07-d9cc7292532c5d1f4d3ca25efaee3ebcb30340e0",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[12]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 39,
+      "source": "Columns",
+      "target": "Columns (columns39)",
+      "key": "columns39",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-07-154ac24cb07fa4e9f6ee2ddf57a07058f124f99c",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[8]/div[1]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 40,
+      "source": "Cards",
+      "target": "Cards (cards40)",
+      "key": "cards40",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-07-8413157914bc112b211c9c9080bbfa9bd1ec2631",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[8]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 41,
+      "source": "Columns",
+      "target": "Columns (columns41)",
+      "key": "columns41",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-10-9a1fde624b9cf69669a0808ccc3f3a6639af8ca9",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[14]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 42,
+      "source": "Cards",
+      "target": "Cards (cards42)",
+      "key": "cards42",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-12-780a49a8ad785f57f43084430c2335548a222bc8",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[16]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 43,
+      "source": "Cards",
+      "target": "Cards (cards43)",
+      "key": "cards43",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-03-11a0235cfb98d43555c69945b76854c7e6854594",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[4]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 44,
+      "source": "Columns",
+      "target": "Columns (columns44)",
+      "key": "columns44",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+          "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+          "uuid": "53d8cb3e-10-c8aab59f9a934489f7f7d65b43937c208158e886",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[18]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 45,
+      "source": "Columns",
+      "target": "Columns (columns45)",
+      "key": "columns45",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-12-c95b2da6b124a7ab6644bfab52f9af417146b565",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]",
+          "section": "section-1"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+      "uuid": "28bcd12e-01-575d679f0392bd060dbde6c89f406adf877a0b4f",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+      "uuid": "28bcd12e-03-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+      "uuid": "28bcd12e-04-11a0235cfb98d43555c69945b76854c7e6854594",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+      "uuid": "28bcd12e-13-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+      "uuid": "28bcd12e-14-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+      "uuid": "28bcd12e-15-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-03-11a0235cfb98d43555c69945b76854c7e6854594",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-04-5775a4b6a711e4fc067ead1cd6c1d257143a9d6d",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-05-aba26977c91befb7ee211e32b4d6ef5e07a936ba",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-06-0bc94e3d1aaa2dcb9bafd21abe1b8abb4eba4179",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[2]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-08-bcea9653c476d09ebc79b6228885cae56f04e0ae",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-09-d9cc7292532c5d1f4d3ca25efaee3ebcb30340e0",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[12]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-11-00f2d343b70aa896f0e4c61a448fef861c978d83",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[16]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-13-1397b07ec59b83945837a2bcd0c7c70a76a07cdc",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[16]/div[1]/div[1]/div[6]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-14-c8aab59f9a934489f7f7d65b43937c208158e886",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[18]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-16-0a0b0d301c45b23a2d4af579842d812d4af93947",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-17-e9c98ad7e854f7dd35a8702a8913778f329320d1",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[22]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-18-55e396e07f1213329804abfef7d4a3415f834362",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[24]/div[1]/div[1]/section[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-20-96b71e93ef908e2d3cb71655abf36074d21deacc",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[26]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-22-d61608dc580e5e98d047b9b77adb71fb9110a4c3",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[28]/div[1]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-25-19002bc39c77574e8293540b77fe2b9a1ccaa64a",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[32]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-30-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-31-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/medien-15771",
+      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+      "uuid": "2f5f0b1b-32-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-04-2e6cea10d970040248ca0e6a4ec60a04ec27435b",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]/div[1]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-13-cd9ad3724e1577d8c06a4fbbee064e020d13826a",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[18]/div[1]/div[1]/div[1]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-14-4315c7d3aba42d579a21523aa123caea052c9892",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-15-359142df4198eecf02801ac5bb60c90e1f3be94c",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/div[1]/div[1]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-17-7ae324d7ff7866a06593b2488dd32380dc9a7748",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[22]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-19-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-20-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/investoren-15766",
+      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+      "uuid": "48bec51d-21-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-04-7f8e3bbb330ed80bfc66006df784f967ca0286aa",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-05-8413157914bc112b211c9c9080bbfa9bd1ec2631",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[8]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-06-bcea9653c476d09ebc79b6228885cae56f04e0ae",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-11-a2dda158eedf197147b3b5222c0ea4dd50f76719",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[1]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-12-359142df4198eecf02801ac5bb60c90e1f3be94c",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/div[1]/div[1]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-14-ea51843cd76cf625e24b0b3d3656e992a4fa9fd0",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]",
+      "section": "section-4"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-15-7ae324d7ff7866a06593b2488dd32380dc9a7748",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[22]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-17-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-18-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/nachhaltigkeit-15772",
+      "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
+      "uuid": "53d8cb3e-19-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-01-ae84a056fe76743f59c9c681cfaf71191ff810aa",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-02-08e82a9bc19b0ba16366f4898dc7b8c286221116",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]",
+      "section": "section-5"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-03-c06578044f39a58720d86c80a88f820b746b47aa",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-06-5ee5a1edb535ad0a071f303a1aba98f64c5b01be",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[8]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-07-5ac2538994524ca2493ccbec10e09a6bb071ca35",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[10]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-08-059088c569436fad7fa48fa80e615c0a2161e7a3",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[14]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-09-b9b105f34d4cc5fd580b02636e47d2169d472f9d",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[16]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-10-022f030bba47a3253fd0be064d24e0d7029f3489",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[18]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-11-bb460ffb97db255c6f2f79527a510714b11f8378",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[20]/div[1]/div[1]/div[1]/div[2]/div[1]/section[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-13-c0db3d89a80e215327bea02e9d68f7b81c48e386",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[20]/div[1]/div[1]/div[1]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-14-da2e3c212244886149f3e307830f6f202819363b",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[20]/div[1]/div[1]/div[1]/div[6]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-15-964dcb3f8ac52dc0c6e73dbe0bdf6a8791373021",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[4]/div[22]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-16-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-17-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/hauptversammlung-2025-18801#",
+      "urlHash": "598c4462778ab2203bd048d1518a80032383edd7",
+      "uuid": "598c4462-18-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+      "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+      "uuid": "63c21342-03-11a0235cfb98d43555c69945b76854c7e6854594",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+      "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+      "uuid": "63c21342-04-7f8e3bbb330ed80bfc66006df784f967ca0286aa",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[6]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+      "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+      "uuid": "63c21342-05-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+      "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+      "uuid": "63c21342-06-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/volkswagen-group-als-innovativster-automobilkonzern-ausgezeichnet-19414",
+      "urlHash": "63c2134271190a563547a6296cf422928d876efb",
+      "uuid": "63c21342-07-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+      "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+      "uuid": "8262a479-01-ae84a056fe76743f59c9c681cfaf71191ff810aa",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+      "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+      "uuid": "8262a479-03-d3986e148cbd6d7adc23ed9477d3c5c947dab057",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+      "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+      "uuid": "8262a479-11-ffbb687e26d477823d8ab6070ec5645759fc4062",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[3]/div[20]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+      "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+      "uuid": "8262a479-12-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+      "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+      "uuid": "8262a479-13-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/event-highlights-18120",
+      "urlHash": "8262a4798dd324367214668adab5ea008c9d04bc",
+      "uuid": "8262a479-14-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de",
+      "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+      "uuid": "d5ab3650-01-ebe0b10e8c4eadba3581e4dea0e27c5d5ffb527b",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de",
+      "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+      "uuid": "d5ab3650-02-396a96f7c278029bb3e176cd367d4468856a45e2",
+      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de",
+      "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+      "uuid": "d5ab3650-03-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de",
+      "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+      "uuid": "d5ab3650-04-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de",
+      "urlHash": "d5ab3650bb0201ddf829eec6b07f87c22e26387d",
+      "uuid": "d5ab3650-05-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+      "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+      "uuid": "dcd95cf2-06-0f1d7f5df3d5be3c797f8c344329fe6d7acc6cbe",
+      "xpath": "/html[1]/body[1]/div[1]/div[5]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+      "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+      "uuid": "dcd95cf2-07-4eabbda5311e71fa12ce80cd0e2687c8b4743c67",
+      "xpath": "/html[1]/body[1]/div[1]/div[6]"
+    },
+    {
+      "url": "https://www.volkswagen-group.com/de/pressemitteilungen/technologie-fuer-die-menschen-die-volkswagen-group-auf-der-iaa-mobility-19425",
+      "urlHash": "dcd95cf2008cc3749e85f80c38a9d65ea0aa43b2",
+      "uuid": "dcd95cf2-08-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
+      "xpath": "/html[1]/body[1]/div[1]/div[8]"
+    }
+  ],
+  "sections": [
+    {
+      "name": "section-1",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 98
+    },
+    {
+      "name": "section-2",
+      "background": "rgba(0, 0, 0, 0) url(\"https://uploads.vw-mms.de/system/production/images/cws/080/680/images/b099b5431d5a3af6985754c7157ebf31b6449bcb/B2024CW00003_web_1600.png?1705314507\") repeat scroll 50% 50% / cover padding-box border-box",
+      "count": 3
+    },
+    {
+      "name": "section-3",
+      "background": "rgb(0, 128, 110) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 9
+    },
+    {
+      "name": "section-4",
+      "background": "rgb(194, 254, 6) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 1
+    },
+    {
+      "name": "section-5",
+      "background": "rgba(217, 217, 217, 0.75) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 1
+    }
+  ]
+}
