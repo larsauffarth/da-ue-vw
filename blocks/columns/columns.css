@@ -2759,16 +2759,12 @@
   margin: 0 auto;
   padding: 38px 0 0 0;
 }
-
-/* Image styling */
 .columns.columns41 .columns-img-col {
   flex: 0 0 390px;
   max-width: 390px;
   min-width: 220px;
   display: flex;
 }
-
-/* right column */
 .columns.columns41 .columns-img-col img,
 .columns.columns41 .columns-img-col picture {
   width: 100%;
@@ -2787,8 +2783,6 @@
   justify-content: flex-start;
   position: relative;
 }
-
-/* HEADER ROW */
 .columns.columns41 > div > div:not(.columns-img-col) > h2,
 .columns.columns41 > div > div:not(.columns-img-col) > .button-container:first-of-type {
   margin: 0;
@@ -2799,12 +2793,10 @@
 .columns.columns41 > div > div:not(.columns-img-col) .columns-header-row,
 .columns.columns41 > div > div:not(.columns-img-col) > h2, 
 .columns.columns41 > div > div:not(.columns-img-col) > .button-container:first-of-type {
-  /* fallback for lack of wrapper */
   width: 100%;
 }
 
 .columns.columns41 > div > div:not(.columns-img-col) {
-  /* arrange heading and button as a row even without wrapper */
 }
 .columns.columns41 > div > div:not(.columns-img-col) > h2,
 .columns.columns41 > div > div:not(.columns-img-col) > .button-container:first-of-type {
@@ -2860,21 +2852,14 @@
     width: auto;
   }
 }
-
-/* EVENTS: Each group of 4 is an event row */
-/* Hide all button-containers by default except for the event structure mapped below */
 .columns.columns41 > div > div:not(.columns-img-col) .button-container {
   margin: 0;
   padding: 0;
   display: none;
 }
-
-/* Show: "Alle Termine" button */
 .columns.columns41 > div > div:not(.columns-img-col) > .button-container:first-of-type {
   display: inline-block;
 }
-
-/* Event row: arrange as flex row, center aligned */
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(2),
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(6),
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(10) {
@@ -2886,8 +2871,6 @@
   margin-bottom: 10px;
   padding: 0;
 }
-
-/* Date block: stacked and centered with event details */
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(2) .button,
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(6) .button,
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(10) .button {
@@ -2905,8 +2888,6 @@
   min-width: 56px;
   white-space: nowrap;
 }
-
-/* Date block: month/year, single line, no wrapping/truncation */
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(3),
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(7),
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(11) {
@@ -2939,8 +2920,6 @@
   overflow: visible;
   text-overflow: unset;
 }
-
-/* Event details: stacked, left aligned */
 .columns.columns41 > div > div:not(.columns-img-col) .event-details {
   display: flex;
   flex-direction: column;
@@ -2949,8 +2928,6 @@
   min-width: 0;
   flex: 1 1 0;
 }
-
-/* Event Title */
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(4),
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(8),
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(12) {
@@ -2977,8 +2954,6 @@
   overflow: visible;
   text-overflow: unset;
 }
-
-/* Event Range */
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(5),
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(9),
 .columns.columns41 > div > div:not(.columns-img-col) .button-container:nth-of-type(13) {
@@ -3004,8 +2979,6 @@
   overflow: visible;
   text-overflow: unset;
 }
-
-/* Responsive: stack event row on small screens */
 @media (max-width: 700px) {
   .columns.columns41 > div {
     flex-direction: column;
@@ -3022,5 +2995,158 @@
   }
   .columns.columns41 .columns-img-col {
     max-width: 100%;
+  }
+}
+
+
+.columns.columns44 {
+  padding: 32px 0;
+}
+
+/* Main columns row: side-by-side, vertically centered */
+.columns.columns44 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Responsive: stack cols on mobile/tablet */
+@media (max-width: 900px) {
+  .columns.columns44 > div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+}
+
+/* Text column sizing and alignment */
+.columns.columns44 > div > div:first-child {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Section titles */
+.columns.columns44 > div > div:first-child p strong {
+  color: #006766;
+  font-weight: 700;
+}
+
+/* Body text */
+.columns.columns44 > div > div:first-child p {
+  color: #222222;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 14px 0;
+}
+
+.columns.columns44 > div > div:first-child > :last-child {
+  margin-bottom: 0;
+}
+
+/* List: teal bullets, better vertical alignment */
+.columns.columns44 > div > div:first-child ul {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding-left: 0;
+}
+
+.columns.columns44 > div > div:first-child ul li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.columns.columns44 > div > div:first-child ul li::marker {
+  display: none;
+}
+
+.columns.columns44 > div > div:first-child ul li::before {
+  width: 7px;
+  height: 7px;
+  background: #009688;
+  border-radius: 50%;
+  margin-right: 9px;
+  margin-top: 0; /* vertical center */
+  flex-shrink: 0;
+  display: inline-block;
+  content: "";
+}
+
+.columns.columns44 > div > div:first-child ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Link: teal, underlined (override .button)*/
+.columns.columns44 > div > div:first-child .button-container {
+  margin-top: 12px;
+}
+
+.columns.columns44 > div > div:first-child .button-container .button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #009688;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  box-shadow: none;
+  max-width: none;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.columns.columns44 > div > div:first-child .button-container .button:hover,
+.columns.columns44 > div > div:first-child .button-container .button:focus {
+  color: #006766;
+  background: none;
+}
+
+/* Image column: alignment, max width/height, rounded corners */
+.columns.columns44 .columns-img-col {
+  flex: 1.1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.columns.columns44 .columns-img-col img {
+  width: 100%;
+  max-width: 530px;
+  max-height: 270px;
+  height: auto;
+  border-radius: 24px;
+  display: block;
+  background: none;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+/* Responsive image centering on mobile */
+@media (max-width: 900px) {
+  .columns.columns44 > div > div:first-child {
+    max-width: 100%;
+  }
+  .columns.columns44 .columns-img-col {
+    justify-content: center;
+    margin-top: 8px;
+  }
+  .columns.columns44 .columns-img-col img {
+    max-width: 100%;
+    max-height: 350px;
+    margin: 0 auto;
   }
 }
