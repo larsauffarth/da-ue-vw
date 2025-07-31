@@ -2053,8 +2053,6 @@
   padding: 0.5rem 0;
   min-height: 32px;
 }
-
-/* Flex container for horizontal grouping and centering */
 .columns.columns29 > div {
   display: flex;
   flex-direction: row;
@@ -2064,8 +2062,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* Ensure children do not stretch or shrink */
 .columns.columns29 > div > div {
   display: flex;
   align-items: center;
@@ -2074,14 +2070,10 @@
   flex: 0 0 auto;
   min-width: 0;
 }
-
-/* Remove margin and padding from button containers */
 .columns.columns29 .button-container {
   margin: 0;
   padding: 0;
 }
-
-/* Strongly override button styles for text-link look */
 .columns.columns29 > div > div > .button-container > .button,
 .columns.columns29 > div > div > .button-container a.button {
   display: flex;
@@ -2105,8 +2097,6 @@
   max-width: unset;
   white-space: normal;
 }
-
-/* On hover/focus, change color and underline */
 .columns.columns29 > div > div > .button-container > .button:hover,
 .columns.columns29 > div > div > .button-container > .button:focus,
 .columns.columns29 > div > div > .button-container a.button:hover,
@@ -2114,12 +2104,314 @@
   color: #263238;
   text-decoration: underline;
 }
-
-/* Responsive: stack vertically on small screens */
 @media (max-width: 600px) {
   .columns.columns29 > div {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+  }
+}
+
+
+.columns.columns34 {
+  background: #009688;
+  padding: 54px 0 54px 0;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep left and right columns side by side */
+.columns.columns34 > div {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 64px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .columns.columns34 > div {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 32px;
+    padding: 0 12px;
+  }
+}
+
+/* Left card styling */
+.columns.columns34 > div > div:first-child {
+  background: #062735;
+  border-radius: 20px;
+  padding: 40px 38px 40px 38px;
+  min-width: 330px;
+  max-width: 370px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .columns.columns34 > div > div:first-child {
+    min-width: 0;
+    max-width: 100%;
+    padding: 32px 18px;
+  }
+}
+
+.columns.columns34 > div > div:first-child h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+.columns.columns34 > div > div:first-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns34 > div > div:first-child ul li {
+  color: #b2bec3;
+  font-size: 18px;
+  margin-bottom: 14px;
+  padding-left: 0;
+}
+
+.columns.columns34 > div > div:first-child ul li a {
+  color: #b2bec3;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.columns.columns34 > div > div:first-child ul li a:hover {
+  color: #d5ff00;
+  text-decoration: underline;
+}
+
+/* --- HEADER ROW (heading + button side by side) --- */
+.columns.columns34 > div > div:last-child {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  /* Remove excess padding above the right column to match left card */
+  padding-top: 0;
+}
+
+.columns.columns34 > div > div:last-child .columns34-header-row,
+.columns.columns34 > div > div:last-child > h2,
+.columns.columns34 > div > div:last-child .button-container:first-of-type {
+  margin: 0;
+  padding: 0;
+}
+
+/* Simulate header row: heading and button on the same line, vertically centered */
+.columns.columns34 > div > div:last-child .columns34-header-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.columns.columns34 > div > div:last-child > h2,
+.columns.columns34 > div > div:last-child .button-container:first-of-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.columns.columns34 > div > div:last-child > h2 {
+  color: #d4f3ef;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.columns.columns34 > div > div:last-child .button-container:first-of-type {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+@media (min-width: 700px) {
+  .columns.columns34 > div > div:last-child > h2,
+  .columns.columns34 > div > div:last-child .button-container:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .columns.columns34 > div > div:last-child .columns34-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+}
+
+/* --- "Alle Termine" BUTTON STYLES --- */
+.columns.columns34 > div > div:last-child .button-container:first-of-type a.button {
+  background: #d5ff00;
+  color: #222;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 11px 32px;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  min-width: 0;
+  vertical-align: middle;
+}
+
+.columns.columns34 > div > div:last-child .button-container:first-of-type a.button:hover,
+.columns.columns34 > div > div:last-child .button-container:first-of-type a.button:focus {
+  background: #c0eb00;
+  color: #222;
+}
+
+/* Remove pill styling for event entries */
+.columns.columns34 > div > div:last-child .button-container:not(:first-of-type) a.button {
+  background: none;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: var(--body-font-family);
+  display: block;
+  white-space: normal;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* --- EVENT ROWS --- */
+/* Each event is 4 .button-containers: date, month, title, meta.
+   We'll visually group them in rows using flex and tighter spacing. */
+.columns.columns34 > div > div:last-child .event-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.columns.columns34 > div > div:last-child .event-date-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.columns.columns34 > div > div:last-child .event-details-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+.columns.columns34 > div > div:last-child .button-container {
+  margin-bottom: 0;
+}
+
+/* Map each event row for the ungrouped DOM (manually for the 3 events) */
+.columns.columns34 > div > div:last-child .button-container:nth-of-type(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.columns.columns34 > div > div:last-child .button-container:nth-of-type(2),
+.columns.columns34 > div > div:last-child .button-container:nth-of-type(6),
+.columns.columns34 > div > div:last-child .button-container:nth-of-type(10) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+/* --- DATE COLUMN (big number, small month/year) --- */
+.columns.columns34 > div > div:last-child .button-container a.button[title="03"],
+.columns.columns34 > div > div:last-child .button-container a.button[title="07"],
+.columns.columns34 > div > div:last-child .button-container a.button[title="09"] {
+  color: #d5ff00;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: -3px;
+  margin-top: 0;
+  padding: 0;
+  text-align: left;
+  pointer-events: none;
+  display: block;
+}
+
+.columns.columns34 > div > div:last-child .button-container a.button[title="Sep 2025"] {
+  color: #d5ff00;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: -5px;
+  margin-bottom: 4px;
+  text-align: left;
+  pointer-events: none;
+  display: block;
+}
+
+/* --- EVENT DETAILS COLUMN (title, meta) --- */
+.columns.columns34 > div > div:last-child .button-container a.button[title*="Conference"],
+.columns.columns34 > div > div:last-child .button-container a.button[title*="MOBILITY"],
+.columns.columns34 > div > div:last-child .button-container a.button[title*="Update"] {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin-bottom: 2px;
+  margin-top: 0;
+  text-align: left;
+  display: block;
+}
+
+.columns.columns34 > div > div:last-child .button-container a.button[title*="2025-"],
+.columns.columns34 > div > div:last-child .button-container a.button[title="09.09.2025"] {
+  color: #b2bec3;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  display: block;
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+  .columns.columns34 {
+    padding: 18px 0;
+  }
+  .columns.columns34 > div > div:first-child {
+    padding: 20px 8px;
+  }
+  .columns.columns34 > div {
+    gap: 16px;
   }
 }
