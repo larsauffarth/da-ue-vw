@@ -402,7 +402,7 @@
 .columns.columns7 > div {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* aligns image and main content at the top */
+  align-items: flex-start;
   gap: 36px;
 }
 
@@ -435,8 +435,6 @@
   display: block;
   background: #f6f6f6;
 }
-
-/* --- Right Column: Heading, Button, Events --- */
 .columns.columns7 > div > div:last-child {
   flex: 1 1 0;
   display: flex;
@@ -445,8 +443,6 @@
   min-width: 0;
   padding-top: 0;
 }
-
-/* Heading + button as a row, baseline/center alignment */
 .columns.columns7 > div > div:last-child > #anstehende-termine,
 .columns.columns7 > div > div:last-child > .button-container:first-of-type {
   display: inline-block;
@@ -468,7 +464,6 @@
   position: relative;
 }
 .columns.columns7 > div > div:last-child {
-  /* tightly group heading/button and events */
   gap: 0;
 }
 .columns.columns7 > div > div:last-child > #anstehende-termine,
@@ -496,8 +491,6 @@
   background: #d3f900;
   color: #222;
 }
-
-/* Remove default button style for event items */
 .columns.columns7 .button-container:not(:first-of-type) .button {
   background: none;
   border: none;
@@ -515,14 +508,10 @@
   font-weight: normal;
   display: block;
 }
-
-/* --- EVENTS LIST LAYOUT --- */
 .columns.columns7 .button-container {
   margin: 0;
   padding: 0;
 }
-
-/* Each event: 4 .button-container siblings: day, month, title, date */
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(2),
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(6),
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) {
@@ -533,8 +522,6 @@
   margin-bottom: 4px;
   margin-top: 16px;
 }
-
-/* Date stack: vertical, right-aligned, slightly spaced */
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(2),
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(6),
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) {
@@ -579,8 +566,6 @@
   min-width: 44px;
   opacity: 0.7;
 }
-
-/* Event details (title/date), stack vertically, tighter spacing */
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(4),
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(8),
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(12) {
@@ -618,13 +603,9 @@
   display: block;
   padding: 0;
 }
-
-/* Remove extra vertical gap after the last event */
 .columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) {
   margin-bottom: 0;
 }
-
-/* Responsive event rows: stack on mobile */
 @media (max-width: 700px) {
   .columns.columns7 > div > div:last-child > .button-container:nth-of-type(2),
   .columns.columns7 > div > div:last-child > .button-container:nth-of-type(6),
@@ -640,4 +621,58 @@
   .columns.columns7 > div > div:last-child > .button-container:nth-of-type(12) {
     margin-left: 0;
   }
+}
+
+
+.columns.columns10 {
+  background: #fff;
+}
+
+/* Ensure the columns layout only applies to actual columns block, not to image/background-only areas */
+.columns.columns10 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+@media (max-width: 899px) {
+  .columns.columns10 > div {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.columns.columns10 > div > div {
+  flex: 1 1 0%;
+  min-width: 0;
+  display: block;
+}
+
+/* List and bullets styling for compact, clean look */
+.columns.columns10 ul {
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.columns.columns10 ul + ul {
+  margin-top: 0;
+}
+
+.columns.columns10 li {
+  color: #295B67;
+  font-size: 14px;
+  font-family: var(--body-font-family), sans-serif;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.columns.columns10 li:last-child {
+  margin-bottom: 0;
+}
+
+.columns.columns10 li::marker {
+  color: #00B1B0;
+  font-size: 1.05em;
 }
