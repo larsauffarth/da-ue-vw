@@ -697,8 +697,6 @@
     gap: 32px;
   }
 }
-
-/* LEFT COLUMN: vertical stack, align top */
 .columns.columns11 > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -706,8 +704,6 @@
   min-width: 0;
   gap: 0;
 }
-
-/* Metadata/date */
 .columns.columns11 > div > div:first-child > p:first-child {
   color: #94979f;
   text-transform: uppercase;
@@ -715,8 +711,6 @@
   letter-spacing: 0.04em;
   margin: 0 0 18px 0;
 }
-
-/* Headline */
 .columns.columns11 > div > div:first-child h1 {
   font-size: 2.35rem;
   line-height: 1.09;
@@ -725,8 +719,6 @@
   margin: 0 0 24px 0;
   letter-spacing: -0.01em;
 }
-
-/* BUTTON ROW GROUPING: Flex row for the first three action items */
 .columns.columns11 > div > div:first-child .columns11-action-row {
   display: flex;
   flex-direction: row;
@@ -734,8 +726,6 @@
   margin: 0 0 28px 0;
   align-items: flex-start;
 }
-
-/* Simulate action row if wrapper class isn't present (use nth-of-type) */
 @media (min-width: 600px) {
   .columns.columns11 > div > div:first-child > p.button-container,
   .columns.columns11 > div > div:first-child > p:nth-of-type(3),
@@ -751,15 +741,11 @@
   .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
     margin-right: 0;
   }
-  /* Group as a flex row */
   .columns.columns11 > div > div:first-child > p.button-container,
   .columns.columns11 > div > div:first-child > p:nth-of-type(3),
   .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
-    /* for visual grouping: wrap row in a parent if possible! */
   }
 }
-
-/* Make all three action items green pill buttons, not full width */
 .columns.columns11 > div > div:first-child > p.button-container .button,
 .columns.columns11 > div > div:first-child > p:nth-of-type(3),
 .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
@@ -788,27 +774,19 @@
 .columns.columns11 > div > div:first-child > p:nth-of-type(4):hover {
   background: #c6ec16;
 }
-
-/* Remove underline from all action links/buttons */
 .columns.columns11 > div > div:first-child > p.button-container .button,
 .columns.columns11 > div > div:first-child > p.button-container a.button {
   text-decoration: none;
 }
-
-/* Remove default margin from action buttons group */
 .columns.columns11 > div > div:first-child > p.button-container,
 .columns.columns11 > div > div:first-child > p:nth-of-type(3),
 .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/* Hide share URL paragraph */
 .columns.columns11 > div > div:first-child > p:nth-of-type(6) {
   display: none;
 }
-
-/* Profile/contact block at bottom: compact, no green button */
 .columns.columns11 > div > div:first-child > p:nth-of-type(7) {
   display: flex;
   align-items: center;
@@ -826,8 +804,6 @@
   background: #ececec;
   display: block;
 }
-
-/* Remove green button style from contact/download link at the bottom */
 .columns.columns11 > div > div:first-child > p.button-container:not(:first-child) .button {
   background: transparent;
   color: var(--link-color);
@@ -847,23 +823,17 @@
   transition: none;
   margin: 0;
 }
-
-/* Name styling */
 .columns.columns11 > div > div:first-child > p:nth-of-type(8) {
   font-weight: 600;
   font-size: 1.07rem;
   color: #22262a;
   margin: 0 0 2px 0;
 }
-
-/* Role/description */
 .columns.columns11 > div > div:first-child > p:nth-of-type(10) {
   font-size: 0.99rem;
   color: #94979f;
   margin: 2px 0 2px 0;
 }
-
-/* Contact info (phone/email) */
 .columns.columns11 > div > div:first-child > p:last-child {
   font-size: 0.97rem;
   margin-top: 2px;
@@ -880,8 +850,6 @@
   text-decoration: none;
   font-weight: 500;
 }
-
-/* RIGHT COLUMN (image block) */
 .columns.columns11 .columns-img-col {
   display: flex;
   justify-content: flex-end;
@@ -899,8 +867,6 @@
   display: block;
   margin-left: auto;
 }
-
-/* Responsive: full width image in stacked mode */
 @media (max-width: 900px) {
   .columns.columns11 .columns-img-col picture,
   .columns.columns11 .columns-img-col img {
@@ -909,14 +875,195 @@
     margin: 0 auto;
   }
 }
-
-/* Tighten vertical gaps for all left column children */
 .columns.columns11 > div > div:first-child > * {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/* Add vertical space after headline */
 .columns.columns11 > div > div:first-child h1 {
   margin-bottom: 24px;
+}
+
+
+.columns.columns15 {
+  background: #f4f9f9;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 2px 12px rgba(35, 64, 72, 0.08);
+  margin: 40px auto;
+  max-width: 1100px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+/* Main row: horizontally aligned, center vertically */
+.columns.columns15 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 56px 60px;
+  gap: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 370px;
+}
+
+@media (max-width: 1100px) {
+  .columns.columns15 {
+    max-width: 99vw;
+    margin: 24px 6px;
+  }
+  .columns.columns15 > div {
+    padding: 40px 16px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .columns.columns15 > div {
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px 6vw;
+    align-items: stretch;
+    min-height: unset;
+  }
+}
+
+/* Image column: remove padding, ensure container fits image only */
+.columns.columns15 .columns-img-col {
+  flex: 0 0 420px;
+  max-width: 420px;
+  min-width: 260px;
+  align-self: center;
+  border-radius: 24px 24px 0 0;
+  background: transparent;
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0; /* Remove extra padding */
+}
+
+@media (max-width: 1100px) {
+  .columns.columns15 .columns-img-col {
+    flex-basis: 310px;
+    max-width: 310px;
+    min-width: 0;
+  }
+}
+@media (max-width: 800px) {
+  .columns.columns15 .columns-img-col {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Make image a bit taller and fill container, no gap below */
+.columns.columns15 .columns-img-col img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  border-radius: 24px 24px 0 0;
+  object-fit: cover;
+  background: #eee;
+  margin: 0;
+}
+
+/* Text/content column: center vertically with image, align left */
+.columns.columns15 > div > div:not(.columns-img-col) {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: center;
+  padding: 0;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .columns.columns15 > div > div:not(.columns-img-col) {
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+
+/* Heading */
+.columns.columns15 h2 {
+  font-size: 2.38rem;
+  font-weight: 700;
+  color: #234048;
+  margin: 0 0 28px 0;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .columns.columns15 h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* Paragraph */
+.columns.columns15 > div > div:not(.columns-img-col) p {
+  color: #234048;
+  font-size: 1.08rem;
+  margin: 0 0 0.5em 0;
+  line-height: 1.65;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .columns.columns15 > div > div:not(.columns-img-col) p {
+    text-align: center;
+  }
+}
+
+/* Button spacing override */
+.columns.columns15 .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 28px 0;
+  padding: 0;
+}
+@media (max-width: 800px) {
+  .columns.columns15 .button-container {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+
+.columns.columns15 .button-container .button {
+  margin: 0;
+  padding: 0.75em 2.5em;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .columns.columns15 > div {
+    padding: 18px 4vw;
+    gap: 10px;
+  }
+  .columns.columns15 h2 {
+    font-size: 1.3rem;
+  }
+  .columns.columns15 .button-container .button {
+    font-size: 0.98rem;
+    padding: 0.6em 2em;
+  }
+}
+
+.columns.columns15 {
+  overflow-x: hidden;
 }
