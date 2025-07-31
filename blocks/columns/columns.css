@@ -2120,8 +2120,6 @@
   width: 100%;
   box-sizing: border-box;
 }
-
-/* Keep left and right columns side by side */
 .columns.columns34 > div {
   display: flex;
   flex-direction: row;
@@ -2140,8 +2138,6 @@
     padding: 0 12px;
   }
 }
-
-/* Left card styling */
 .columns.columns34 > div > div:first-child {
   background: #062735;
   border-radius: 20px;
@@ -2197,8 +2193,6 @@
   color: #d5ff00;
   text-decoration: underline;
 }
-
-/* --- HEADER ROW (heading + button side by side) --- */
 .columns.columns34 > div > div:last-child {
   width: 100%;
   min-width: 0;
@@ -2207,7 +2201,6 @@
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
-  /* Remove excess padding above the right column to match left card */
   padding-top: 0;
 }
 
@@ -2217,8 +2210,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* Simulate header row: heading and button on the same line, vertically centered */
 .columns.columns34 > div > div:last-child .columns34-header-row {
   display: flex;
   flex-direction: row;
@@ -2261,8 +2252,6 @@
     margin-bottom: 18px;
   }
 }
-
-/* --- "Alle Termine" BUTTON STYLES --- */
 .columns.columns34 > div > div:last-child .button-container:first-of-type a.button {
   background: #d5ff00;
   color: #222;
@@ -2284,8 +2273,6 @@
   background: #c0eb00;
   color: #222;
 }
-
-/* Remove pill styling for event entries */
 .columns.columns34 > div > div:last-child .button-container:not(:first-of-type) a.button {
   background: none;
   color: inherit;
@@ -2301,10 +2288,6 @@
   pointer-events: none;
   cursor: default;
 }
-
-/* --- EVENT ROWS --- */
-/* Each event is 4 .button-containers: date, month, title, meta.
-   We'll visually group them in rows using flex and tighter spacing. */
 .columns.columns34 > div > div:last-child .event-row {
   display: flex;
   flex-direction: row;
@@ -2332,8 +2315,6 @@
 .columns.columns34 > div > div:last-child .button-container {
   margin-bottom: 0;
 }
-
-/* Map each event row for the ungrouped DOM (manually for the 3 events) */
 .columns.columns34 > div > div:last-child .button-container:nth-of-type(2) {
   margin-top: 0;
   margin-bottom: 0;
@@ -2348,8 +2329,6 @@
   margin-bottom: 10px;
   gap: 20px;
 }
-
-/* --- DATE COLUMN (big number, small month/year) --- */
 .columns.columns34 > div > div:last-child .button-container a.button[title="03"],
 .columns.columns34 > div > div:last-child .button-container a.button[title="07"],
 .columns.columns34 > div > div:last-child .button-container a.button[title="09"] {
@@ -2377,8 +2356,6 @@
   pointer-events: none;
   display: block;
 }
-
-/* --- EVENT DETAILS COLUMN (title, meta) --- */
 .columns.columns34 > div > div:last-child .button-container a.button[title*="Conference"],
 .columns.columns34 > div > div:last-child .button-container a.button[title*="MOBILITY"],
 .columns.columns34 > div > div:last-child .button-container a.button[title*="Update"] {
@@ -2402,8 +2379,6 @@
   text-align: left;
   display: block;
 }
-
-/* Responsive tweaks */
 @media (max-width: 700px) {
   .columns.columns34 {
     padding: 18px 0;
@@ -2414,4 +2389,154 @@
   .columns.columns34 > div {
     gap: 16px;
   }
+}
+
+
+.columns.columns35 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;        /* Key: vertical centering of columns */
+  justify-content: center;
+  gap: 24px;
+  max-width: 900px;
+  margin: 48px auto;
+  width: 100%;
+  /* Remove min-height and height to allow vertical centering based on content */
+}
+
+/* Responsive: columns stack on small screens */
+@media (max-width: 900px) {
+  .columns.columns35 > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 100%;
+    margin: 32px 0;
+  }
+}
+
+/* Left column: text and button */
+.columns.columns35 > div > div:first-child {
+  max-width: 410px;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 0;
+  justify-content: center;    /* vertical centering within column */
+  /* Remove height or min-height if present */
+}
+
+/* Headline */
+.columns.columns35 > div > div:first-child h2 {
+  color: #162935;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  line-height: 1.18;
+}
+
+/* Description */
+.columns.columns35 > div > div:first-child p:not(.button-container) {
+  color: #162935;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+}
+
+/* Button container */
+.columns.columns35 > div > div:first-child p.button-container {
+  margin: 0;
+}
+
+/* Button */
+.columns.columns35 > div > div:first-child .button-container .button {
+  background: #C8FF00;
+  color: #162935;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 28px;
+  border: none;
+  margin: 0 auto;
+  min-width: unset;
+  max-width: 100%;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.15s;
+}
+
+.columns.columns35 > div > div:first-child .button-container .button:hover,
+.columns.columns35 > div > div:first-child .button-container .button:focus {
+  background: #b3e900;
+  color: #162935;
+  text-decoration: none;
+}
+
+/* Right column: image + badge */
+.columns.columns35 > div > div:last-child {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 0;
+  justify-content: center; /* vertical centering if needed */
+}
+
+@media (max-width: 900px) {
+  .columns.columns35 > div > div:last-child {
+    align-items: center;
+    margin-top: 12px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+/* Responsive image */
+.columns.columns35 > div > div:last-child picture,
+.columns.columns35 > div > div:last-child img {
+  display: block;
+  border-radius: 16px;
+  width: 340px;
+  height: 212px;
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 0;
+  background: #eee;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .columns.columns35 > div > div:last-child picture,
+  .columns.columns35 > div > div:last-child img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    min-width: 0;
+  }
+}
+
+/* "02" Badge styling: last <p> in image column */
+.columns.columns35 > div > div:last-child > p:last-child {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: #fff;
+  color: #162935;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 2px 12px;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(22,41,53,0.08);
+  z-index: 2;
+  min-width: 24px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.columns.columns35 > div > div:last-child > p:last-child:empty {
+  display: none;
 }
