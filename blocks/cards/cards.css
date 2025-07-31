@@ -1052,8 +1052,6 @@
   font-weight: 600;
   margin: 0;
 }
-
-/* Button/link left align and spacing inside cards */
 .cards.cards32 .cards-card-body a.button,
 .cards.cards32 .cards-card-body button,
 .cards.cards32 .cards-card-body .button {
@@ -1063,8 +1061,6 @@
   text-align: left;
   justify-content: flex-start;
 }
-
-/* Responsive: stack cards vertically on narrow screens */
 @media (max-width: 900px) {
   .cards.cards32 > ul {
     gap: 16px;
@@ -1079,4 +1075,119 @@
     margin-bottom: 10px;
     min-height: 38px;
   }
+}
+
+
+.cards.cards33 {
+  background: #f2f4f8;
+  padding: 32px 24px; /* Adds edge padding for better alignment */
+}
+
+/* Grid: uniform card heights in each row */
+.cards.cards33 > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: stretch;
+  grid-auto-rows: 1fr; /* Ensures all cards in a row match the tallest card */
+}
+
+@media (max-width: 1100px) {
+  .cards.cards33 > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .cards.cards33 > ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card appearance */
+.cards.cards33 > ul > li {
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(23, 43, 77, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  transition: box-shadow 0.15s;
+}
+
+/* Always reserve image space, even if empty */
+.cards.cards33 .cards-card-image {
+  width: 100%;
+  height: 130px;
+  background: #eee;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fill image area edge-to-edge */
+.cards.cards33 .cards-card-image img,
+.cards.cards33 .cards-card-image picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Remove unwanted padding/margin for special "image" backgrounds */
+.cards.cards33 .cards-card-image > * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Card body */
+.cards.cards33 .cards-card-body {
+  padding: 16px;
+  margin: 0;
+  color: #23272f;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  background: transparent;
+}
+
+/* Metadata */
+.cards.cards33 .cards-card-body p:first-child {
+  color: #7a899c;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+/* Main text */
+.cards.cards33 .cards-card-body p:not(:first-child) {
+  color: #23272f;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 0 8px 0;
+  line-height: 1.5;
+}
+
+/* Remove last bottom margin */
+.cards.cards33 .cards-card-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Fine-tune: Remove padding/margin on <ul> inside .cards33 for clean edge */
+.cards.cards33 > ul {
+  margin: 0;
+  padding: 0;
 }
