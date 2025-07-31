@@ -3002,16 +3002,12 @@
 .columns.columns44 {
   padding: 32px 0;
 }
-
-/* Main columns row: side-by-side, vertically centered */
 .columns.columns44 > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 48px;
 }
-
-/* Responsive: stack cols on mobile/tablet */
 @media (max-width: 900px) {
   .columns.columns44 > div {
     flex-direction: column;
@@ -3019,8 +3015,6 @@
     gap: 24px;
   }
 }
-
-/* Text column sizing and alignment */
 .columns.columns44 > div > div:first-child {
   flex: 1 1 0;
   min-width: 0;
@@ -3029,14 +3023,10 @@
   flex-direction: column;
   justify-content: center;
 }
-
-/* Section titles */
 .columns.columns44 > div > div:first-child p strong {
   color: #006766;
   font-weight: 700;
 }
-
-/* Body text */
 .columns.columns44 > div > div:first-child p {
   color: #222222;
   font-size: 16px;
@@ -3047,8 +3037,6 @@
 .columns.columns44 > div > div:first-child > :last-child {
   margin-bottom: 0;
 }
-
-/* List: teal bullets, better vertical alignment */
 .columns.columns44 > div > div:first-child ul {
   list-style: none;
   margin: 0 0 10px 0;
@@ -3076,7 +3064,7 @@
   background: #009688;
   border-radius: 50%;
   margin-right: 9px;
-  margin-top: 0; /* vertical center */
+  margin-top: 0;
   flex-shrink: 0;
   display: inline-block;
   content: "";
@@ -3085,8 +3073,6 @@
 .columns.columns44 > div > div:first-child ul li:last-child {
   margin-bottom: 0;
 }
-
-/* Link: teal, underlined (override .button)*/
 .columns.columns44 > div > div:first-child .button-container {
   margin-top: 12px;
 }
@@ -3113,8 +3099,6 @@
   color: #006766;
   background: none;
 }
-
-/* Image column: alignment, max width/height, rounded corners */
 .columns.columns44 .columns-img-col {
   flex: 1.1 1 0;
   min-width: 0;
@@ -3134,8 +3118,6 @@
   box-shadow: none;
   object-fit: cover;
 }
-
-/* Responsive image centering on mobile */
 @media (max-width: 900px) {
   .columns.columns44 > div > div:first-child {
     max-width: 100%;
@@ -3149,4 +3131,201 @@
     max-height: 350px;
     margin: 0 auto;
   }
+}
+
+
+/* Flexbox layout: align columns side by side and vertically center */
+.columns.columns45 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* vertical centering */
+  gap: 56px;
+  max-width: 1100px;
+  margin: 48px auto 56px auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .columns.columns45 > div {
+    flex-direction: column;
+    gap: 36px;
+    max-width: 98vw;
+    margin: 24px auto;
+    width: 100%;
+    align-items: stretch;
+  }
+}
+
+/* Left: text column */
+.columns.columns45 > div > div:first-child {
+  flex: 1 1 0;
+  min-width: 270px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+/* Heading style */
+.columns.columns45 h2 {
+  color: #2d3c43;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 2.1rem 0;
+  font-family: var(--heading-font-family);
+}
+
+/* Button container spacing */
+.columns.columns45 .button-container {
+  margin-bottom: 2.1rem;
+}
+
+/* Button: lime green, rounded, prominent, horizontally centered under heading */
+.columns.columns45 .button-container .button {
+  background: #c7fa05;
+  color: #222;
+  border-radius: 28px;
+  padding: 12px 36px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  margin: 0 auto;
+  letter-spacing: 0.01em;
+  min-width: 160px;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.columns.columns45 .button-container .button:hover,
+.columns.columns45 .button-container .button:focus {
+  background: #b0e305;
+  color: #222;
+  text-decoration: none;
+}
+
+/* Paragraph style */
+.columns.columns45 > div > div:first-child > p:not(.button-container) {
+  color: #222;
+  font-size: 1.06rem;
+  line-height: 1.55;
+  margin: 0 0 0.9rem 0;
+  font-family: var(--body-font-family);
+  max-width: 560px;
+}
+
+@media (max-width: 700px) {
+  .columns.columns45 > div > div:first-child > p:not(.button-container) {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+.columns.columns45 > div > div:first-child > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Right: image+badge column, vertically center content */
+.columns.columns45 > div > div:last-child {
+  flex: 0 0 480px;
+  min-width: 350px;
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* vertical centering */
+  position: relative;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .columns.columns45 > div > div:last-child {
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+
+/* Image wrapper for correct aspect and rounded corners */
+.columns.columns45 > div > div:last-child p:first-child {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  position: relative;
+  min-width: 350px;
+  max-width: 520px;
+  height: 220px;
+}
+
+@media (max-width: 700px) {
+  .columns.columns45 > div > div:last-child p:first-child {
+    min-width: 0;
+    max-width: 100%;
+    height: 150px;
+  }
+}
+
+.columns.columns45 > div > div:last-child picture,
+.columns.columns45 > div > div:last-child img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  background: #fff;
+}
+
+/* Badge styling: position absolutely inside image area */
+.columns.columns45 > div > div:last-child p:last-child {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #f5f5f5;
+  color: #888;
+  border-radius: 50%;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 3px 15px;
+  margin: 0;
+  font-family: var(--heading-font-family);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  z-index: 2;
+  min-width: 36px;
+  text-align: center;
+  pointer-events: none;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .columns.columns45 > div > div:last-child p:last-child {
+    top: 10px;
+    right: 14px;
+    font-size: 0.98rem;
+    padding: 3px 10px;
+    height: 26px;
+  }
+}
+
+/* Remove unwanted margin in image column */
+.columns.columns45 > div > div:last-child p {
+  margin: 0;
 }
