@@ -45,3 +45,138 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero5 {
+  position: relative;
+  width: 100vw;
+  min-height: 400px;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  background: transparent;
+}
+
+/* Full-width background image */
+.hero.hero5 > div:first-child {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+}
+
+.hero.hero5 picture,
+.hero.hero5 img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay container for heading and nav */
+.hero.hero5 > div:last-child {
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* Vertically center heading */
+.hero.hero5 > div:last-child > div {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+  width: 100vw;
+}
+
+/* Heading styling */
+.hero.hero5 h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: var(--heading-font-family);
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 0 4px 18px rgb(0 0 0 / 50%);
+  margin: 0 0 0.5em;
+  letter-spacing: 0.01em;
+  line-height: 1.08;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+/* Navigation bar: full width, compact, bottom-aligned, with sharp transition */
+.hero.hero5 p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 100vw;
+  margin: 0;
+  padding: 0.36rem 0 0.32rem;
+  border-top: 1px solid #e5e5e5;
+  box-shadow: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  gap: 1.1rem;
+  pointer-events: auto;
+}
+
+/* Navigation link styling */
+.hero.hero5 p a {
+  display: flex;
+  align-items: center;
+  color: #22313f;
+  font-size: 1rem;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0 0.07rem;
+  transition: color 0.2s;
+  gap: 0.29rem;
+}
+
+.hero.hero5 p a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Responsive adjustments */
+@media (width <= 900px) {
+  .hero.hero5 {
+    min-height: 200px;
+  }
+
+  .hero.hero5 > div:last-child > div {
+    min-height: 110px;
+  }
+
+  .hero.hero5 h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero.hero5 p {
+    gap: 0.28rem;
+    font-size: 0.95rem;
+    padding: 0.19rem 0 0.18rem;
+  }
+}
+
+/* Make sure hero is full-bleed */
+.hero-container > .hero-wrapper {
+  max-width: unset;
+  padding: 0;
+}
