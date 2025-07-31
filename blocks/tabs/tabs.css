@@ -1,3 +1,5 @@
+/* Corrected CSS */
+/* stylelint-disable no-descending-specificity */
 .tabs .tabs-list {
   display: flex;
   gap: 0.5ch;
@@ -39,7 +41,6 @@
   margin: 0;
 }
 
-
 .tabs .tabs-list button[aria-selected='true'] {
   border-bottom: 1px solid var(--background-color);
   background-color: var(--background-color);
@@ -55,4 +56,169 @@
 
 .tabs .tabs-panel[aria-hidden='true'] {
   display: none;
+}
+
+.tabs {
+  background: #002833;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 10%);
+  padding: 40px 32px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  min-height: 400px;
+  align-items: flex-start;
+}
+
+/* Responsive layout: stack columns on smaller screens */
+@media (width <= 900px) {
+  .tabs {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 8px;
+    min-height: unset;
+  }
+}
+
+/* Main columns */
+.tabs > .tabs-panel {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 0;
+}
+
+/* Left column: slightly less width for better balance */
+.tabs > .tabs-panel:first-of-type {
+  flex: 1 1 59%;
+  max-width: 62%;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+/* Tighter grouping for main content */
+.tabs > .tabs-panel:first-of-type > div {
+  background: none;
+  border: none;
+  margin: 0 0 8px;
+  padding: 0;
+  box-shadow: none;
+  color: #fff;
+  font-size: 1.08em;
+  font-weight: 400;
+}
+
+.tabs > .tabs-panel:first-of-type > div:empty {
+  display: none;
+}
+
+.tabs .tabs-panel:first-of-type p {
+  margin: 0 0 10px;
+}
+
+/* Right column: wider and sidebar blocks stacked at top */
+.tabs > .tabs-panel:nth-of-type(2) {
+  flex: 1 1 41%;
+  max-width: 41%;
+  gap: 24px;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: 320px;
+}
+
+/* Remove background from all sidebar blocks by default */
+.tabs > .tabs-panel:nth-of-type(2) > div {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  color: #fff;
+  display: block;
+  border-radius: 0;
+}
+
+/* Card styles only on promo/feature block */
+.tabs > .tabs-panel:nth-of-type(2) > div:nth-child(2) {
+  background: #002833;
+  border: 2px solid #CF0;
+  border-radius: 18px;
+  padding: 36px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #fff;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Make promo card fit content and not stretch */
+.tabs > .tabs-panel:nth-of-type(2) > div:nth-child(2) > * {
+  width: 100%;
+}
+
+/* Sidebar link directly below promo card, not pinned to bottom */
+.tabs > .tabs-panel:nth-of-type(2) > div:last-child,
+.tabs > .tabs-panel:nth-of-type(2) > div:last-child a {
+  color: #CF0;
+  font-size: 1.15em;
+  font-weight: 600;
+  text-align: left;
+  margin: 22px 0 0;
+  background: none;
+  border: none;
+  padding: 0;
+  display: block;
+}
+
+/* Remove card/background if promo link is not there */
+.tabs > .tabs-panel:nth-of-type(2) > div:empty {
+  display: none;
+}
+
+/* Typography: match reference design */
+.tabs p {
+  color: #fff;
+  font-family: var(--body-font-family);
+}
+
+.tabs h1,
+.tabs h2,
+.tabs h3,
+.tabs h4,
+.tabs h5,
+.tabs h6 {
+  color: #fff;
+  font-family: var(--body-font-family);
+}
+
+.tabs a,
+.tabs > .tabs-panel:nth-of-type(2) > div:last-child a {
+  color: #CF0;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.tabs a:hover {
+  color: #b3c900;
+  text-decoration: underline;
+}
+
+/* Responsive images in blocks */
+.tabs img,
+.tabs video {
+  max-width: 100%;
+  border-radius: 14px;
+  display: block;
+  margin-bottom: 16px;
 }
