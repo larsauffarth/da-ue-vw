@@ -1568,8 +1568,6 @@
   margin-top: 0;
   margin-bottom: 32px;
 }
-
-/* --- LEFT COLUMN: CONTACTS --- */
 .columns.columns23 > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -1582,15 +1580,12 @@
   font-size: 1rem;
   line-height: 1.5;
 }
-
-/* Avatar + info side-by-side ROW for each contact */
 .columns.columns23 > div > div:first-child > p:has(picture) {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   margin-bottom: 0;
   margin-top: 0;
-  /* Add bottom margin only between contact blocks */
   padding-bottom: 20px;
 }
 
@@ -1668,8 +1663,6 @@
 .columns.columns23 > div > div:first-child .button-container:last-of-type {
   margin-top: 8px;
 }
-
-/* --- RIGHT COLUMN: CORPORATE DESIGN PORTAL --- */
 .columns.columns23 > div > div:last-child {
   display: flex;
   flex-direction: column;
@@ -1697,15 +1690,12 @@
   margin-bottom: 0;
 }
 .columns.columns23 > div > div:last-child > p:first-of-type > picture:empty::after {
-  /* If image missing, reserve space */
   display: block;
   content: '';
   min-width: 180px;
   min-height: 97px;
   background: transparent;
 }
-
-/* Description text, always right of image space */
 .columns.columns23 > div > div:last-child > p:first-of-type > span,
 .columns.columns23 > div > div:last-child > p:first-of-type > br + span,
 .columns.columns23 > div > div:last-child > p:nth-of-type(2) {
@@ -1734,8 +1724,6 @@
     height: 70px;
   }
 }
-
-/* "Hier registrieren" link below, left aligned */
 .columns.columns23 > div > div:last-child .button-container {
   margin: 0;
   padding: 0;
@@ -1749,4 +1737,359 @@
   color: #14726c;
   text-decoration: underline;
   font-size: 1rem;
+}
+
+
+.columns.columns26 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 64px;
+}
+
+/* Responsive: stack columns */
+@media (max-width: 899px) {
+  .columns.columns26 > div {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+/* --- LEFT CARD --- */
+.columns.columns26 .columns-img-col {
+  background: #009688;
+  border-radius: 20px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.09);
+  min-width: 340px;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  height: 530px;
+}
+
+/* Vertically center yellow block */
+@media (min-width: 900px) {
+  .columns.columns26 .columns-img-col {
+    height: 530px;
+    min-height: 530px;
+  }
+}
+
+/* Simulate the yellow card as a flex child */
+.columns.columns26 .columns-img-col-inner,
+.columns.columns26 .columns-img-col > blockquote,
+.columns.columns26 .columns-img-col > p,
+.columns.columns26 .columns-img-col > p strong {
+  background: #CCFF00;
+  border-radius: 14px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 94%;
+  max-width: 380px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2.1rem 2.2rem 1.7rem 2.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Remove background from blockquote so only one yellow block shows */
+.columns.columns26 .columns-img-col > blockquote {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+  border: none;
+}
+
+/* Make sure only one yellow background (not on p/strong block) */
+.columns.columns26 .columns-img-col > p,
+.columns.columns26 .columns-img-col > p strong {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Quote text styling */
+.columns.columns26 .columns-img-col blockquote p {
+  color: #009688;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 1.8rem 0;
+}
+
+/* Name and company styling */
+.columns.columns26 .columns-img-col p strong {
+  color: #009688;
+  font-size: 1.07rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  position: relative;
+  display: block;
+}
+
+/* Divider line below name */
+.columns.columns26 .columns-img-col p strong::after {
+  display: block;
+  width: 44px;
+  height: 4px;
+  background: #009688;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  content: "";
+}
+
+/* Company line (immediately after strong) */
+.columns.columns26 .columns-img-col p:not(:last-of-type):not(:has(strong)) {
+  color: #009688;
+  font-size: 1.02rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+  margin-top: 0;
+}
+
+/* "Teilen" button style */
+.columns.columns26 .columns-img-col > p:last-of-type {
+  margin-top: 1.6rem;
+  margin-bottom: 0;
+  padding: 0.5em 1.3em;
+  color: #009688;
+  font-weight: 700;
+  font-size: 1.07rem;
+  background: #CCFF00;
+  border-radius: 10px;
+  text-align: left;
+  transition: background 0.2s;
+  width: fit-content;
+  cursor: pointer;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+
+/* Hide share links */
+.columns.columns26 .columns-img-col a {
+  display: none;
+}
+
+/* Profile image precisely on the yellow block's corner */
+.columns.columns26 .columns-img-col picture,
+.columns.columns26 .columns-img-col img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.13);
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  z-index: 2;
+  background: #eee;
+  background-clip: padding-box;
+}
+
+@media (max-width: 899px) {
+  .columns.columns26 .columns-img-col {
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* --- RIGHT COLUMN --- */
+.columns.columns26 > div > div:not(.columns-img-col) {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  min-width: 0;
+  flex: 1 1 0;
+  margin-top: 0;
+  justify-content: flex-start;
+}
+
+/* Heading */
+.columns.columns26 > div > div:not(.columns-img-col) > h3 {
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+  color: #131313;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Finance card image styling */
+.columns.columns26 > div > div:not(.columns-img-col) picture:first-of-type img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  margin-bottom: 1.1rem;
+  object-fit: cover;
+  min-height: 128px;
+  margin-left: 0;
+}
+
+/* Finance text */
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(2) {
+  color: #222;
+  font-size: 1.01rem;
+  margin-bottom: 1.1rem;
+  margin-top: 0;
+}
+
+/* "Mehr erfahren" button */
+.columns.columns26 > div > div:not(.columns-img-col) .button-container {
+  margin-bottom: 1.1rem;
+  margin-top: 0;
+}
+.columns.columns26 > div > div:not(.columns-img-col) .button-container .button {
+  background: #CCFF00;
+  color: #11202B;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.09rem;
+  box-shadow: none;
+  padding: 0.49em 1.39em;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* --- Aktien Card (Stock Prices) --- */
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(4) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #11202B;
+  color: #fff;
+  border-radius: 16px 16px 0 0;
+  padding: 1.08rem 2.1rem 1.05rem 2.1rem;
+  font-size: 1.19rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(4) a {
+  background: #CCFF00;
+  color: #11202B;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.01rem;
+  box-shadow: none;
+  padding: 0.34em 1.1em;
+  margin-left: 1.1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Aktien two-column grid for stock prices/cards */
+@media (min-width: 900px) {
+  .columns.columns26 > div > div:not(.columns-img-col) {
+    /* For Aktien p5-7 and p8-10: two columns using float */
+  }
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(5),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(6),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(7),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(8),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(9),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(10) {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0.15rem 0;
+    box-sizing: border-box;
+    background: #11202B;
+    padding-left: 2.1rem;
+    padding-right: 2.1rem;
+  }
+  /* First three (p5-7) left, next three (p8-10) right */
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(5),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(6),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(7) {
+    float: left;
+    clear: none;
+  }
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(8),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(9),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(10) {
+    float: right;
+    clear: none;
+  }
+}
+
+/* Stock price and label styles */
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(5),
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(8) {
+  font-size: 2.18rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0.7rem 0 0.13rem 0;
+  background: #11202B;
+  border-radius: 0;
+  padding-right: 2.1rem;
+  padding-left: 2.1rem;
+}
+
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(6),
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(9) {
+  color: #E74C3C;
+  font-size: 1rem;
+  background: #11202B;
+  padding-right: 2.1rem;
+  padding-left: 2.1rem;
+  margin-bottom: 0.12rem;
+  margin-top: 0;
+}
+
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(7),
+.columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(10) {
+  color: #7ED8DF;
+  font-size: 0.97rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  background: #11202B;
+  border-radius: 0 0 11px 11px;
+  padding-right: 2.1rem;
+  padding-left: 2.1rem;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+/* Responsive: stack stock blocks vertically */
+@media (max-width: 899px) {
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(5),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(6),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(7),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(8),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(9),
+  .columns.columns26 > div > div:not(.columns-img-col) > p:nth-of-type(10) {
+    width: 100%;
+    float: none;
+    display: block;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Reduce vertical spacing between cards in right column */
+.columns.columns26 > div > div:not(.columns-img-col) > *:not(:last-child) {
+  margin-bottom: 0.34rem;
 }
