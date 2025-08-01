@@ -236,73 +236,6 @@
 }
 
 
-.columns.columns21 {
-  max-width: 700px;
-  margin-left: 40px;
-  background: #fff;
-  padding-top: 20px;
-  box-sizing: border-box;
-}
-
-.columns.columns21 > div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
-.columns.columns21 > div > div:nth-child(2) {
-  display: none;
-}
-
-.columns.columns21 h2 {
-  font-family: var(--heading-font-family);
-  font-size: 28px;
-  font-weight: 400;
-  color: #17353a;
-  margin-top: 0;
-  margin-bottom: 24px;
-  line-height: 1.1;
-  text-align: left;
-}
-
-.columns.columns21 ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-.columns.columns21 ul ul ul {
-  list-style: disc;
-  padding-left: 16px;
-}
-
-.columns.columns21 ul ul ul li {
-  color: #25393f;
-  font-size: 13px;
-  font-family: var(--body-font-family);
-  font-weight: 400;
-  margin-bottom: 6px;
-  line-height: 1.4;
-}
-
-.columns.columns21 ul ul ul li:last-child {
-  margin-bottom: 0;
-}
-
-.columns.columns21 ul ul ul li::marker {
-  color: #008080;
-  font-size: 13px;
-}
-
-@media (max-width: 900px) {
-  .columns.columns21 {
-    max-width: 100%;
-    margin-left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-
 .columns.columns22 {
   background: #01222C;
   border-radius: 28px;
@@ -3048,8 +2981,6 @@
     margin: 24px 8px;
   }
 }
-
-/* Vertically center and compact left content */
 .columns.columns11 > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -3065,8 +2996,6 @@
     padding: 32px 16px 28px 16px;
   }
 }
-
-/* Top meta */
 .columns.columns11 > div > div:first-child > p:first-child {
   color: #94979f;
   font-size: 13px;
@@ -3074,8 +3003,6 @@
   margin: 0 0 18px 0;
   font-weight: 400;
 }
-
-/* Headline */
 .columns.columns11 > div > div:first-child h1 {
   font-size: 2.45rem;
   line-height: 1.12;
@@ -3086,25 +3013,12 @@
   font-family: var(--heading-font-family);
   max-width: 540px;
 }
-
-/* ================================ */
-/* ACTION BUTTON ROW IMPLEMENTATION */
-/* ================================ */
-
-/* 1. Flex container for the CTA row, targeting the three action <p>s after the headline */
 .columns.columns11 > div > div:first-child .cta-row {
   display: flex;
   flex-direction: row;
   gap: 18px;
   margin: 0 0 28px 0;
 }
-
-/* 2. Make sure all three CTAs are displayed inline and not stacked 
-   We assume: 
-    - p.button-container = first CTA (Herunterladen)
-    - p:nth-of-type(3)   = second CTA (In die Sammelmappe)
-    - p:nth-of-type(4)   = third  CTA (Teilen)
-   Place these in a flex row by wrapping them in a .cta-row via JS or by using the sibling selector below.  */
 
 .columns.columns11 > div > div:first-child > p.button-container,
 .columns.columns11 > div > div:first-child > p:nth-of-type(3),
@@ -3116,8 +3030,6 @@
   padding: 0;
   vertical-align: top;
 }
-
-/* 3. Style each action CTA as a compact green button */
 .columns.columns11 > div > div:first-child > p.button-container a.button,
 .columns.columns11 > div > div:first-child > p:nth-of-type(3),
 .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
@@ -3142,23 +3054,17 @@
   align-items: center;
   justify-content: center;
 }
-
-/* Remove underline from all action p's (including links inside if present) */
 .columns.columns11 > div > div:first-child > p.button-container a.button,
 .columns.columns11 > div > div:first-child > p:nth-of-type(3) a,
 .columns.columns11 > div > div:first-child > p:nth-of-type(4) a {
   text-decoration: none;
 }
-
-/* Pointer and hover feedback for action CTAs */
 .columns.columns11 > div > div:first-child > p.button-container a.button:hover,
 .columns.columns11 > div > div:first-child > p:nth-of-type(3):hover,
 .columns.columns11 > div > div:first-child > p:nth-of-type(4):hover {
   background: #bef000;
   color: #212529;
 }
-
-/* Remove any forced width from CTAs so they shrink to fit content */
 .columns.columns11 > div > div:first-child > p.button-container a.button,
 .columns.columns11 > div > div:first-child > p:nth-of-type(3),
 .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
@@ -3166,23 +3072,13 @@
   min-width: 120px;
   max-width: 320px;
 }
-
-/* Hide extra download/contact buttons if present */
 .columns.columns11 > div > div:first-child > p.button-container:not(:first-child) {
   display: none;
 }
-
-/* Hide the long social links and share URLs */
 .columns.columns11 > div > div:first-child > p:nth-of-type(5),
 .columns.columns11 > div > div:first-child > p:nth-of-type(6) {
   display: none;
 }
-
-/* ================================ */
-/* PROFILE/CONTACT INFO BLOCK       */
-/* ================================ */
-
-/* Group the name, title, and contact info tightly */
 .columns.columns11 > div > div:first-child > p:nth-of-type(7),
 .columns.columns11 > div > div:first-child > p:nth-of-type(8),
 .columns.columns11 > div > div:first-child > p:nth-of-type(9),
@@ -3206,8 +3102,6 @@
   color: #979899;
   margin-bottom: 2px;
 }
-
-/* Contact info */
 .columns.columns11 > div > div:first-child > p:last-child {
   margin-top: 2px;
   margin-bottom: 0;
@@ -3224,16 +3118,10 @@
 .columns.columns11 > div > div:first-child > p:last-child a[href^="mailto:"] {
   display: none;
 }
-
-/* Remove margin from all direct children for compactness */
 .columns.columns11 > div > div:first-child > * {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/* ================================ */
-/* RIGHT COLUMN IMAGE STYLING       */
-/* ================================ */
 .columns.columns11 .columns-img-col {
   display: flex;
   justify-content: center;
@@ -3260,8 +3148,6 @@
   box-shadow: 0 2px 16px rgba(60,60,60,0.05);
   display: block;
 }
-
-/* Responsive: Stack columns, image at top */
 @media (max-width: 750px) {
   .columns.columns11 > div {
     grid-template-columns: 1fr;
@@ -3270,9 +3156,6 @@
     margin-bottom: 28px;
   }
 }
-
-/* ========== ADVANCED: AUTO FLEX GROUPING FOR CTA ROW ========== */
-/* If the three action <p>s are not already in a container, visually group them with a clever sibling selector */
 @media (min-width: 600px) {
   .columns.columns11 > div > div:first-child > p.button-container,
   .columns.columns11 > div > div:first-child > p:nth-of-type(3),
@@ -3285,5 +3168,135 @@
   .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+
+.columns.columns21 {
+  box-sizing: border-box;
+  width: 1280px;
+  max-width: 100vw;
+  height: 302px;
+  min-height: 302px;
+  background: #e4e4e4;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+
+/* Flex layout: two columns, no gap */
+.columns.columns21 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100%;
+  min-height: 302px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 0;
+}
+
+/* Left column: text block, less padding for closer alignment */
+.columns.columns21 > div > div:first-child {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 12px 16px 0 24px;
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.columns.columns21 h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #24424C;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: left;
+}
+
+/* List styling: flatten and match color/size/bullet */
+.columns.columns21 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.columns.columns21 ul ul ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.columns.columns21 ul ul ul li {
+  color: #24424C;
+  font-size: 14px;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.columns.columns21 ul ul ul li:last-child {
+  margin-bottom: 0;
+}
+.columns.columns21 ul ul ul li::marker {
+  color: #009999;
+  font-size: 14px;
+}
+
+/* Right column: visible rectangle with slightly lighter gray background */
+.columns.columns21 > div > div:last-child {
+  flex: 0 0 800px;
+  width: 800px;
+  max-width: 800px;
+  height: 302px;
+  min-height: 302px;
+  background: #e0e0e0;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hide only the link inside the right column, not the rectangle itself */
+.columns.columns21 > div > div:last-child a {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: block;
+}
+
+/* Responsiveness: stack columns on smaller screens */
+@media (max-width: 1200px) {
+  .columns.columns21 {
+    width: 100vw;
+    min-width: 0;
+    height: auto;
+    max-width: 100vw;
+  }
+  .columns.columns21 > div {
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+  }
+  .columns.columns21 > div > div:first-child {
+    padding: 16px 12px 12px 12px;
+    width: 100%;
+    height: auto;
+  }
+  .columns.columns21 > div > div:last-child {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    min-height: 120px;
   }
 }
