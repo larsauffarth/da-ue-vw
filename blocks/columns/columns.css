@@ -2548,228 +2548,6 @@
 }
 
 
-.columns.columns7 {
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  width: 1100px;
-  max-width: 100vw;
-  height: 420px;
-  margin: 40px auto 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.columns.columns7 > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  gap: 18px;
-  height: 100%;
-  box-sizing: border-box;
-}
-.columns.columns7 .columns-img-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 420px;
-  max-width: 440px;
-  width: 440px;
-  height: 240px;
-  margin-left: 10px;
-  margin-right: 0;
-}
-
-.columns.columns7 .columns-img-col img {
-  border-radius: 24px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.columns.columns7 > div > div:not(.columns-img-col) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: auto;
-  min-width: 0;
-  box-sizing: border-box;
-  max-width: 600px;
-  padding: 0;
-}
-.columns.columns7 > div > div:not(.columns-img-col) .header-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 4px;
-  width: 100%;
-}
-
-.columns.columns7 > div > div:not(.columns-img-col) > #anstehende-termine {
-  color: #8d989e;
-  font-size: 17px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-right: 16px;
-  margin-bottom: 0;
-  line-height: 1.3;
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:first-of-type {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:first-of-type .button {
-  background: #E9FF00;
-  color: #008060;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 999px;
-  padding: 7px 18px;
-  border: none;
-  text-decoration: none;
-  outline: none;
-  box-shadow: none;
-  line-height: 1.3;
-  display: inline-block;
-  min-width: 0;
-}
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:not(:first-of-type) .button {
-  background: none;
-  border: none;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: 1.15;
-  padding: 0;
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
-  text-align: left;
-  outline: none;
-  min-width: 0;
-  display: inline;
-  cursor: default;
-  white-space: normal;
-}
-.columns.columns7 > div > div:not(.columns-img-col) .button-container {
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-}
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(2),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(6),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(10) {
-  display: inline-block;
-  vertical-align: top;
-  width: 60px;
-  text-align: right;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(3),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(7),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(11) {
-  display: inline-block;
-  width: 60px;
-  text-align: right;
-  margin-bottom: 0;
-  color: #8d989e;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 500;
-  line-height: 1.08;
-  margin-top: -4px;
-}
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(2) .button,
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(6) .button,
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(10) .button {
-  color: #008060;
-  font-size: 32px;
-  font-weight: 700;
-}
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(4),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(8),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(12) {
-  display: inline-block;
-  width: calc(100% - 72px);
-  vertical-align: top;
-  padding-left: 18px;
-  margin-bottom: 0;
-  color: #191919;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.22;
-  margin-top: -2px;
-}
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(5),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(9),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(13) {
-  display: inline-block;
-  width: calc(100% - 72px);
-  vertical-align: top;
-  padding-left: 18px;
-  color: #8d989e;
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 7px;
-  margin-top: -2px;
-  line-height: 1.16;
-}
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(5),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(9),
-.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(13) {
-  margin-bottom: 8px;
-}
-@media (max-width: 1100px) {
-  .columns.columns7 {
-    width: 100vw;
-    min-width: 0;
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 32px 0 0 0;
-  }
-  .columns.columns7 > div {
-    flex-direction: column;
-    gap: 0;
-    align-items: flex-start;
-  }
-  .columns.columns7 .columns-img-col {
-    width: 100vw;
-    min-width: 0;
-    max-width: 100vw;
-    margin-left: 0;
-    margin-bottom: 24px;
-    height: 180px;
-    justify-content: flex-start;
-  }
-  .columns.columns7 .columns-img-col img {
-    height: 100%;
-    border-radius: 24px;
-  }
-  .columns.columns7 > div > div:not(.columns-img-col) {
-    padding: 0 20px;
-    width: 100%;
-    max-width: none;
-  }
-}
-
-
 .columns.columns15 {
   background: #f8f9fa;
   border-radius: 18px;
@@ -3116,8 +2894,6 @@
     height: auto;
   }
 }
-
-/* Left column should have a fixed max-width so the link wraps and the column is visually narrow */
 .columns.columns6 > .columns-2-cols > div:first-child {
   flex: 0 1 410px;
   max-width: 410px;
@@ -3128,8 +2904,6 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-
-/* Info link: plain teal, underlined, left-aligned, normal text, inline display */
 .columns.columns6 > .columns-2-cols > div:first-child .button-container {
   margin-top: 0.5em;
   width: 100%;
@@ -3156,8 +2930,6 @@
   white-space: normal;
   cursor: pointer;
 }
-
-/* Bullet list: spacing and bullet color close to original */
 .columns.columns6 > .columns-2-cols > div:first-child ul {
   list-style: disc;
   margin: 1em 0 1.2em 0;
@@ -3178,8 +2950,6 @@
   color: #00A85A;
   font-size: 1em;
 }
-
-/* Headings/text */
 .columns.columns6 > .columns-2-cols > div:first-child strong {
   font-weight: 700;
   font-size: 1.12em;
@@ -3194,8 +2964,6 @@
   line-height: 1.6;
   width: 100%;
 }
-
-/* Image column: more flexible and fills height */
 .columns.columns6 > .columns-2-cols > .columns-img-col {
   flex: 1 1 0;
   min-width: 0;
@@ -3227,9 +2995,262 @@
     min-height: 200px;
   }
 }
-
-/* Prevent unwanted overflow */
 .columns.columns6 > .columns-2-cols > .columns-img-col,
 .columns.columns6 > .columns-2-cols > div:first-child {
   overflow: visible;
+}
+
+
+.columns.columns7 {
+  background: #fff;
+  border: 3px solid #00806e;
+  border-radius: 24px;
+  max-width: 820px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+
+/* --- 2-column layout: image left, content right --- */
+.columns.columns7 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 28px 36px 28px 28px;
+  box-sizing: border-box;
+}
+
+/* Image column - keep visually anchored at the top */
+.columns.columns7 .columns-img-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 132px;
+  max-width: 132px;
+  width: 132px;
+  height: 90px;
+  margin: 0;
+  padding: 0;
+}
+.columns.columns7 .columns-img-col img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin: 0;
+}
+
+/* --- Content column --- */
+.columns.columns7 > div > div:not(.columns-img-col) {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* HEADER ROW: heading and button in a row, spaced apart */
+.columns.columns7 > div > div:not(.columns-img-col) .columns7-headerrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+/* Simulate header row by using a flex row on first two children (heading and button) */
+.columns.columns7 > div > div:not(.columns-img-col) > #anstehende-termine,
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:first-of-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+.columns.columns7 > div > div:not(.columns-img-col) > #anstehende-termine {
+  color: #8B9497;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.18;
+  padding: 0;
+  letter-spacing: 0.03em;
+}
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:first-of-type {
+  margin: 0 0 0 16px;
+  padding: 0;
+  float: right;
+}
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:first-of-type .button {
+  background: #D6FF00;
+  color: #11181F;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 32px;
+  min-width: unset;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  letter-spacing: 0.01em;
+  display: inline-block;
+}
+
+/* Remove space below header */
+.columns.columns7 > div > div:not(.columns-img-col) > #anstehende-termine,
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:first-of-type {
+  margin-bottom: 0;
+}
+
+/* --- EVENTS --- */
+
+/* For each event, simulate a two-column event row using grid */
+.columns.columns7 > div > div:not(.columns-img-col) .columns7-eventrow {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  align-items: flex-start;
+  margin: 0 0 6px 0;
+  width: 100%;
+}
+
+/* Event date row: grid for date/month vs. info */
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(2),
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(6),
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(10) {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  align-items: flex-start;
+  gap: 0 14px;
+  margin-bottom: 0;
+  margin-top: 18px;
+  width: 100%;
+  position: relative;
+}
+
+/* Date/Month stack */
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(2) .button,
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(6) .button,
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(10) .button {
+  color: #00705A;
+  font-size: 36px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1;
+  display: block;
+}
+
+/* Month/year - directly under date, in event left column */
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(3),
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(7),
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(11) {
+  color: #8B9497;
+  font-size: 12px;
+  font-weight: 400;
+  margin: -2px 0 0 0;
+  padding: 0;
+  text-align: left;
+  display: block;
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 54px;
+}
+
+/* --- Event info: title/range --- */
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(4),
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(8),
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(12) {
+  color: #11181F;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 1px 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.2;
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(5),
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(9),
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(13) {
+  color: #8B9497;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 0 0;
+  padding: 0;
+  line-height: 1.1;
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Remove button styles from event details */
+.columns.columns7 .button-container:not(:first-of-type) .button {
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  padding: 0;
+  min-width: 0;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  text-decoration: none;
+  text-align: left;
+  cursor: default;
+  border-radius: 0;
+  display: inline;
+  white-space: normal;
+  margin: 0;
+}
+
+/* Hide any unwanted extra spacing */
+.columns.columns7 > div > div:not(.columns-img-col) > .button-container {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 800px) {
+  .columns.columns7 > div {
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 2px;
+  }
+  .columns.columns7 .columns-img-col {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  .columns.columns7 .columns-img-col img {
+    height: 90px;
+  }
+  .columns.columns7 > div > div:not(.columns-img-col) {
+    padding: 0 4px;
+  }
+  .columns.columns7 > div > div:not(.columns-img-col) .columns7-eventrow,
+  .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(2),
+  .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(6),
+  .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(10) {
+    grid-template-columns: 48px 1fr;
+    gap: 0 8px;
+  }
 }
