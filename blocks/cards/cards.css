@@ -27,117 +27,6 @@
 }
 
 
-.cards.cards32 > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 40px;
-  padding: 0;
-  margin: 0 auto;
-  list-style: none;
-  scroll-behavior: smooth;
-  align-items: flex-start;
-  background: none;
-}
-
-.cards.cards32 > ul > li {
-  border: none;
-  box-shadow: 0 2px 12px 0 rgba(16,24,40,0.08);
-  border-radius: 18px;
-  background: #fff;
-  min-width: 320px;
-  max-width: 340px;
-  flex: 0 0 320px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 32px 24px 32px 24px;
-  margin: 0;
-}
-
-.cards.cards32 .cards-card-image {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  margin-bottom: 18px;
-  min-height: 55px;
-}
-
-.cards.cards32 .cards-card-image img {
-  display: block;
-  max-width: 120px;
-  max-height: 56px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  margin: 0 auto;
-}
-
-.cards.cards32 .cards-card-body {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  margin: 0;
-  padding: 0;
-  background: none;
-}
-
-.cards.cards32 .cards-card-body p {
-  margin: 0;
-  padding: 0;
-}
-
-.cards.cards32 .cards-card-body p:first-child {
-  display: inline-block;
-  background: #F2F4F5;
-  color: #737A82;
-  font-size: 12px;
-  line-height: 1.0;
-  font-weight: 500;
-  border-radius: 12px;
-  padding: 3px 12px;
-  margin-bottom: 13px;
-  letter-spacing: 0.03em;
-  margin-top: 0;
-}
-
-.cards.cards32 .cards-card-body p:last-child {
-  color: #171B1E;
-  font-size: 16px;
-  line-height: 1.32;
-  font-weight: 600;
-  margin: 0;
-}
-.cards.cards32 .cards-card-body a.button,
-.cards.cards32 .cards-card-body button,
-.cards.cards32 .cards-card-body .button {
-  display: inline-block;
-  margin-left: 0;
-  margin-right: 0;
-  text-align: left;
-  justify-content: flex-start;
-}
-@media (max-width: 900px) {
-  .cards.cards32 > ul {
-    gap: 16px;
-  }
-  .cards.cards32 > ul > li {
-    min-width: 88vw;
-    max-width: 96vw;
-    flex: 0 0 92vw;
-    padding: 20px 12px 20px 12px;
-  }
-  .cards.cards32 .cards-card-image {
-    margin-bottom: 10px;
-    min-height: 38px;
-  }
-}
-
-
 .cards.cards33 {
   background: #f2f4f8;
   padding: 32px 24px;
@@ -1596,8 +1485,6 @@
   padding: 18px 32px;
   box-sizing: border-box;
 }
-
-/* Left image area: slightly wider to match original */
 .cards.cards31 > ul > li > .cards-card-body:first-child {
   display: flex;
   align-items: center;
@@ -1616,8 +1503,6 @@
 .cards.cards31 > ul > li > .cards-card-body:first-child p {
   display: none;
 }
-
-/* Right text area */
 .cards.cards31 > ul > li > .cards-card-body:nth-child(2) {
   display: flex;
   flex-direction: column;
@@ -1654,8 +1539,6 @@
   max-width: 410px;
   white-space: normal;
 }
-
-/* Responsive adjustments */
 @media (max-width: 900px) {
   .cards.cards31 > ul > li {
     max-width: 98vw;
@@ -1696,5 +1579,171 @@
   }
   .cards.cards31 > ul > li > .cards-card-body:nth-child(2) p:nth-child(2) {
     max-width: 96vw;
+  }
+}
+
+
+.cards.cards32 {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 16px;
+  overflow-x: auto;
+}
+
+.cards.cards32 > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-x: auto;
+  align-items: stretch;
+  min-width: 100vw;
+}
+
+.cards.cards32 > ul > li {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 328px;
+  max-width: 360px;
+  flex: 0 0 328px;
+  height: 340px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.cards.cards32 .cards-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 128px;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  margin: 0 0 8px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.cards.cards32 .cards-card-image img {
+  display: block;
+  max-width: 90%;
+  max-height: 110px;
+  object-fit: contain;
+  margin: 0 auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cards.cards32 .cards-card-body {
+  padding: 12px 20px 0 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background: none;
+  margin: 0;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.cards.cards32 .cards-card-body p:first-child {
+  background: #e5eaee;
+  color: #6d7682;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 3px 12px;
+  margin: 0 0 6px 0;
+  align-self: flex-start;
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.cards.cards32 .cards-card-body p:last-child {
+  color: #111918;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.28;
+  margin: 0;
+  text-align: left;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.cards.cards32 .cards-card-body p:last-child strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+/* Make sure images are never hidden by earlier rules */
+.cards.cards32 .cards-card-image,
+.cards.cards32 .cards-card-image img {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .cards.cards32 > ul > li {
+    min-width: 260px;
+    max-width: 280px;
+    flex: 0 0 260px;
+    height: 250px;
+  }
+  .cards.cards32 .cards-card-image {
+    height: 82px;
+    border-radius: 7px 7px 0 0;
+  }
+  .cards.cards32 .cards-card-image img {
+    max-height: 64px;
+  }
+  .cards.cards32 .cards-card-body {
+    padding: 8px 10px 0 10px;
+    gap: 7px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards.cards32 {
+    padding: 0 4px;
+  }
+  .cards.cards32 > ul {
+    gap: 12px;
+  }
+  .cards.cards32 > ul > li {
+    min-width: 94vw;
+    max-width: 98vw;
+    flex: 0 0 94vw;
+    height: 188px;
+  }
+  .cards.cards32 .cards-card-image {
+    height: 40px;
+    border-radius: 6px 6px 0 0;
+  }
+  .cards.cards32 .cards-card-image img {
+    max-height: 36px;
+  }
+  .cards.cards32 .cards-card-body {
+    padding: 4px 6px 0 6px;
+    gap: 4px;
   }
 }
