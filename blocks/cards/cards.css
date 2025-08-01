@@ -418,136 +418,6 @@
     max-height: 40vw;
   }
 }
-.cards.cards30 .cards-card-image,
-.cards.cards30 .cards-card-image img,
-.cards.cards30 .cards-card-body,
-.cards.cards30 .cards-card-body .button-container,
-.cards.cards30 .cards-card-body .button,
-.cards.cards30 .cards-card-body a {
-  display: block;
-  visibility: visible;
-  opacity: 1;
-}
-.cards.cards30 > ul {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  flex-wrap: nowrap;
-}
-.cards.cards30 > ul > li {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  min-width: 180px;
-  max-width: 240px;
-  background: transparent;
-  border-radius: 18px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0;
-  box-shadow: none;
-  margin: 0;
-}
-.cards.cards30 .cards-card-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  overflow: hidden;
-  border-radius: 18px;
-  display: block;
-  background: transparent;
-}
-.cards.cards30 .cards-card-image picture,
-.cards.cards30 .cards-card-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  min-height: 0;
-  border-radius: 18px;
-}
-.cards.cards30 .cards-card-body {
-  position: absolute;
-  left: 14px;
-  bottom: 14px;
-  z-index: 2;
-  background: rgba(24, 24, 24, 0.62);
-  color: #fff;
-  border-radius: 9px;
-  padding: 10px 16px 9px 16px;
-  max-width: 80%;
-  min-width: 0;
-  display: inline-block;
-  font-size: 1rem;
-  font-family: inherit;
-  line-height: 1.3;
-  box-sizing: border-box;
-  pointer-events: none;
-  margin: 0;
-}
-.cards.cards30 .cards-card-body .button-container,
-.cards.cards30 .cards-card-body .button,
-.cards.cards30 .cards-card-body a {
-  display: inline;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  background: none;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  line-height: 1.3;
-  white-space: normal;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.40);
-  pointer-events: auto;
-  cursor: pointer;
-  max-width: 100%;
-  overflow-wrap: break-word;
-  word-break: normal;
-}
-.cards.cards30 .cards-card-body .button-container {
-  margin: 0;
-  padding: 0;
-}
-.cards.cards30 > ul > li,
-.cards.cards30 .cards-card-body {
-  border: none;
-  box-shadow: none;
-  background-clip: padding-box;
-}
-@media (max-width: 700px) {
-  .cards.cards30 > ul {
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-  }
-  .cards.cards30 > ul > li {
-    width: 92vw;
-    max-width: 360px;
-    height: 92vw;
-    min-width: 0;
-    min-height: 0;
-  }
-  .cards.cards30 .cards-card-body {
-    max-width: 88vw;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    font-size: 0.98rem;
-    padding: 8px 12px;
-  }
-}
 
 
 .cards.cards31 {
@@ -1694,8 +1564,6 @@
   box-sizing: border-box;
   border: none;
 }
-
-/* Horizontally scrollable row of cards */
 .cards.cards27 > ul {
   display: flex;
   flex-direction: row;
@@ -1711,8 +1579,6 @@
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
 }
-
-/* Card styling */
 .cards.cards27 > ul > li {
   background: #fff;
   border-radius: 20px;
@@ -1731,8 +1597,6 @@
   height: 260px;
   justify-content: flex-start;
 }
-
-/* Logo/image styling and stacking */
 .cards.cards27 .cards-card-image {
   display: flex;
   align-items: center;
@@ -1740,7 +1604,7 @@
   width: 100%;
   min-height: 80px;
   max-height: 110px;
-  margin-top: 54px; /* Add more space for the badge above */
+  margin-top: 54px;
   margin-bottom: 12px;
   background: transparent;
 }
@@ -1754,8 +1618,6 @@
   border-radius: 8px;
   background: transparent;
 }
-
-/* Card body stacking and spacing */
 .cards.cards27 .cards-card-body {
   display: flex;
   flex-direction: column;
@@ -1766,11 +1628,8 @@
   min-height: 72px;
   flex: 1 1 auto;
   box-sizing: border-box;
-  /* Remove position: relative to avoid badge overlap with text */
   position: static;
 }
-
-/* Date badge absolutely positioned at the card's top-left */
 .cards.cards27 > ul > li {
   position: relative;
 }
@@ -1791,8 +1650,6 @@
   line-height: 1.3;
   box-sizing: border-box;
 }
-
-/* Headline styling: ensure visible and prominent, margin above */
 .cards.cards27 .cards-card-body p:not(:first-child) {
   display: block;
   margin-top: 16px;
@@ -1816,8 +1673,6 @@
   line-height: 1.22;
   word-break: break-word;
 }
-
-/* Responsive: Show partial card at right edge, tighter on small screens */
 @media (max-width: 1100px) {
   .cards.cards27 > ul {
     gap: 16px;
@@ -1857,5 +1712,172 @@
   }
   .cards.cards27 .cards-card-body {
     padding: 0 10px 10px 10px;
+  }
+}
+
+
+.cards.cards30 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent;
+  width: 1018px;
+  max-width: 100vw;
+  min-height: 185px;
+  height: 185px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+/* Remove all left margin/padding from row and ensure full width */
+.cards.cards30 > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px; /* even tighter gap for pixel-perfect match */
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  overflow: visible;
+  width: 100%;
+  min-height: 170px;
+  box-sizing: border-box;
+}
+
+/* Only show the first three cards */
+.cards.cards30 > ul > li:nth-child(n+4) {
+  display: none;
+}
+
+.cards.cards30 > ul > li {
+  position: relative;
+  width: 175px;
+  height: 170px;
+  min-width: 175px;
+  max-width: 175px;
+  min-height: 170px;
+  max-height: 170px;
+  border-radius: 24px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Card image: cover entire card, rounded corners */
+.cards.cards30 .cards-card-image {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 1;
+  background: transparent;
+}
+.cards.cards30 .cards-card-image picture,
+.cards.cards30 .cards-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card text: bottom-left, no background */
+.cards.cards30 .cards-card-body {
+  position: absolute;
+  left: 16px;
+  bottom: 20px;
+  right: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  font-size: 1.04rem;
+  font-weight: 400;
+  line-height: 1.30;
+  width: auto;
+  max-width: 86%;
+  font-family: inherit;
+  pointer-events: auto;
+  display: block;
+  text-align: left;
+}
+
+.cards.cards30 .cards-card-body .button-container,
+.cards.cards30 .cards-card-body .button,
+.cards.cards30 .cards-card-body a {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.3;
+  display: inline;
+  white-space: normal;
+  text-shadow: none;
+  pointer-events: auto;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Responsive: stack cards vertically and scale */
+@media (max-width: 700px) {
+  .cards.cards30 {
+    width: 98vw;
+    min-width: 0;
+    max-width: 100vw;
+    height: auto;
+    min-height: 0;
+  }
+  .cards.cards30 > ul {
+    flex-direction: column;
+    gap: 16px;
+    width: 98vw;
+    min-width: 0;
+    max-width: 100vw;
+    align-items: center;
+    min-height: 0;
+  }
+  .cards.cards30 > ul > li {
+    width: 92vw;
+    max-width: 96vw;
+    min-width: 0;
+    height: 56vw;
+    max-height: 68vw;
+    border-radius: 20px;
+  }
+  .cards.cards30 .cards-card-body {
+    left: 12px;
+    bottom: 12px;
+    font-size: 0.99rem;
+    max-width: 88vw;
+  }
+  .cards.cards30 .cards-card-image,
+  .cards.cards30 .cards-card-image picture,
+  .cards.cards30 .cards-card-image img {
+    border-radius: 20px;
   }
 }
