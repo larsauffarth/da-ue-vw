@@ -1,4 +1,4 @@
-/* Disable no-descending-specificity globally */
+/* Disable no-descending-specificity rule globally */
 /* stylelint-disable no-descending-specificity */
 
 .hero-container .hero-wrapper {
@@ -52,91 +52,6 @@
 .hero-container > .hero-wrapper {
   max-width: unset;
   padding: 0;
-}
-
-.hero.hero20 {
-  padding: 0;
-  background: #fff;
-  min-height: unset;
-}
-
-.hero.hero20 > div:first-child {
-  display: none;
-}
-
-.hero.hero20 > div:last-child {
-  padding: 0;
-}
-
-.hero.hero20 > div:last-child > div {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  gap: 32px;
-  min-width: 0;
-}
-
-.hero.hero20 h2 {
-  color: #14303c;
-  font-size: 32px;
-  font-family: var(--heading-font-family);
-  font-weight: 400;
-  line-height: 1.1;
-  margin: 0;
-  padding: 0;
-  flex-shrink: 0;
-  min-width: 0;
-  position: relative;
-  top: 2px;
-}
-
-.hero.hero20 .button-container {
-  margin: 0;
-  padding: 0;
-  align-self: flex-start;
-  min-width: 0;
-}
-
-.hero.hero20 .button-container .button {
-  background: #cf0;
-  color: #14303c;
-  font-size: 15px;
-  font-family: var(--body-font-family);
-  font-weight: 400;
-  padding: 6px 18px;
-  border-radius: 16px;
-  border: none;
-  box-shadow: none;
-  margin: 0;
-  line-height: 1.25;
-  min-width: 0;
-  text-align: center;
-  transition: background 0.2s, color 0.2s;
-  white-space: nowrap;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.hero.hero20 .button-container .button:hover,
-.hero.hero20 .button-container .button:focus {
-  background: #b8e600;
-  color: #14303c;
-  text-decoration: underline;
-}
-
-@media (width <= 700px) {
-  .hero.hero20 > div:last-child > div {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .hero.hero20 h2 {
-    font-size: 22px;
-    top: 0;
-  }
 }
 
 .hero.hero5 {
@@ -241,7 +156,6 @@
   min-height: 340px;
 }
 
-/* Image column: ensure always visible and doesn't collapse even if image is not loaded */
 .hero.hero14 > div:first-child {
   flex: 0 0 360px;
   display: flex;
@@ -253,7 +167,6 @@
   min-height: 1px;
 }
 
-/* Support older browsers—ensure direct image container also takes width */
 .hero.hero14 > div:first-child > div {
   display: flex;
   align-items: center;
@@ -264,7 +177,6 @@
   min-height: 1px;
 }
 
-/* Hero image presentation */
 .hero.hero14 > div:first-child picture,
 .hero.hero14 > div:first-child img {
   width: 360px;
@@ -277,7 +189,6 @@
   margin: 0;
 }
 
-/* Text column */
 .hero.hero14 > div:last-child {
   flex: 1 1 0;
   display: flex;
@@ -325,7 +236,6 @@
   justify-content: flex-start;
 }
 
-/* Call to action button */
 .hero.hero14 .button {
   background: #B7FF1E;
   color: #022C36;
@@ -348,7 +258,6 @@
   background: #A5EB19;
 }
 
-/* Responsive stacking */
 @media (width <= 900px) {
   .hero.hero14 {
     flex-direction: column;
@@ -392,5 +301,139 @@
 
   .hero.hero14 p.button-container {
     justify-content: center;
+  }
+}
+
+.hero.hero20 {
+  background: #f6f7f8;
+  height: 46.08px;
+  min-height: 46px;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Hide the empty first column so content shifts fully left */
+.hero.hero20 > div:first-child {
+  display: none;
+}
+
+.hero.hero20 > div:last-child {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.hero.hero20 > div:last-child > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  min-width: 0;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* LEFT CROPPED HEADING: fine-tuned to crop just the leading edge of 'F' only */
+.hero.hero20 h2 {
+  color: #173642;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  width: 270px;      /* Show almost entire word; tune if needed */
+  box-sizing: border-box;
+  position: relative;
+  left: -12px;       /* Only a slight crop of the left edge */
+}
+
+/* Keep the button flush right */
+.hero.hero20 .button-container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero.hero20 .button-container .button {
+  background: #d0ff00;
+  color: #173642;
+  font-size: 14px;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  padding: 0 18px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 17px;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  white-space: nowrap;
+  transition: background 0.2s;
+  box-sizing: border-box;
+}
+
+/* Responsive: stack heading/button, remove crop at smaller sizes */
+@media (width <= 700px) {
+  .hero.hero20 {
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 0;
+  }
+
+  .hero.hero20 > div:last-child {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .hero.hero20 > div:last-child > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero.hero20 h2 {
+    width: 100%;
+    left: 0;
+    font-size: 22px;
+  }
+
+  .hero.hero20 .button-container .button {
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
   }
 }
