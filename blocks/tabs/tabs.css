@@ -213,8 +213,6 @@
   box-sizing: border-box;
   width: calc(100vw - 64px);
 }
-
-/* Responsive stacking on narrow screens */
 @media (max-width: 900px) {
   .tabs {
     flex-direction: column;
@@ -225,8 +223,6 @@
     border-radius: 0;
   }
 }
-
-/* --- Left column: main content --- */
 .tabs > .tabs-panel:first-of-type {
   flex: 1 1 65%;
   max-width: 520px;
@@ -243,8 +239,6 @@
   width: 100%;
   box-sizing: border-box;
 }
-
-/* Headline */
 .tabs > .tabs-panel:first-of-type > div:first-child p {
   font-size: 38.4px;
   font-weight: bold;
@@ -258,8 +252,6 @@
   letter-spacing: 0;
   overflow: visible;
 }
-
-/* Metadata row */
 .tabs > .tabs-panel:first-of-type > div:nth-child(2) p {
   color: #a5c4c2;
   font-size: 18px;
@@ -268,8 +260,6 @@
   font-weight: 500;
   text-align: left;
 }
-
-/* --- Right column: sidebar, vertical stack --- */
 .tabs > .tabs-panel:not(:first-of-type),
 .tabs > div:not(.tabs-panel) {
   flex: 0 0 260px;
@@ -295,8 +285,6 @@
     gap: 16px;
   }
 }
-
-/* Sidebar card style: tight, vertical, readable */
 .tabs > .tabs-panel:not(:first-of-type) > div,
 .tabs > div:not(.tabs-panel) > div {
   background: #cbff2e;
@@ -314,8 +302,6 @@
   box-shadow: none;
   position: relative;
 }
-
-/* Sidebar card image/logo block at top, if any, should be separated from text */
 .tabs > .tabs-panel:not(:first-of-type) > div > *:first-child img,
 .tabs > div:not(.tabs-panel) > div > *:first-child img {
   display: block;
@@ -327,8 +313,6 @@
   background: #032d37;
   padding: 8px;
 }
-
-/* Sidebar card text contrast */
 .tabs > .tabs-panel:not(:first-of-type) > div p,
 .tabs > div:not(.tabs-panel) > div p {
   color: #032d37;
@@ -346,15 +330,11 @@
   align-self: flex-start;
   display: block;
 }
-
-/* Remove card overlay, just make bg neon, text dark */
 .tabs > .tabs-panel:not(:first-of-type) > div > p,
 .tabs > div:not(.tabs-panel) > div > p {
   position: static;
   border-radius: 0;
 }
-
-/* Hide extra logo or branding if not needed */
 .tabs .neon-bracket,
 .tabs .extra-branding,
 .tabs .extra-branding-text {
@@ -366,8 +346,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* Responsive: tile height and padding on smaller screens */
 @media (max-width: 700px) {
   .tabs {
     flex-direction: column;
@@ -388,8 +366,175 @@
     width: 100%;
   }
 }
-
-/* Ensure container always top-aligns its children */
 .tabs {
   align-items: flex-start;
+}
+
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #022d37;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 32px 32px 32px 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  min-height: 580px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .tabs {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px 2vw;
+    border-radius: 0;
+    min-height: unset;
+  }
+}
+
+/* -- LEFT COLUMN -- */
+.tabs > .tabs-panel:first-of-type {
+  flex: 2 1 0;
+  max-width: 66%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-right: 1vw;
+  gap: 0;
+}
+
+.tabs > .tabs-panel:first-of-type > div:first-child p {
+  margin: 0 0 12px 0;
+  font-size: 1.32rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.13;
+  text-align: left;
+  max-width: 98%;
+  white-space: pre-line;
+  letter-spacing: 0;
+}
+
+.tabs > .tabs-panel:first-of-type > div:nth-child(2) p {
+  margin: 0;
+  font-size: 1rem;
+  color: #a5c4c2;
+  font-weight: 400;
+  line-height: 1.28;
+}
+
+/* -- RIGHT COLUMN/SIDEBAR -- */
+.tabs > .tabs-panel:not(:first-of-type) {
+  flex: 1 1 0;
+  max-width: 210px;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: stretch;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-left: 0;
+  margin-top: 0;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .tabs > .tabs-panel:not(:first-of-type) {
+    max-width: 100%;
+    min-width: 0;
+    gap: 9px;
+    padding: 0;
+  }
+}
+
+/* Sidebar cards/tiles: dark with neon overlay at the bottom */
+.tabs > .tabs-panel:not(:first-of-type) > div {
+  background: #022d37;
+  border-radius: 12px;
+  min-height: 96px;
+  max-height: 118px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+}
+
+/* "Image" or placeholder area at top of tile, if present in DOM */
+.tabs > .tabs-panel:not(:first-of-type) > div > :not(p):first-child {
+  width: 100%;
+  min-height: 48px;
+  background: #022d37;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+/* Neon overlay label at the bottom of tile */
+.tabs > .tabs-panel:not(:first-of-type) > div p {
+  background: #c4ff1f;
+  color: #1a1a1a;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 14px 8px 14px;
+  border-radius: 0 0 12px 12px;
+  line-height: 1.13;
+  width: 100%;
+  min-height: 36px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+/* All-neon card for tiles with only a label (no image/placeholder) */
+.tabs > .tabs-panel:not(:first-of-type) > div:only-child p,
+.tabs > .tabs-panel:not(:first-of-type) > div:not(:has(:not(p))) p {
+  position: static;
+  background: #c4ff1f;
+  border-radius: 12px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Remove empty sidebar blocks for cleaner layout */
+.tabs > .tabs-panel:not(:first-of-type) > div:empty {
+  display: none;
+}
+
+/* Remove unwanted bottom margins and ensure compact stack */
+.tabs > .tabs-panel,
+.tabs > .tabs-panel > div,
+.tabs > .tabs-panel:not(:first-of-type) > div {
+  margin-bottom: 0;
+}
+
+.tabs,
+.tabs > .tabs-panel,
+.tabs > .tabs-panel > div {
+  min-height: 0;
 }
