@@ -1,17 +1,77 @@
 footer {
-  background-color: var(--light-color);
+  /* Volkswagen Group footer styles */
+  background-color: #002b39; /* same dark teal as header */
+  color: #ffffff;
   font-size: var(--body-font-size-xs);
+  position: relative;
+}
+
+/* subtle top border */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(255,255,255,0.2);
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: 1716px;
+  padding: 40px 32px 24px;
+}
+
+/* first row inline links */
+footer .footer .default-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 24px;
+  row-gap: 12px;
 }
 
 footer .footer p {
   margin: 0;
 }
+
+footer .footer p:first-child {
+  font-weight: 600;
+}
+
+footer .footer a.button:any-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* treat wrappers as inline elements so links flow in one line */
+footer .footer .button-container {
+  display: contents;
+}
+
+/* push stock price group to far right */
+footer .footer a[title^="PREF"] {
+  margin-left: auto;
+}
+
+footer .footer a.button:hover {
+  text-decoration: underline;
+}
+
+/* move disclaimer text to new line and lighter color */
+footer .footer p:last-of-type,
+footer .footer p:last-of-type ~ p {
+  flex: 0 0 100%;
+  color: rgba(255,255,255,0.8);
+  margin-top: 16px;
+  line-height: 1.4;
+}
+
 
 @media (width >= 900px) {
   footer .footer > div {
