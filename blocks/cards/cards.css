@@ -27,110 +27,6 @@
 }
 
 
-.cards.cards30 > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 18px;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  max-width: 100vw;
-  list-style: none;
-}
-
-.cards.cards30 > ul > li {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 225px;
-  height: 225px;
-  min-width: 0;
-  min-height: 0;
-  border: none;
-  border-radius: 20px;
-  overflow: hidden;
-  background: none;
-  box-sizing: border-box;
-}
-
-.cards.cards30 .cards-card-image {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: stretch;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.cards.cards30 .cards-card-image picture,
-.cards.cards30 .cards-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.cards.cards30 .cards-card-body {
-  position: absolute;
-  left: 14px;
-  right: 14px;
-  bottom: 18px;
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  pointer-events: none;
-}
-
-.cards.cards30 .cards-card-body .button-container {
-  margin: 0;
-  padding: 0;
-}
-
-.cards.cards30 .cards-card-body .button.primary {
-  background: none;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.3;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-  white-space: normal;
-  text-overflow: unset;
-  display: inline;
-  pointer-events: auto;
-  cursor: pointer;
-  max-width: 100%;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  word-break: normal;
-}
-
-@media (width <= 900px) {
-  .cards.cards30 > ul {
-    flex-direction: column;
-    gap: 16px;
-    width: 100%;
-    max-width: 98vw;
-  }
-
-  .cards.cards30 > ul > li {
-    width: 100%;
-    max-width: 340px;
-    height: 210px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-
 .cards.cards31 {
   max-width: 660px;
   margin: 0 auto;
@@ -1515,8 +1411,6 @@
   border-bottom: 1px solid #fff;
   box-sizing: border-box;
 }
-
-/* Use flex row for horizontal scrollable layout */
 .cards.cards27 > ul {
   display: flex;
   flex-direction: row;
@@ -1530,8 +1424,6 @@
   align-items: stretch;
   box-sizing: border-box;
 }
-
-/* Card: sharp, flat, compact, visually balanced */
 .cards.cards27 > ul > li {
   background: #fff;
   border-radius: 0;
@@ -1552,8 +1444,6 @@
   height: 100%;
   justify-content: flex-start;
 }
-
-/* Card image area: visually center logo in upper half */
 .cards.cards27 .cards-card-image {
   display: flex;
   justify-content: center;
@@ -1565,8 +1455,6 @@
   background: transparent;
   height: 54px;
 }
-
-/* Show image/logo: bigger horizontally, centered vertically */
 .cards.cards27 .cards-card-image img {
   display: block;
   max-width: 88%;
@@ -1576,8 +1464,6 @@
   object-fit: contain;
   background: transparent;
 }
-
-/* Date badge: compact, not crowded */
 .cards.cards27 .cards-card-body p:first-child {
   position: absolute;
   top: 10px;
@@ -1595,8 +1481,6 @@
   pointer-events: none;
   box-sizing: border-box;
 }
-
-/* Card content: more compact padding for better content fit */
 .cards.cards27 .cards-card-body {
   padding: 0 15px 15px 15px;
   display: flex;
@@ -1608,8 +1492,6 @@
   justify-content: flex-end;
   height: 100%;
 }
-
-/* Show all card body text. */
 .cards.cards27 .cards-card-body p {
   color: #222;
   font-size: 1rem;
@@ -1620,8 +1502,6 @@
   text-align: left;
   display: block;
 }
-
-/* Headline: tighter spacing, bold, break long words naturally */
 .cards.cards27 .cards-card-body p strong {
   color: #222;
   font-size: 1.15rem;
@@ -1632,8 +1512,6 @@
   margin-bottom: 0.38em;
   word-break: break-word;
 }
-
-/* Responsive: tighter layout on mobile */
 @media (max-width: 900px) {
   .cards.cards27 {
     padding: 8px 0 8px 0;
@@ -1658,10 +1536,157 @@
     height: 40px;
   }
 }
-
-/* Remove bullets and margin for all nested lists */
 .cards.cards27 ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+
+
+/* Force visibility for essential elements that may have been hidden by previous CSS */
+.cards.cards30 .cards-card-image,
+.cards.cards30 .cards-card-image img,
+.cards.cards30 .cards-card-body,
+.cards.cards30 .cards-card-body .button-container,
+.cards.cards30 .cards-card-body .button,
+.cards.cards30 .cards-card-body a {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 1. Flex row for card list, tight spacing, top-aligned */
+.cards.cards30 > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+
+/* 2. Card: visible, square, relative for overlays and image, overflow hidden */
+.cards.cards30 > ul > li {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  min-width: 180px;
+  max-width: 240px;
+  background: transparent;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+  box-shadow: none;
+  margin: 0;
+}
+
+/* 3. Image wrapper: covers card, absolute, rounded */
+.cards.cards30 .cards-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 18px;
+  display: block;
+  background: transparent;
+}
+.cards.cards30 .cards-card-image picture,
+.cards.cards30 .cards-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 0;
+  border-radius: 18px;
+}
+
+/* 4. Overlay: absolute, bottom left, compact, semi-transparent dark bg */
+.cards.cards30 .cards-card-body {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 2;
+  background: rgba(24, 24, 24, 0.62);
+  color: #fff;
+  border-radius: 9px;
+  padding: 10px 16px 9px 16px;
+  max-width: 80%;
+  min-width: 0;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: 1.3;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0;
+}
+
+/* 5. Overlay text: white, no button styles/leaks, left-aligned */
+.cards.cards30 .cards-card-body .button-container,
+.cards.cards30 .cards-card-body .button,
+.cards.cards30 .cards-card-body a {
+  display: inline;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.3;
+  white-space: normal;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.40);
+  pointer-events: auto;
+  cursor: pointer;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Remove any default margin from button-container in overlay */
+.cards.cards30 .cards-card-body .button-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default background, border, box-shadow on cards */
+.cards.cards30 > ul > li,
+.cards.cards30 .cards-card-body {
+  border: none;
+  box-shadow: none;
+  background-clip: padding-box;
+}
+
+/* Responsive: stack cards vertically, keep images square */
+@media (max-width: 700px) {
+  .cards.cards30 > ul {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .cards.cards30 > ul > li {
+    width: 92vw;
+    max-width: 360px;
+    height: 92vw;
+    min-width: 0;
+    min-height: 0;
+  }
+  .cards.cards30 .cards-card-body {
+    max-width: 88vw;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 0.98rem;
+    padding: 8px 12px;
+  }
 }
