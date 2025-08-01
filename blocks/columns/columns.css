@@ -33,216 +33,6 @@
 }
 
 
-.columns.columns11 {
-  background: #fff;
-  padding: 56px 40px 56px 80px;
-  box-sizing: border-box;
-}
-
-.columns.columns11 > div {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 64px;
-  align-items: flex-start;
-  width: 100%;
-}
-
-@media (max-width: 900px) {
-  .columns.columns11 {
-    padding: 32px 8px;
-  }
-  .columns.columns11 > div {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-}
-.columns.columns11 > div > div:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-width: 0;
-  gap: 0;
-}
-.columns.columns11 > div > div:first-child > p:first-child {
-  color: #94979f;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  margin: 0 0 18px 0;
-}
-.columns.columns11 > div > div:first-child h1 {
-  font-size: 2.35rem;
-  line-height: 1.09;
-  color: #22262a;
-  font-weight: 400;
-  margin: 0 0 24px 0;
-  letter-spacing: -0.01em;
-}
-.columns.columns11 > div > div:first-child .columns11-action-row {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  margin: 0 0 28px 0;
-  align-items: flex-start;
-}
-@media (min-width: 600px) {
-  .columns.columns11 > div > div:first-child > p.button-container,
-  .columns.columns11 > div > div:first-child > p:nth-of-type(3),
-  .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 16px 0 0;
-    padding: 0;
-    max-width: none;
-    vertical-align: top;
-  }
-  .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
-    margin-right: 0;
-  }
-  .columns.columns11 > div > div:first-child > p.button-container,
-  .columns.columns11 > div > div:first-child > p:nth-of-type(3),
-  .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
-  }
-}
-.columns.columns11 > div > div:first-child > p.button-container .button,
-.columns.columns11 > div > div:first-child > p:nth-of-type(3),
-.columns.columns11 > div > div:first-child > p:nth-of-type(4) {
-  background: #d2fa1a;
-  color: #22262a;
-  border-radius: 999px;
-  padding: 12px 32px;
-  font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  box-shadow: none;
-  line-height: 1.25;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  min-width: 0;
-  white-space: nowrap;
-  transition: background 0.2s;
-  width: auto;
-  margin: 0;
-}
-
-.columns.columns11 > div > div:first-child > p.button-container .button:hover,
-.columns.columns11 > div > div:first-child > p:nth-of-type(3):hover,
-.columns.columns11 > div > div:first-child > p:nth-of-type(4):hover {
-  background: #c6ec16;
-}
-.columns.columns11 > div > div:first-child > p.button-container .button,
-.columns.columns11 > div > div:first-child > p.button-container a.button {
-  text-decoration: none;
-}
-.columns.columns11 > div > div:first-child > p.button-container,
-.columns.columns11 > div > div:first-child > p:nth-of-type(3),
-.columns.columns11 > div > div:first-child > p:nth-of-type(4) {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.columns.columns11 > div > div:first-child > p:nth-of-type(6) {
-  display: none;
-}
-.columns.columns11 > div > div:first-child > p:nth-of-type(7) {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin: 32px 0 2px 0;
-}
-.columns.columns11 > div > div:first-child > p:nth-of-type(7) picture,
-.columns.columns11 > div > div:first-child > p:nth-of-type(7) img {
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  min-width: 48px;
-  min-height: 48px;
-  background: #ececec;
-  display: block;
-}
-.columns.columns11 > div > div:first-child > p.button-container:not(:first-child) .button {
-  background: transparent;
-  color: var(--link-color);
-  border-radius: 0;
-  padding: 0;
-  font-weight: 500;
-  font-size: 1rem;
-  border: none;
-  box-shadow: none;
-  line-height: 1.25;
-  cursor: pointer;
-  text-align: left;
-  text-decoration: underline;
-  display: inline;
-  min-width: 0;
-  white-space: normal;
-  transition: none;
-  margin: 0;
-}
-.columns.columns11 > div > div:first-child > p:nth-of-type(8) {
-  font-weight: 600;
-  font-size: 1.07rem;
-  color: #22262a;
-  margin: 0 0 2px 0;
-}
-.columns.columns11 > div > div:first-child > p:nth-of-type(10) {
-  font-size: 0.99rem;
-  color: #94979f;
-  margin: 2px 0 2px 0;
-}
-.columns.columns11 > div > div:first-child > p:last-child {
-  font-size: 0.97rem;
-  margin-top: 2px;
-  margin-bottom: 0;
-}
-.columns.columns11 > div > div:first-child > p:last-child a[href^="tel:"] {
-  color: #009f4c;
-  text-decoration: none;
-  margin-right: 8px;
-  font-weight: 500;
-}
-.columns.columns11 > div > div:first-child > p:last-child a[href^="mailto:"] {
-  color: #0072ce;
-  text-decoration: none;
-  font-weight: 500;
-}
-.columns.columns11 .columns-img-col {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  min-width: 0;
-}
-.columns.columns11 .columns-img-col picture,
-.columns.columns11 .columns-img-col img {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 2px 16px rgba(60,60,60,0.04);
-  background: #ededed;
-  display: block;
-  margin-left: auto;
-}
-@media (max-width: 900px) {
-  .columns.columns11 .columns-img-col picture,
-  .columns.columns11 .columns-img-col img {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-.columns.columns11 > div > div:first-child > * {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.columns.columns11 > div > div:first-child h1 {
-  margin-bottom: 24px;
-}
-
-
 .columns.columns17 {
   border: 1.5px solid #1D9182;
   border-radius: 16px;
@@ -3180,7 +2970,7 @@
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 24px rgba(52,88,109,0.07), 0 1.5px 4px rgba(52,88,109,0.04);
-  padding: 36px 40px; /* tighter top/bottom padding for less empty space */
+  padding: 36px 40px;
   margin: 40px auto;
   max-width: 1200px;
   display: block;
@@ -3227,4 +3017,273 @@
 
 .columns.columns10 li:last-child {
   margin-bottom: 0;
+}
+
+
+.columns.columns11 {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  max-width: 1240px;
+  margin: 32px auto;
+  padding: 0;
+  overflow: visible;
+}
+
+.columns.columns11 > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0;
+  min-height: 410px;
+}
+
+@media (max-width: 900px) {
+  .columns.columns11 > div {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+  .columns.columns11 {
+    border-radius: 20px;
+    margin: 24px 8px;
+  }
+}
+
+/* Vertically center and compact left content */
+.columns.columns11 > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 48px 48px 48px 56px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .columns.columns11 > div > div:first-child {
+    padding: 32px 16px 28px 16px;
+  }
+}
+
+/* Top meta */
+.columns.columns11 > div > div:first-child > p:first-child {
+  color: #94979f;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  margin: 0 0 18px 0;
+  font-weight: 400;
+}
+
+/* Headline */
+.columns.columns11 > div > div:first-child h1 {
+  font-size: 2.45rem;
+  line-height: 1.12;
+  color: #212529;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+  letter-spacing: -0.01em;
+  font-family: var(--heading-font-family);
+  max-width: 540px;
+}
+
+/* ================================ */
+/* ACTION BUTTON ROW IMPLEMENTATION */
+/* ================================ */
+
+/* 1. Flex container for the CTA row, targeting the three action <p>s after the headline */
+.columns.columns11 > div > div:first-child .cta-row {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin: 0 0 28px 0;
+}
+
+/* 2. Make sure all three CTAs are displayed inline and not stacked 
+   We assume: 
+    - p.button-container = first CTA (Herunterladen)
+    - p:nth-of-type(3)   = second CTA (In die Sammelmappe)
+    - p:nth-of-type(4)   = third  CTA (Teilen)
+   Place these in a flex row by wrapping them in a .cta-row via JS or by using the sibling selector below.  */
+
+.columns.columns11 > div > div:first-child > p.button-container,
+.columns.columns11 > div > div:first-child > p:nth-of-type(3),
+.columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+/* 3. Style each action CTA as a compact green button */
+.columns.columns11 > div > div:first-child > p.button-container a.button,
+.columns.columns11 > div > div:first-child > p:nth-of-type(3),
+.columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+  background: #d3ff1c;
+  color: #212529;
+  border-radius: 14px;
+  font-size: 1.14rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  min-width: 0;
+  max-width: none;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.2;
+  white-space: nowrap;
+  margin: 0;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove underline from all action p's (including links inside if present) */
+.columns.columns11 > div > div:first-child > p.button-container a.button,
+.columns.columns11 > div > div:first-child > p:nth-of-type(3) a,
+.columns.columns11 > div > div:first-child > p:nth-of-type(4) a {
+  text-decoration: none;
+}
+
+/* Pointer and hover feedback for action CTAs */
+.columns.columns11 > div > div:first-child > p.button-container a.button:hover,
+.columns.columns11 > div > div:first-child > p:nth-of-type(3):hover,
+.columns.columns11 > div > div:first-child > p:nth-of-type(4):hover {
+  background: #bef000;
+  color: #212529;
+}
+
+/* Remove any forced width from CTAs so they shrink to fit content */
+.columns.columns11 > div > div:first-child > p.button-container a.button,
+.columns.columns11 > div > div:first-child > p:nth-of-type(3),
+.columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+  width: auto;
+  min-width: 120px;
+  max-width: 320px;
+}
+
+/* Hide extra download/contact buttons if present */
+.columns.columns11 > div > div:first-child > p.button-container:not(:first-child) {
+  display: none;
+}
+
+/* Hide the long social links and share URLs */
+.columns.columns11 > div > div:first-child > p:nth-of-type(5),
+.columns.columns11 > div > div:first-child > p:nth-of-type(6) {
+  display: none;
+}
+
+/* ================================ */
+/* PROFILE/CONTACT INFO BLOCK       */
+/* ================================ */
+
+/* Group the name, title, and contact info tightly */
+.columns.columns11 > div > div:first-child > p:nth-of-type(7),
+.columns.columns11 > div > div:first-child > p:nth-of-type(8),
+.columns.columns11 > div > div:first-child > p:nth-of-type(9),
+.columns.columns11 > div > div:first-child > p:nth-of-type(10),
+.columns.columns11 > div > div:first-child > p:nth-of-type(11) {
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+}
+
+.columns.columns11 > div > div:first-child > p:nth-of-type(7) {
+  margin-top: 12px;
+  margin-bottom: 2px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.columns.columns11 > div > div:first-child > p:nth-of-type(8) {
+  font-size: 1rem;
+  color: #979899;
+  margin-bottom: 2px;
+}
+
+/* Contact info */
+.columns.columns11 > div > div:first-child > p:last-child {
+  margin-top: 2px;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.columns.columns11 > div > div:first-child > p:last-child a[href^="tel:"] {
+  color: #009f4c;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.columns.columns11 > div > div:first-child > p:last-child a[href^="mailto:"] {
+  display: none;
+}
+
+/* Remove margin from all direct children for compactness */
+.columns.columns11 > div > div:first-child > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ================================ */
+/* RIGHT COLUMN IMAGE STYLING       */
+/* ================================ */
+.columns.columns11 .columns-img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  min-width: 0;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .columns.columns11 .columns-img-col {
+    padding: 0 0 32px 0;
+    justify-content: center;
+  }
+}
+
+.columns.columns11 .columns-img-col picture,
+.columns.columns11 .columns-img-col img {
+  width: 100%;
+  max-width: 440px;
+  border-radius: 24px;
+  object-fit: cover;
+  background: #ededed;
+  box-shadow: 0 2px 16px rgba(60,60,60,0.05);
+  display: block;
+}
+
+/* Responsive: Stack columns, image at top */
+@media (max-width: 750px) {
+  .columns.columns11 > div {
+    grid-template-columns: 1fr;
+  }
+  .columns.columns11 .columns-img-col {
+    margin-bottom: 28px;
+  }
+}
+
+/* ========== ADVANCED: AUTO FLEX GROUPING FOR CTA ROW ========== */
+/* If the three action <p>s are not already in a container, visually group them with a clever sibling selector */
+@media (min-width: 600px) {
+  .columns.columns11 > div > div:first-child > p.button-container,
+  .columns.columns11 > div > div:first-child > p:nth-of-type(3),
+  .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .columns.columns11 > div > div:first-child > p.button-container,
+  .columns.columns11 > div > div:first-child > p:nth-of-type(3),
+  .columns.columns11 > div > div:first-child > p:nth-of-type(4) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
