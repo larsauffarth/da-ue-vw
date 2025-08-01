@@ -27,103 +27,6 @@
 }
 
 
-.cards.cards19 {
-  background: #00323a;
-  padding: 32px 0;
-}
-
-.cards.cards19 > ul {
-  display: grid;
-  grid-template-columns: 61.2% 36.8%;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 18px;
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  background: none;
-  place-items: stretch stretch;
-  box-sizing: border-box;
-}
-
-.cards.cards19 > ul > li {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-  min-width: 0;
-  min-height: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: stretch;
-}
-
-.cards.cards19 > ul > li:nth-child(1) {
-  grid-row: 1 / span 3;
-  grid-column: 1 / 2;
-  aspect-ratio: 4/5.5;
-}
-
-.cards.cards19 > ul > li:nth-child(2),
-.cards.cards19 > ul > li:nth-child(3),
-.cards.cards19 > ul > li:nth-child(4) {
-  grid-column: 2 / 3;
-  aspect-ratio: 16/9;
-}
-.cards.cards19 > ul > li:nth-child(2) { grid-row: 1 / 2; }
-.cards.cards19 > ul > li:nth-child(3) { grid-row: 2 / 3; }
-.cards.cards19 > ul > li:nth-child(4) { grid-row: 3 / 4; }
-
-.cards.cards19 .cards-card-image {
-  flex: 1 1 auto;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: stretch;
-  justify-content: stretch;
-  overflow: hidden;
-  background: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards.cards19 .cards-card-image img,
-.cards.cards19 .cards-card-image picture {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-.cards.cards19 .cards-card-body {
-  display: none;
-}
-
-@media (width <= 800px) {
-  .cards.cards19 > ul {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 12px;
-    max-width: 100%;
-  }
-
-  .cards.cards19 > ul > li,
-  .cards.cards19 > ul > li:nth-child(1),
-  .cards.cards19 > ul > li:nth-child(2),
-  .cards.cards19 > ul > li:nth-child(3),
-  .cards.cards19 > ul > li:nth-child(4) {
-    grid-column: auto;
-    grid-row: auto;
-    aspect-ratio: 16/9;
-  }
-}
-
-
 .cards.cards27 > ul {
   display: flex;
   flex-direction: row;
@@ -1436,8 +1339,6 @@
   padding: 0;
   background: var(--background-color);
 }
-
-/* Improved CSS Grid for true row-wise card alignment */
 .cards.cards16 > ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1449,8 +1350,6 @@
   align-items: stretch;
   justify-items: stretch;
 }
-
-/* Responsive grid for tablet and mobile */
 @media (max-width: 1100px) {
   .cards.cards16 > ul {
     grid-template-columns: repeat(2, 1fr);
@@ -1463,8 +1362,6 @@
     gap: 10px;
   }
 }
-
-/* Force equal card heights per row: stretch cards to fill row grid cell */
 .cards.cards16 > ul > li {
   display: flex;
   flex-direction: column;
@@ -1480,8 +1377,6 @@
   height: 100%;
   align-self: stretch;
 }
-
-/* Info-card variant (first and fourth cards only) */
 .cards.cards16 > ul > li:nth-child(1),
 .cards.cards16 > ul > li:nth-child(4) {
   background: #22323E;
@@ -1498,8 +1393,6 @@
   font-weight: 700;
   margin-bottom: 0.33em;
 }
-
-/* Card image styles */
 .cards.cards16 .cards-card-image {
   width: 100%;
   height: 180px;
@@ -1519,8 +1412,6 @@
   display: block;
   border-radius: 10px 10px 0 0;
 }
-
-/* Card body (text) */
 .cards.cards16 .cards-card-body {
   flex: 1 1 auto;
   padding: 18px 18px 16px 18px;
@@ -1538,8 +1429,6 @@
   font-size: 1rem;
   font-weight: 400;
 }
-
-/* Promote headline if present */
 .cards.cards16 .cards-card-body > h3,
 .cards.cards16 .cards-card-body > .headline {
   font-size: 1.2rem;
@@ -1548,8 +1437,6 @@
   color: #222;
   line-height: 1.22;
 }
-
-/* Remove excess padding/spacing */
 .cards.cards16 > ul > li,
 .cards.cards16 .cards-card-body {
   margin-bottom: 0;
@@ -1559,10 +1446,127 @@
   row-gap: 18px;
   column-gap: 18px;
 }
-
-/* Keep images slightly shorter for denser rows on mobile */
 @media (max-width: 700px) {
   .cards.cards16 .cards-card-image {
     height: 130px;
+  }
+}
+
+
+.cards.cards19 {
+  background: #03363D;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* 2x2 grid: left column is larger, right column is smaller */
+.cards.cards19 > ul {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: stretch;
+  justify-items: stretch;
+  background: none;
+  box-sizing: border-box;
+}
+
+/* Restore all four images/cards */
+.cards.cards19 > ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+/* Assign grid placement for each card */
+.cards.cards19 > ul > li:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.cards.cards19 > ul > li:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.cards.cards19 > ul > li:nth-child(3) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.cards.cards19 > ul > li:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* Image should fill its cell and keep aspect ratio */
+.cards.cards19 .cards-card-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  line-height: 0;
+}
+
+.cards.cards19 .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+/* Hide card-body/text for pure gallery look */
+.cards.cards19 .cards-card-body {
+  display: none;
+}
+
+/* Responsive: stack images vertically on small screens */
+@media (max-width: 800px) {
+  .cards.cards19 {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+  .cards.cards19 > ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 14px;
+  }
+  .cards.cards19 > ul > li {
+    min-width: 0;
+  }
+  .cards.cards19 > ul > li:nth-child(1),
+  .cards.cards19 > ul > li:nth-child(2),
+  .cards.cards19 > ul > li:nth-child(3),
+  .cards.cards19 > ul > li:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+  .cards.cards19 .cards-card-image img {
+    max-height: 40vw;
   }
 }
