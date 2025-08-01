@@ -1,5 +1,3 @@
-/* stylelint-disable no-descending-specificity */
-
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -51,95 +49,6 @@
 .hero-container > .hero-wrapper {
   max-width: unset;
   padding: 0;
-}
-
-.hero.hero5 {
-  position: relative;
-  width: 100vw;
-  min-height: 400px;
-  padding: 0;
-  overflow: hidden;
-  background: transparent;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
-.hero.hero5 > div:first-child {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  position: absolute;
-  inset: 0;
-  width: 100vw;
-  height: 100%;
-  z-index: 1;
-  display: block;
-  pointer-events: none;
-}
-
-.hero.hero5 picture,
-.hero.hero5 img {
-  width: 100vw;
-  height: 100%;
-  min-height: 400px;
-  object-fit: cover;
-  display: block;
-  pointer-events: none;
-}
-
-.hero.hero5 h1,
-.hero.hero5 p {
-  display: none;
-}
-
-.hero.hero5 > div:last-child {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.hero.hero5 .cookie-modal {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 6px 32px rgb(0 0 0 / 20%);
-  max-width: 500px;
-  width: 90vw;
-  padding: 2rem 2.5rem;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  pointer-events: auto;
-}
-
-.hero.hero5::before {
-  position: absolute;
-  inset: 0;
-  background: rgb(0 0 0 / 10%);
-  z-index: 2;
-  pointer-events: none;
-  display: block;
-  content: "";
-}
-
-@media (width <= 900px) {
-  .hero.hero5,
-  .hero.hero5 > div:first-child,
-  .hero.hero5 picture,
-  .hero.hero5 img {
-    min-height: 200px;
-  }
-
-  .hero.hero5 .cookie-modal {
-    max-width: 98vw;
-    padding: 1rem 0.5rem;
-  }
 }
 
 .hero.hero20 {
@@ -286,7 +195,7 @@
 .hero.hero14 > div {
   display: flex;
   flex-direction: column;
-  align-items: center; /* center the content block horizontally */
+  align-items: center;
   width: 100%;
 }
 
@@ -295,7 +204,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* left-align text and button inside the block */
+  align-items: flex-start;
 }
 
 .hero.hero14 h2 {
@@ -361,5 +270,161 @@
 
   .hero.hero14 p.button-container {
     justify-content: center;
+  }
+}
+
+
+.hero.hero5 {
+  position: relative;
+  width: 100vw;
+  height: 459px;
+  min-height: 459px;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Make the hero full width */
+.hero-container > .hero-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+/* Background image setup */
+.hero.hero5 > div:first-child {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  display: block;
+  pointer-events: none;
+}
+.hero.hero5 picture,
+.hero.hero5 img {
+  width: 100vw;
+  height: 100%;
+  min-height: 459px;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* Overlay for contrast */
+.hero.hero5::before {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.13);
+  z-index: 2;
+  display: block;
+}
+
+/* Center the content stack with a slight upward nudge */
+.hero.hero5 > div:last-child {
+  position: relative;
+  z-index: 3;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  pointer-events: none;
+  margin-top: -28px; /* nudge group up a bit */
+}
+
+/* Stack inner content very tightly and center it */
+.hero.hero5 > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px; /* minimal gap between h1 and nav */
+  margin: 0 auto;
+  pointer-events: auto;
+}
+
+/* Headline styling */
+.hero.hero5 h1 {
+  color: #fff;
+  font-size: 2.15rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.16);
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  max-width: 90vw;
+  padding: 0;
+}
+
+/* Navigation bar: crisp, flat, tight, content-hugging */
+.hero.hero5 p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  width: max-content;
+  min-width: 0;
+  max-width: 100vw;
+  padding: 0.25rem 0.7rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  gap: 1.05rem;
+  pointer-events: auto;
+  height: 39px;
+}
+
+/* Individual links: minimal padding, tight spacing */
+.hero.hero5 p a {
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 0.13em;
+  transition: color 0.18s;
+  white-space: nowrap;
+}
+
+.hero.hero5 p a:hover,
+.hero.hero5 p a:focus {
+  color: #0067b1;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .hero.hero5 {
+    height: 340px;
+    min-height: 340px;
+  }
+  .hero.hero5 picture,
+  .hero.hero5 img,
+  .hero.hero5 > div:first-child {
+    min-height: 340px;
+    height: 340px;
+  }
+  .hero.hero5 > div:last-child {
+    margin-top: -8px;
+  }
+  .hero.hero5 > div:last-child > div {
+    gap: 2px;
+    max-width: 98vw;
+  }
+  .hero.hero5 h1 {
+    font-size: 1.15rem;
+    padding: 0 4px;
+  }
+  .hero.hero5 p {
+    padding: 0.18rem 0.25rem;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+    max-width: 98vw;
+    flex-wrap: wrap;
+    height: 31px;
   }
 }
