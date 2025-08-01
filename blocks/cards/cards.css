@@ -27,135 +27,6 @@
 }
 
 
-.cards.cards8 ul > li {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  background: none;
-  border: none;
-  border-radius: 12px;
-  box-sizing: border-box;
-  min-height: 86px;
-  padding: 0;
-  position: relative;
-  overflow: visible;
-}
-.cards.cards8 ul > li > .cards-card-body:first-child {
-  width: 68px;
-  min-width: 68px;
-  height: 86px;
-  min-height: 86px;
-  max-height: 86px;
-  border-radius: 10px 0 0 10px;
-  background: #214f66;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  overflow: hidden;
-  box-shadow: none;
-  margin-right: 20px;
-  margin-bottom: 0;
-}
-.cards.cards8 ul > li > .cards-card-body:first-child p {
-  display: none;
-}
-@media (max-width: 900px) {
-  .cards.cards8 ul > li > .cards-card-body:first-child {
-    width: 56px;
-    min-width: 56px;
-    height: 64px;
-    min-height: 64px;
-    max-height: 64px;
-    border-radius: 8px 0 0 8px;
-    margin-right: 12px;
-  }
-}
-.cards.cards8 ul > li > .cards-card-body:last-child {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-width: 0;
-  padding: 0 0 24px 0;
-  background: none;
-}
-.cards.cards8 {
-  background: #077c73;
-  padding: 32px 0;
-  box-sizing: border-box;
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-.cards.cards8 ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px 40px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  max-width: 100vw;
-  box-sizing: border-box;
-}
-.cards.cards8 .button-container:first-child .button {
-  font-size: 19px;
-  font-weight: 600;
-  color: #fff;
-  background: none;
-  border: none;
-  text-align: left;
-  margin-bottom: 8px;
-  margin-top: 0;
-  padding: 0;
-  box-shadow: none;
-  line-height: 1.25;
-  max-width: 100%;
-  white-space: normal;
-  overflow: visible;
-  text-overflow: unset;
-  font-family: inherit;
-}
-.cards.cards8 .button-container:nth-child(2) .button {
-  display: block;
-  font-size: 15px;
-  color: #b0d9d7;
-  font-weight: 400;
-  background: none;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-shadow: none;
-  font-family: inherit;
-  max-width: 100%;
-  white-space: normal;
-  overflow: visible;
-  text-overflow: unset;
-}
-.cards.cards8 .button-container {
-  margin: 0;
-  padding: 0;
-}
-@media (max-width: 900px) {
-  .cards.cards8 {
-    padding: 16px 0;
-  }
-  .cards.cards8 ul {
-    grid-template-columns: 1fr;
-    gap: 8px 0;
-  }
-  .cards.cards8 ul > li {
-    min-height: 64px;
-  }
-}
-.cards.cards8 ul {
-  scrollbar-width: thin;
-  scrollbar-color: #b0d9d7 #077c73;
-}
-
-
 .cards {
   width: 100%;
   background: none;
@@ -1672,8 +1543,6 @@
   padding: 40px 0;
   width: 100%;
 }
-
-/* FLEX row for the card list */
 .cards.cards1 > ul {
   display: flex;
   flex-direction: row;
@@ -1686,8 +1555,6 @@
   width: 100%;
   list-style: none;
 }
-
-/* Card base */
 .cards.cards1 > ul > li {
   background: #fff;
   border: none;
@@ -1706,8 +1573,6 @@
   transition: box-shadow 0.2s;
   overflow: visible;
 }
-
-/* First card: Large headline, force wrap to two lines */
 .cards.cards1 > ul > li:first-child .cards-card-body h3 {
   font-size: 32px;
   font-weight: bold;
@@ -1719,8 +1584,6 @@
   word-break: break-word;
   letter-spacing: -0.01em;
 }
-
-/* Second card: headline size and spacing */
 .cards.cards1 > ul > li:nth-child(2) .cards-card-body h3 {
   font-size: 25.6px;
   font-weight: bold;
@@ -1728,8 +1591,6 @@
   color: #002336;
   margin: 0 0 16px 0;
 }
-
-/* All card headlines: fallback for other cards */
 .cards.cards1 .cards-card-body h3 {
   font-size: 20px;
   font-weight: 700;
@@ -1738,8 +1599,6 @@
   line-height: 1.2;
   font-family: var(--heading-font-family);
 }
-
-/* Body text */
 .cards.cards1 .cards-card-body p:not(.button-container) {
   color: #002336;
   font-size: 16px;
@@ -1748,8 +1607,6 @@
   line-height: 1.5;
   font-family: var(--body-font-family);
 }
-
-/* Images: fill width, correct aspect and rounding */
 .cards.cards1 .cards-card-image {
   width: 100%;
   margin: 0 0 20px 0;
@@ -1763,8 +1620,6 @@
   border-radius: 16px;
   display: block;
 }
-
-/* First card: prominent green button, visible and styled */
 .cards.cards1 > ul > li:first-child .button-container {
   width: 100%;
   margin: 0;
@@ -1794,8 +1649,6 @@
 .cards.cards1 > ul > li:first-child .button-container .button:focus {
   background: #c3ea17;
 }
-
-/* Third card: subtle white overlay on the left using ::after (not content) */
 .cards.cards1 > ul > li:nth-child(3) {
   position: relative;
   overflow: hidden;
@@ -1808,15 +1661,10 @@
   z-index: 2;
   pointer-events: none;
   display: block;
-  /* no content property used */
 }
-
-/* Remove any outline or border between cards */
 .cards.cards1 > ul > li:not(:last-child) {
   outline: none;
 }
-
-/* Responsiveness: Stack cards vertically on small screens */
 @media (max-width: 1050px) {
   .cards.cards1 > ul {
     flex-direction: column;
@@ -1839,4 +1687,156 @@
   .cards.cards1 > ul > li:nth-child(2) .cards-card-body h3 {
     font-size: 20px;
   }
+}
+
+
+.cards.cards8 {
+  background: #008578;
+  padding: 32px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.cards.cards8 > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 32px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0;
+  padding: 0 16px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Card block */
+.cards.cards8 ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.13);
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+  box-sizing: border-box;
+  min-height: 96px;
+  padding: 28px 32px;
+  width: 100%;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+/* Image/placeholder */
+.cards.cards8 ul > li > .cards-card-body:first-child {
+  width: 66px;
+  height: 86px;
+  background: #214f66;
+  border-radius: 8px;
+  margin: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cards.cards8 ul > li > .cards-card-body:first-child p {
+  display: none;
+}
+
+/* Card content (text) */
+.cards.cards8 ul > li > .cards-card-body:last-child {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  margin-left: 24px;
+  padding: 0;
+  gap: 0;
+  background: none;
+  color: #fff;
+}
+
+.cards.cards8 ul > li > .cards-card-body:last-child .button-container {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* Title */
+.cards.cards8 ul > li > .cards-card-body:last-child .button-container:first-child .button {
+  font-size: 18.5px;
+  font-weight: 700;
+  color: #fff;
+  background: none;
+  border: none;
+  text-align: left;
+  margin: 0 0 8px 0;
+  padding: 0;
+  box-shadow: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.31;
+  font-family: inherit;
+  max-width: 100%;
+  display: inline;
+}
+
+/* Meta/info and overflow text */
+.cards.cards8 ul > li > .cards-card-body:last-child .button-container:not(:first-child) .button {
+  display: inline;
+  font-size: 15px;
+  color: #b7c9c9;
+  font-weight: 400;
+  background: none;
+  text-align: left;
+  margin: 0 0 4px 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  font-family: inherit;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.37;
+}
+
+/* Ensure all button containers stack neatly */
+.cards.cards8 ul > li > .cards-card-body:last-child .button-container:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* Remove unwanted button/link formatting */
+.cards.cards8 ul > li > .cards-card-body:last-child .button {
+  text-decoration: none;
+  box-shadow: none;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 900px) {
+  .cards.cards8 > ul {
+    grid-template-columns: 1fr;
+    gap: 18px 0;
+    padding: 0 4px;
+    max-width: 600px;
+  }
+  .cards.cards8 ul > li {
+    min-height: 72px;
+    padding: 16px 10px;
+  }
+  .cards.cards8 ul > li > .cards-card-body:first-child {
+    width: 44px;
+    height: 56px;
+    border-radius: 6px;
+  }
+  .cards.cards8 ul > li > .cards-card-body:last-child {
+    margin-left: 9px;
+  }
+}
+
+.cards.cards8 ul {
+  box-sizing: border-box;
 }
