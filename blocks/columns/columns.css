@@ -33,56 +33,6 @@
 }
 
 
-.columns.columns10 {
-  background: #fff;
-}
-.columns.columns10 > div {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-@media (max-width: 899px) {
-  .columns.columns10 > div {
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
-.columns.columns10 > div > div {
-  flex: 1 1 0%;
-  min-width: 0;
-  display: block;
-}
-.columns.columns10 ul {
-  padding-left: 20px;
-  margin: 0;
-  list-style-type: disc;
-}
-
-.columns.columns10 ul + ul {
-  margin-top: 0;
-}
-
-.columns.columns10 li {
-  color: #295B67;
-  font-size: 14px;
-  font-family: var(--body-font-family), sans-serif;
-  line-height: 1.35;
-  margin-bottom: 8px;
-}
-
-.columns.columns10 li:last-child {
-  margin-bottom: 0;
-}
-
-.columns.columns10 li::marker {
-  color: #00B1B0;
-  font-size: 1.05em;
-}
-
-
 .columns.columns11 {
   background: #fff;
   padding: 56px 40px 56px 80px;
@@ -3012,8 +2962,6 @@
   padding: 0;
   display: block;
 }
-
-/* --- 2-column layout: image left, content right --- */
 .columns.columns7 > div {
   display: flex;
   flex-direction: row;
@@ -3022,8 +2970,6 @@
   padding: 28px 36px 28px 28px;
   box-sizing: border-box;
 }
-
-/* Image column - keep visually anchored at the top */
 .columns.columns7 .columns-img-col {
   display: flex;
   align-items: flex-start;
@@ -3043,8 +2989,6 @@
   display: block;
   margin: 0;
 }
-
-/* --- Content column --- */
 .columns.columns7 > div > div:not(.columns-img-col) {
   display: flex;
   flex-direction: column;
@@ -3056,8 +3000,6 @@
   justify-content: flex-start;
   align-items: stretch;
 }
-
-/* HEADER ROW: heading and button in a row, spaced apart */
 .columns.columns7 > div > div:not(.columns-img-col) .columns7-headerrow {
   display: flex;
   flex-direction: row;
@@ -3066,8 +3008,6 @@
   margin-bottom: 6px;
   width: 100%;
 }
-
-/* Simulate header row by using a flex row on first two children (heading and button) */
 .columns.columns7 > div > div:not(.columns-img-col) > #anstehende-termine,
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:first-of-type {
   display: inline-block;
@@ -3101,16 +3041,10 @@
   letter-spacing: 0.01em;
   display: inline-block;
 }
-
-/* Remove space below header */
 .columns.columns7 > div > div:not(.columns-img-col) > #anstehende-termine,
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:first-of-type {
   margin-bottom: 0;
 }
-
-/* --- EVENTS --- */
-
-/* For each event, simulate a two-column event row using grid */
 .columns.columns7 > div > div:not(.columns-img-col) .columns7-eventrow {
   display: grid;
   grid-template-columns: 62px 1fr;
@@ -3118,8 +3052,6 @@
   margin: 0 0 6px 0;
   width: 100%;
 }
-
-/* Event date row: grid for date/month vs. info */
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(2),
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(6),
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(10) {
@@ -3132,8 +3064,6 @@
   width: 100%;
   position: relative;
 }
-
-/* Date/Month stack */
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(2) .button,
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(6) .button,
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(10) .button {
@@ -3151,8 +3081,6 @@
   line-height: 1;
   display: block;
 }
-
-/* Month/year - directly under date, in event left column */
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(3),
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(7),
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(11) {
@@ -3167,8 +3095,6 @@
   grid-row: 2;
   min-width: 54px;
 }
-
-/* --- Event info: title/range --- */
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(4),
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(8),
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container:nth-of-type(12) {
@@ -3197,8 +3123,6 @@
   grid-column: 2;
   grid-row: 2;
 }
-
-/* Remove button styles from event details */
 .columns.columns7 .button-container:not(:first-of-type) .button {
   background: none;
   color: inherit;
@@ -3218,15 +3142,11 @@
   white-space: normal;
   margin: 0;
 }
-
-/* Hide any unwanted extra spacing */
 .columns.columns7 > div > div:not(.columns-img-col) > .button-container {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
 }
-
-/* Responsive tweaks */
 @media (max-width: 800px) {
   .columns.columns7 > div {
     flex-direction: column;
@@ -3253,4 +3173,58 @@
     grid-template-columns: 48px 1fr;
     gap: 0 8px;
   }
+}
+
+
+.columns.columns10 {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(52,88,109,0.07), 0 1.5px 4px rgba(52,88,109,0.04);
+  padding: 36px 40px; /* tighter top/bottom padding for less empty space */
+  margin: 40px auto;
+  max-width: 1200px;
+  display: block;
+}
+
+.columns.columns10 > div {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .columns.columns10 {
+    padding: 20px 8px;
+  }
+  .columns.columns10 > div {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.columns.columns10 > div > div {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.columns.columns10 ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.columns.columns10 li {
+  font-size: 18px;
+  line-height: 27px;
+  color: #34586d;
+  margin-bottom: 20px;
+  font-family: var(--body-font-family, sans-serif);
+  text-indent: 0;
+}
+
+.columns.columns10 li:last-child {
+  margin-bottom: 0;
 }
