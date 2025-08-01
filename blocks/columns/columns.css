@@ -389,240 +389,6 @@
   }
 }
 
-.columns.columns7 {
-  background: #fff;
-  border: 2px solid #00724B;
-  border-radius: 16px;
-  padding: 32px 24px;
-  box-sizing: border-box;
-  max-width: 720px;
-  margin: 32px auto;
-}
-
-.columns.columns7 > div {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 36px;
-}
-
-@media (max-width: 700px) {
-  .columns.columns7 {
-    padding: 16px 4vw;
-    max-width: 100vw;
-  }
-  .columns.columns7 > div {
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
-.columns.columns7 .columns-img-col {
-  flex: 0 0 260px;
-  max-width: 260px;
-  min-width: 180px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.columns.columns7 .columns-img-col img {
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  background: #f6f6f6;
-}
-.columns.columns7 > div > div:last-child {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 0;
-  padding-top: 0;
-}
-.columns.columns7 > div > div:last-child > #anstehende-termine,
-.columns.columns7 > div > div:last-child > .button-container:first-of-type {
-  display: inline-block;
-  vertical-align: middle;
-}
-.columns.columns7 > div > div:last-child > #anstehende-termine {
-  margin: 0;
-  color: #8A8A8A;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-  padding-bottom: 0;
-}
-.columns.columns7 > div > div:last-child > .button-container:first-of-type {
-  margin: 0 0 0 18px;
-  padding: 0;
-}
-.columns.columns7 > div > div:last-child {
-  position: relative;
-}
-.columns.columns7 > div > div:last-child {
-  gap: 0;
-}
-.columns.columns7 > div > div:last-child > #anstehende-termine,
-.columns.columns7 > div > div:last-child > .button-container:first-of-type {
-  position: relative;
-  top: 0.1em;
-}
-.columns.columns7 .button-container:first-of-type .button {
-  background: #E6FF00;
-  color: #222;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 18px;
-  padding: 7px 22px;
-  border: none;
-  box-shadow: none;
-  text-decoration: none;
-  margin: 0;
-  letter-spacing: 0.01em;
-  display: inline-block;
-  vertical-align: middle;
-}
-.columns.columns7 .button-container:first-of-type .button:hover,
-.columns.columns7 .button-container:first-of-type .button:focus {
-  background: #d3f900;
-  color: #222;
-}
-.columns.columns7 .button-container:not(:first-of-type) .button {
-  background: none;
-  border: none;
-  box-shadow: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-  text-align: left;
-  white-space: normal;
-  cursor: default;
-  pointer-events: none;
-  font-family: inherit;
-  text-decoration: none;
-  font-weight: normal;
-  display: block;
-}
-.columns.columns7 .button-container {
-  margin: 0;
-  padding: 0;
-}
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(2),
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(6),
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 4px;
-  margin-top: 16px;
-}
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(2),
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(6),
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) {
-  flex-shrink: 0;
-  min-width: 60px;
-  flex-direction: row;
-}
-
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(2) .button,
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(6) .button,
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) .button {
-  font-size: 34px;
-  color: #00724B;
-  font-weight: 700;
-  line-height: 1.07;
-  text-align: right;
-  min-width: 44px;
-  display: block;
-  padding-right: 0;
-  margin: 0 0 0.14em 0;
-}
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(3),
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(7),
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(11) {
-  display: flex;
-  align-items: flex-end;
-  margin: 0;
-  padding: 0;
-}
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(3) .button,
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(7) .button,
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(11) .button {
-  font-size: 10.5px;
-  color: #00724B;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 1.05;
-  text-align: right;
-  margin: 0 0 0 0;
-  letter-spacing: 0.03em;
-  display: block;
-  min-width: 44px;
-  opacity: 0.7;
-}
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(4),
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(8),
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(12) {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 12px;
-  margin-right: 0;
-  min-width: 0;
-}
-
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(4) .button,
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(8) .button,
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(12) .button {
-  font-size: 17px;
-  color: #222;
-  font-weight: 700;
-  margin-bottom: 2px;
-  line-height: 1.16;
-  text-align: left;
-  display: block;
-  padding: 0;
-  word-break: break-word;
-}
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(5) .button,
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(9) .button,
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(13) .button {
-  font-size: 12.5px;
-  color: #b0b0b0;
-  font-weight: 400;
-  margin: 0;
-  line-height: 1.2;
-  text-align: left;
-  display: block;
-  padding: 0;
-}
-.columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) {
-  margin-bottom: 0;
-}
-@media (max-width: 700px) {
-  .columns.columns7 > div > div:last-child > .button-container:nth-of-type(2),
-  .columns.columns7 > div > div:last-child > .button-container:nth-of-type(6),
-  .columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) {
-    flex-direction: column;
-    gap: 0;
-    align-items: flex-start;
-    min-width: 0;
-    margin-top: 16px;
-  }
-  .columns.columns7 > div > div:last-child > .button-container:nth-of-type(4),
-  .columns.columns7 > div > div:last-child > .button-container:nth-of-type(8),
-  .columns.columns7 > div > div:last-child > .button-container:nth-of-type(12) {
-    margin-left: 0;
-  }
-}
-
 
 .columns.columns10 {
   background: #fff;
@@ -3132,14 +2898,11 @@
     margin: 0 auto;
   }
 }
-
-
-/* Flexbox layout: align columns side by side and vertically center */
 .columns.columns45 > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; /* vertical centering */
+  align-items: center;
   gap: 56px;
   max-width: 1100px;
   margin: 48px auto 56px auto;
@@ -3157,8 +2920,6 @@
     align-items: stretch;
   }
 }
-
-/* Left: text column */
 .columns.columns45 > div > div:first-child {
   flex: 1 1 0;
   min-width: 270px;
@@ -3169,8 +2930,6 @@
   align-items: flex-start;
   padding: 0;
 }
-
-/* Heading style */
 .columns.columns45 h2 {
   color: #2d3c43;
   font-size: 2.2rem;
@@ -3179,13 +2938,9 @@
   margin: 0 0 2.1rem 0;
   font-family: var(--heading-font-family);
 }
-
-/* Button container spacing */
 .columns.columns45 .button-container {
   margin-bottom: 2.1rem;
 }
-
-/* Button: lime green, rounded, prominent, horizontally centered under heading */
 .columns.columns45 .button-container .button {
   background: #c7fa05;
   color: #222;
@@ -3209,8 +2964,6 @@
   color: #222;
   text-decoration: none;
 }
-
-/* Paragraph style */
 .columns.columns45 > div > div:first-child > p:not(.button-container) {
   color: #222;
   font-size: 1.06rem;
@@ -3230,8 +2983,6 @@
 .columns.columns45 > div > div:first-child > p:last-child {
   margin-bottom: 0;
 }
-
-/* Right: image+badge column, vertically center content */
 .columns.columns45 > div > div:last-child {
   flex: 0 0 480px;
   min-width: 350px;
@@ -3240,7 +2991,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* vertical centering */
+  justify-content: center;
   position: relative;
   padding: 0;
 }
@@ -3254,8 +3005,6 @@
     margin-top: 12px;
   }
 }
-
-/* Image wrapper for correct aspect and rounded corners */
 .columns.columns45 > div > div:last-child p:first-child {
   margin: 0;
   padding: 0;
@@ -3290,8 +3039,6 @@
   border-radius: 24px;
   background: #fff;
 }
-
-/* Badge styling: position absolutely inside image area */
 .columns.columns45 > div > div:last-child p:last-child {
   position: absolute;
   top: 20px;
@@ -3324,8 +3071,207 @@
     height: 26px;
   }
 }
-
-/* Remove unwanted margin in image column */
 .columns.columns45 > div > div:last-child p {
   margin: 0;
+}
+
+
+.columns.columns7 {
+  background: #fff;
+  border: 2px solid #00724B;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 36px 44px 36px 36px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.columns.columns7 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+  width: 100%;
+}
+
+/* --- LEFT COLUMN: IMAGE --- */
+.columns.columns7 .columns-img-col {
+  flex: 0 0 240px;
+  min-width: 200px;
+  max-width: 260px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+}
+.columns.columns7 .columns-img-col img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin-top: 0;
+}
+
+/* --- RIGHT COLUMN: CONTENT --- */
+.columns.columns7 > div > div:last-child {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- HEADER ROW (HEADING + BUTTON) --- */
+.columns.columns7 > div > div:last-child > #anstehende-termine,
+.columns.columns7 > div > div:last-child > .button-container:first-of-type {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+.columns.columns7 > div > div:last-child > #anstehende-termine {
+  color: #A2A4A3;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 28px 0 0;
+  line-height: 1.3;
+  padding: 0;
+}
+
+.columns.columns7 > div > div:last-child > .button-container:first-of-type {
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+.columns.columns7 > div > div:last-child > .button-container:first-of-type .button {
+  background: #D8FF32;
+  color: #2B3A2C;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 22px;
+  padding: 8px 26px;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  letter-spacing: 0.01em;
+  vertical-align: top;
+}
+
+/* --- EVENT ROWS (DATE/INFO) --- */
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(2),
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(6),
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.columns.columns7 > div > div:last-child > .button-container:not(:first-of-type) {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- DATE BADGE --- */
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(2) .button,
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(6) .button,
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(10) .button {
+  font-size: 38px;
+  color: #00724B;
+  font-weight: 700;
+  line-height: 1.08;
+  text-align: right;
+  min-width: 44px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  display: block;
+}
+
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(3) .button,
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(7) .button,
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(11) .button {
+  display: block;
+  font-size: 15px;
+  color: #6EB497;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.08;
+  text-align: right;
+  margin-top: -8px;
+  background: none;
+  border: none;
+  letter-spacing: 0.01em;
+  padding: 0;
+  pointer-events: none;
+}
+
+/* --- EVENT INFO COLUMN (TITLE + DATE) --- */
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(4) .button,
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(8) .button,
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(12) .button {
+  font-size: 18px;
+  color: #222827;
+  font-weight: 800;
+  line-height: 1.15;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 2px 0;
+  pointer-events: none;
+  display: block;
+}
+
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(5) .button,
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(9) .button,
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(13) .button {
+  font-size: 14px;
+  color: #A2A4A3;
+  font-weight: 400;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 0 0;
+  pointer-events: none;
+  display: block;
+}
+
+/* --- TIGHTER SPACE AFTER EACH EVENT GROUP --- */
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(5),
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(9),
+.columns.columns7 > div > div:last-child > .button-container:nth-of-type(13) {
+  margin-bottom: 4px;
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 900px) {
+  .columns.columns7 {
+    max-width: 100vw;
+    padding: 16px 2vw;
+  }
+  .columns.columns7 > div {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .columns.columns7 .columns-img-col {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .columns.columns7 .columns-img-col img {
+    height: 84px;
+  }
+  .columns.columns7 > div > div:last-child {
+    padding: 0;
+  }
 }
