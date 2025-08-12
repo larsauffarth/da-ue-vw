@@ -600,7 +600,7 @@
       ]
     },
     {
-      "name": "Hero",
+      "name": "Columns",
       "cluster": 14,
       "source": "Hero",
       "target": "Hero (hero14)",
