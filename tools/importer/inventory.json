@@ -326,6 +326,20 @@
           "uuid": "28bcd12e-09-9a1fde624b9cf69669a0808ccc3f3a6639af8ca9",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[14]",
           "section": "section-2"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-07-bcea9653c476d09ebc79b6228885cae56f04e0ae",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-12-c95b2da6b124a7ab6644bfab52f9af417146b565",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]",
+          "section": "section-1"
         }
       ]
     },
@@ -600,11 +614,11 @@
       ]
     },
     {
-      "name": "Hero",
+      "name": "Columns",
       "cluster": 14,
-      "source": "Hero",
-      "target": "Hero (hero14)",
-      "key": "hero14",
+      "source": "Columns",
+      "target": "Columns (columns14)",
+      "key": "columns14",
       "instances": [
         {
           "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
@@ -974,22 +988,6 @@
     },
     {
       "name": "Columns",
-      "cluster": 35,
-      "source": "Columns",
-      "target": "Columns (columns35)",
-      "key": "columns35",
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
-          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
-          "uuid": "28bcd12e-07-bcea9653c476d09ebc79b6228885cae56f04e0ae",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
-          "section": "section-2"
-        }
-      ]
-    },
-    {
-      "name": "Columns",
       "cluster": 36,
       "source": "Columns",
       "target": "Columns (columns36)",
@@ -1096,22 +1094,6 @@
           "urlHash": "53d8cb3ea44d871bb59ac51c706cd625984f635a",
           "uuid": "53d8cb3e-10-c8aab59f9a934489f7f7d65b43937c208158e886",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[18]",
-          "section": "section-1"
-        }
-      ]
-    },
-    {
-      "name": "Columns",
-      "cluster": 45,
-      "source": "Columns",
-      "target": "Columns (columns45)",
-      "key": "columns45",
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
-          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
-          "uuid": "28bcd12e-12-c95b2da6b124a7ab6644bfab52f9af417146b565",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[20]",
           "section": "section-1"
         }
       ]

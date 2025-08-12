@@ -37,4 +37,13 @@ export const customElements = [];
 /**
  * Custom transformers
  */
-export const customTransformers = {};
+export const customTransformers = {
+  // Dismiss cookie dialog prior to parsing
+  injectCookieDismiss: (hookName, element) => {
+      try {
+        element.querySelector('.cookie-dialog .cookie-dialog--button')?.click();
+      } catch (e) {
+        // no-op
+      }
+    }
+};
