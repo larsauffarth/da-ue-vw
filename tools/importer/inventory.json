@@ -326,6 +326,13 @@
           "uuid": "28bcd12e-09-9a1fde624b9cf69669a0808ccc3f3a6639af8ca9",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[14]",
           "section": "section-2"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-07-bcea9653c476d09ebc79b6228885cae56f04e0ae",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
+          "section": "section-2"
         }
       ]
     },
@@ -602,9 +609,9 @@
     {
       "name": "Columns",
       "cluster": 14,
-      "source": "Hero",
-      "target": "Hero (hero14)",
-      "key": "hero14",
+      "source": "Columns",
+      "target": "Columns (columns14)",
+      "key": "columns14",
       "instances": [
         {
           "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
@@ -969,22 +976,6 @@
           "uuid": "48bec51d-08-bcea9653c476d09ebc79b6228885cae56f04e0ae",
           "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
           "section": "section-3"
-        }
-      ]
-    },
-    {
-      "name": "Columns",
-      "cluster": 35,
-      "source": "Columns",
-      "target": "Columns (columns2)",
-      "key": "columns35",
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
-          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
-          "uuid": "28bcd12e-07-bcea9653c476d09ebc79b6228885cae56f04e0ae",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[10]",
-          "section": "section-2"
         }
       ]
     },
