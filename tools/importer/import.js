@@ -25,7 +25,7 @@ import hero20Parser from './parsers/hero20.js';
 import columns7Parser from './parsers/columns7.js';
 import cards8Parser from './parsers/cards8.js';
 import cards16Parser from './parsers/cards16.js';
-import hero14Parser from './parsers/hero14.js';
+import columns14Parser from './parsers/columns14.js';
 import columns23Parser from './parsers/columns23.js';
 import columns26Parser from './parsers/columns26.js';
 import cards19Parser from './parsers/cards19.js';
@@ -79,7 +79,7 @@ const parsers = {
   columns7: columns7Parser,
   cards8: cards8Parser,
   cards16: cards16Parser,
-  hero14: hero14Parser,
+  columns14: columns14Parser,
   columns23: columns23Parser,
   columns26: columns26Parser,
   cards19: cards19Parser,
