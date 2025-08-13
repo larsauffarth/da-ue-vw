@@ -50,6 +50,7 @@ import tabs24Parser from './parsers/tabs24.js';
 import columns45Parser from './parsers/columns45.js';
 import columns21Parser from './parsers/columns21.js';
 import columns29Parser from './parsers/columns29.js';
+import search1Parser from './parsers/search1.js';
 import headerParser from './parsers/header.js';
 import metadataParser from './parsers/metadata.js';
 import cleanupTransformer from './transformers/cleanup.js';
@@ -105,6 +106,7 @@ const parsers = {
   columns45: columns45Parser,
   columns21: columns21Parser,
   columns29: columns29Parser,
+  search1: search1Parser,
   ...customParsers,
 };
 
