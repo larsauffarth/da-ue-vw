@@ -51,6 +51,7 @@ import columns45Parser from './parsers/columns45.js';
 import columns21Parser from './parsers/columns21.js';
 import columns29Parser from './parsers/columns29.js';
 import search1Parser from './parsers/search1.js';
+import pageIntro1Parser from './parsers/pageIntro1.js';
 import headerParser from './parsers/header.js';
 import metadataParser from './parsers/metadata.js';
 import cleanupTransformer from './transformers/cleanup.js';
@@ -107,6 +108,7 @@ const parsers = {
   columns21: columns21Parser,
   columns29: columns29Parser,
   search1: search1Parser,
+  pageIntro1: pageIntro1Parser,
   ...customParsers,
 };
 
@@ -320,6 +322,12 @@ export default {
 
   transform: async (source) => {
     const { document, params: { originalURL } } = source;
+
+    try {
+      await WebImporter.Loader.waitForElement('.hero', document, 10000, 500);
+    } catch (error) {
+      throw new Error(`Element '.hero' not found in page ${originalURL}`);
+    }
 
     /* eslint-disable-next-line prefer-const */
     let publishUrl = window.location.origin;

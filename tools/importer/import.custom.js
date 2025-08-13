@@ -32,7 +32,10 @@ export const customParsers = {};
  *   { name: 'myParser', element: 'selector' },
  * ]
  */
-export const customElements = [];
+export const customElements = [
+  { name: 'heroVideo', element: '.hero:has(video)' },
+  { name: 'pageIntro1', element: 'div.intro-text' },
+];
 
 /**
  * Custom transformers
