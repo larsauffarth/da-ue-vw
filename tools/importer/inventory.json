@@ -1097,16 +1097,39 @@
           "section": "section-1"
         }
       ]
+    },
+    {
+      "name": "Search",
+      "cluster": 46,
+      "source": "Search",
+      "target": "Search (search1)",
+      "key": "search1",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-03-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/medien-15771",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.volkswagen-group.com/de/investoren-15766",
+          "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
+          "uuid": "48bec51d-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
+          "section": "section-1"
+        }
+      ]
     }
   ],
   "outliers": [
-    {
-      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
-      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
-      "uuid": "28bcd12e-03-dbd29587d2290430cf12c9381ae5f053c1ba43de",
-      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
-      "section": "section-1"
-    },
     {
       "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
       "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
@@ -1131,13 +1154,6 @@
       "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
       "uuid": "28bcd12e-15-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
       "xpath": "/html[1]/body[1]/div[1]/div[8]"
-    },
-    {
-      "url": "https://www.volkswagen-group.com/de/medien-15771",
-      "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
-      "uuid": "2f5f0b1b-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
-      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
-      "section": "section-1"
     },
     {
       "url": "https://www.volkswagen-group.com/de/medien-15771",
@@ -1261,13 +1277,6 @@
       "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
       "uuid": "2f5f0b1b-32-0fbbd74f14ea96fc1d7b9a077f262961ea246d78",
       "xpath": "/html[1]/body[1]/div[1]/div[8]"
-    },
-    {
-      "url": "https://www.volkswagen-group.com/de/investoren-15766",
-      "urlHash": "48bec51d3fb889a2a3b3189e35c113ac03a3aeba",
-      "uuid": "48bec51d-02-dbd29587d2290430cf12c9381ae5f053c1ba43de",
-      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[2]",
-      "section": "section-1"
     },
     {
       "url": "https://www.volkswagen-group.com/de/investoren-15766",
