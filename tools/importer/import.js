@@ -20,6 +20,7 @@ import columns11Parser from './parsers/columns11.js';
 import columns3Parser from './parsers/columns3.js';
 import columns15Parser from './parsers/columns15.js';
 import hero5Parser from './parsers/hero5.js';
+import heroVideoParser from './parsers/heroVideo.js';
 import columns17Parser from './parsers/columns17.js';
 import hero20Parser from './parsers/hero20.js';
 import columns7Parser from './parsers/columns7.js';
@@ -74,6 +75,7 @@ const parsers = {
   columns3: columns3Parser,
   columns15: columns15Parser,
   hero5: hero5Parser,
+  heroVideo: heroVideoParser,
   columns17: columns17Parser,
   hero20: hero20Parser,
   columns7: columns7Parser,
