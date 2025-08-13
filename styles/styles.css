@@ -183,7 +183,7 @@
   box-sizing: border-box;
 }
 
-:where(body,h1,h2,h3,h4,h5,h6,p,figure,blockquote,dl,dd) {
+:where(body,h1,h2,h3,h4,h5,h6,p,figure,blockquote,dl,dd,ul) {
   margin: 0;
 }
 
@@ -367,6 +367,10 @@ main>.section>div {
   max-width: calc(2000px + var(--container-padding) * 2);
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
+}
+
+main>.section>div:not(:first-child) {
+  padding-block-start: var(--row-spacing, 0);
 }
 
 main>.section:first-of-type {
