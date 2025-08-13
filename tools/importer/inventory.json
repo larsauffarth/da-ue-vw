@@ -1127,16 +1127,25 @@
           "section": "section-1"
         }
       ]
+    },
+    {
+      "name": "Page Intro",
+      "cluster": 47,
+      "source": "Page Intro",
+      "target": "Page Intro (pageIntro1)",
+      "key": "pageIntro1",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
+          "uuid": "28bcd12e-04-11a0235cfb98d43555c69945b76854c7e6854594",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[4]",
+          "section": "section-1"
+        }
+      ]
     }
   ],
   "outliers": [
-    {
-      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
-      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
-      "uuid": "28bcd12e-04-11a0235cfb98d43555c69945b76854c7e6854594",
-      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[2]/div[4]",
-      "section": "section-1"
-    },
     {
       "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
       "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
