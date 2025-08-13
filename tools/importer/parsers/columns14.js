@@ -48,8 +48,7 @@ export default function parse(element, { document }) {
   // Construct the table rows
   const rows = [
     headerRow,
-    [imageCell],
-    [textCell]
+    [[imageCell], [textCell]]
   ];
 
   const block = WebImporter.DOMUtils.createTable(rows, document);
