@@ -9,13 +9,10 @@
       "id": "28bcd12ea3a9072b6255038bb6849a1245739668"
     }
   ],
-  "lastCrawled": null,
   "crawlOptions": {
-    "limit": 100,
     "strategy": "manual",
     "strategiesAttempted": [
       "MANUAL"
     ]
-  },
-  "extractionErrors": []
+  }
 }
