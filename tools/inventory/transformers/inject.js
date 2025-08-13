@@ -11,5 +11,6 @@
  */
 /* eslint-disable no-console */
 (() => {
-  document.querySelector('.cookie-dialog .cookie-dialog--button')?.click()
+  document.querySelector('.cookie-dialog .cookie-dialog--button')?.click();
+  document.querySelector('body > a.sr-only:first-child')?.remove();
 })();
