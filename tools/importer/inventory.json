@@ -427,6 +427,22 @@
       ]
     },
     {
+      "name": "Hero",
+      "cluster": 45,
+      "source": "Hero",
+      "target": "Hero (heroVideo)",
+      "key": "heroVideo",
+      "instances": [
+        {
+          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
+          "urlHash": "2f5f0b1bb698c1827cabd25fd7f6ae26122679f4",
+          "uuid": "2f5f0b1b-01-a3ba83865713fcd3e742327c1b85dfdca9c82d9a",
+          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
       "name": "Columns",
       "cluster": 6,
       "source": "Columns",
@@ -891,22 +907,6 @@
       ]
     },
     {
-      "name": "Columns",
-      "cluster": 29,
-      "source": "Columns",
-      "target": "Columns (columns29)",
-      "key": "columns29",
-      "instances": [
-        {
-          "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
-          "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
-          "uuid": "28bcd12e-02-5c885cf5c738bd5e23c7c066a6da356605921013",
-          "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]/div[2]",
-          "section": "section-1"
-        }
-      ]
-    },
-    {
       "name": "Cards",
       "cluster": 30,
       "source": "Cards",
@@ -1100,13 +1100,6 @@
     }
   ],
   "outliers": [
-    {
-      "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
-      "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
-      "uuid": "28bcd12e-01-575d679f0392bd060dbde6c89f406adf877a0b4f",
-      "xpath": "/html[1]/body[1]/div[1]/div[4]/div[3]/div[2]/div[1]/div[1]",
-      "section": "section-1"
-    },
     {
       "url": "https://www.volkswagen-group.com/de/unternehmen-15765",
       "urlHash": "28bcd12ea3a9072b6255038bb6849a1245739668",
