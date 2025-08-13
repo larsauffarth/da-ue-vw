@@ -1,7 +1,7 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
   // 1. Header row: block name as in the example
-  const headerRow = ['Hero (hero14)'];
+  const headerRow = ['Columns (columns14)'];
 
   // 2. Find image (background image)
   let imageCell = null;
@@ -48,8 +48,7 @@ export default function parse(element, { document }) {
   // Construct the table rows
   const rows = [
     headerRow,
-    [imageCell],
-    [textCell]
+    [imageCell, textCell]
   ];
 
   const block = WebImporter.DOMUtils.createTable(rows, document);
