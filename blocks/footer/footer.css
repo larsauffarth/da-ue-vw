@@ -58,10 +58,17 @@
     gap: var(--gap-4) var(--gap-12);
   }
 
+  & .footer-stocks-and-socials-wrapper {
+    flex-grow: 1;
+  }
+
+  & .footer-copyright-and-links-wrapper {
+    flex-grow: 1000;
+  }
+
   & .footer-copyright-and-links {
     align-items: center;
     display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
     gap: var(--gap-4) var(--gap-12);
     white-space: nowrap;
