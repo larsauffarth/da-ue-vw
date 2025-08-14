@@ -42,6 +42,7 @@ export default function parse(element, { document }) {
     smartLinks.forEach((a) => {
       ctaDiv.appendChild(a);
     });
+    contentElements.push(ctaDiv);
   }
 
   // Ensure at least an empty cell if no content
