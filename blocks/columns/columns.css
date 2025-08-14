@@ -196,13 +196,12 @@
 /* First col image, second col text, with outline */
 .columns-wrapper:has(.columns17) {
   padding-block: var(--row-spacing, 0);
+  padding-inline: var(--container-padding);
 }
 
 .columns.columns17 {
-  background: #fff;
   border: var(--border-width-m) solid var(--cws-green);
   border-radius: var(--border-radius-m);
-  color: var(--cws-deep-blue);
   padding: var(--space-9);
 
   & > div {
