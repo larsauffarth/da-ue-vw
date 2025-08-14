@@ -318,6 +318,13 @@ function transformFragment(main, { fragment, inventory, ...source }) {
 export default {
   onLoad: async (payload) => {
     await handleOnLoad(payload);
+
+    const { document } = payload;
+    document.querySelector('.cookie-dialog .cookie-dialog--button')?.click();
+    document.querySelector('.popover.-mini-cart')?.remove();
+    document.querySelector('.popover.-globe')?.remove();
+    document.querySelector('.layout--consumption-data')?.remove();
+    document.querySelector('body > a.sr-only.sr-only-focusable')?.remove();
   },
 
   transform: async (source) => {

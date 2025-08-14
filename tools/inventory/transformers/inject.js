@@ -12,5 +12,8 @@
 /* eslint-disable no-console */
 (() => {
   document.querySelector('.cookie-dialog .cookie-dialog--button')?.click();
-  document.querySelector('body > a.sr-only:first-child')?.remove();
+  document.querySelector('.popover.-mini-cart')?.remove();
+  document.querySelector('.popover.-globe')?.remove();
+  document.querySelector('.layout--consumption-data')?.remove();
+  document.querySelector('body > a.sr-only.sr-only-focusable')?.remove();
 })();
