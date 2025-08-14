@@ -330,6 +330,12 @@ export default {
   transform: async (source) => {
     const { document, params: { originalURL } } = source;
 
+    document.querySelector('.cookie-dialog .cookie-dialog--button')?.click();
+    document.querySelector('.popover.-mini-cart')?.remove();
+    document.querySelector('.popover.-globe')?.remove();
+    document.querySelector('.layout--consumption-data')?.remove();
+    document.querySelector('body > a.sr-only.sr-only-focusable')?.remove();
+
     /* eslint-disable-next-line prefer-const */
     let publishUrl = window.location.origin;
     // $$publishUrl = '{{{publishUrl}}}';
