@@ -4,22 +4,21 @@ export default function parse(element, { document }) {
   const headerRow = ['Hero (heroVideo)'];
 
   // 2. Background video row (figure > video)
-  let videoEl = '';
+  let videoSrcLink = '';
   let videoPoster = '';
   const figure = element.querySelector('.hero--video');
   if (figure) {
     const video = figure.querySelector('video');
     const videoSource = video.querySelector('source');
-    videoEl = document.createElement('a');
-    videoEl.href = videoSource.src;
+    videoSrcLink = document.createElement('a');
+    videoSrcLink.textContent = videoSource.src;
+    videoSrcLink.href = videoSource.src;
 
     if (video.getAttribute('poster')) {
       videoPoster = document.createElement('img');
       videoPoster.src = video.poster;
     }
   }
-  const videoRow = [];
-  videoRow.push(videoEl, videoPoster)
 
   // 3. Content row: title (h1) and smart links (as CTAs)
   const contentElements = [];
@@ -43,17 +42,20 @@ export default function parse(element, { document }) {
     smartLinks.forEach((a) => {
       ctaDiv.appendChild(a);
     });
-    contentElements.push(ctaDiv);
   }
 
   // Ensure at least an empty cell if no content
   const contentRow = [contentElements.length ? (contentElements.length === 1 ? contentElements[0] : contentElements) : ''];
 
+  const consumptionWrapperIndex = element.querySelector('.consumption-wrapper--index') || '';
+
   // Construct the table
   const cells = [
     headerRow,
-    videoRow,
+    [videoSrcLink],
+    [videoPoster],
     contentRow,
+    [consumptionWrapperIndex]
   ];
 
   // Replace original element
