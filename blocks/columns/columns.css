@@ -194,6 +194,10 @@
 }
 
 /* First col image, second col text, with outline */
+.columns-wrapper:has(.columns17) {
+  padding-block: var(--row-spacing, 0);
+}
+
 .columns.columns17 {
   background: #fff;
   border: var(--border-width-m) solid var(--cws-green);

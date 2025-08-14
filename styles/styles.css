@@ -11,10 +11,10 @@
  * governing permissions and limitations under the License.
  */
 :root {
-  --background-color: white;
+  --background-color: var(--white);
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: var(--cws-deep-blue);
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
   --body-font-family: "Volkswagen Group Font", "Volkswagen Group Font Fallback", "Helvetica", "sans-serif";
@@ -307,15 +307,19 @@ a.button:any-link, button {
 
 a.button:hover,
 a.button:active,
-a.button:focus-visible,
 button:hover,
-button:active,
-button:focus-visible
-{
+button:active {
   cursor: pointer;
   background-color: var(--button-background-hover-color);
   border-color: var(--button-background-hover-color);
   color: var(--button-hover-color)
+}
+
+button:focus-visible,
+a.button:focus-visible {
+  outline: var(--cws-neon) solid var(--border-width-m);
+  outline-offset: var(--gap-4);
+  text-decoration: none !important;
 }
 
 button:disabled, button:disabled:hover {
@@ -363,17 +367,18 @@ main img {
 }
 
 /* sections */
-main>.section>div {
+
+/* Default block spacing (can be overridden by individual blocks */
+
+/* This should really be on the wrapper or the section but we don't have control over sections and section styling with the import */
+:where(main > .section > div.default-content-wrapper),
+:where(main > .section > div > div) {
   box-sizing: border-box;
   margin-inline: auto;
   max-width: calc(2000px + var(--container-padding) * 2);
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
   padding-block: var(--row-spacing, 0);
-}
-
-main>.section:first-of-type {
-  margin-top: 0;
 }
 
 /* section metadata */
