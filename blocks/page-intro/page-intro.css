@@ -43,3 +43,7 @@
     }
   }
 }
+
+.search-wrapper + .page-intro-wrapper {
+  padding-block-start: 0 !important;
+}

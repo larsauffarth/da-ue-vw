@@ -358,16 +358,13 @@ main img {
 }
 
 /* sections */
-main>.section {
-  padding-block: var(--row-spacing, 0);
-}
-
 main>.section>div {
   box-sizing: border-box;
   margin-inline: auto;
   max-width: calc(2000px + var(--container-padding) * 2);
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
+  padding-block: var(--row-spacing, 0);
 }
 
 main>.section>div:not(:first-child) {

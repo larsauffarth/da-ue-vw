@@ -111,6 +111,11 @@
 }
 
 /* Second col text, first col image */
+.columns-wrapper:has(.columns14) {
+  background-color: var(--cws-deep-blue);
+  color: var(--white);
+}
+
 .columns.columns14 > div {
   align-items: stretch;
   display: flex;
