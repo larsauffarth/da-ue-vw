@@ -3,18 +3,14 @@ export default function parse(element, { document }) {
   // 1. Header row
   const headerRow = ['Page Intro (pageIntro1)'];
 
-  const textEl = element.querySelector('.intro-text--text');
-  const tagEl = element.querySelector('.intro-text--tags');
-
-  if (!textEl && !tagEl) {
-    return;
-  }
+  const textEl = element.querySelector('.intro-text--text') || '';
+  const tagsEl = element.querySelector('.intro-text--tags') || '';
 
   // Construct the table
   const cells = [
     headerRow,
-    [textEl || ''],
-    [tagEl || ''],
+    [textEl],
+    [tagsEl],
   ];
 
   // Replace original element

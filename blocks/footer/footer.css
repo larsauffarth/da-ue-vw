@@ -1,80 +1,145 @@
-footer {
+.footer-wrapper {
+  background-color: var(--cws-deep-blue);
+  color: var(--white);
+}
+
+.footer {
+  --text-contrast-color: var(--cws-neon);
+  --pale-text-color: var(--grey-9);
+  --text-link-color: var(--cws-neon);
+  --text-link-decoration-color: var(--cws-neon);
+  --text-link-hover-color: var(--white);
+  --text-link-decoration-hover-color: var(--cws-neon);
+
   /* Volkswagen Group footer styles */
-  background-color: #002b39; /* same dark teal as header */
-  color: #ffffff;
   font-size: var(--body-font-size-xs);
-  position: relative;
+  margin-inline: auto;
+  max-width: calc(2000px + var(--container-padding) * 2);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
-/* subtle top border */
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: rgba(255,255,255,0.2);
-}
-
-footer .footer > div {
-  margin: auto;
-  max-width: 1716px;
-  padding: 40px 32px 24px;
-}
-
-/* first row inline links */
-footer .footer .default-content-wrapper {
+.footer .section:first-child {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  column-gap: 24px;
-  row-gap: 12px;
+  gap: var(--gap-12);
+  font-size: .7778rem;
+  font-weight: 400;
+  justify-content: space-between;
+  letter-spacing: .25px;
+  line-height: 1.5;
+  padding-bottom: var(--gap-12);
+  padding-top: var(--gap-12);
+
+  & a:any-link, & a.button:any-link {
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--gap-4);
+    background: none;
+    border: none;
+    padding: 0;
+
+    &:hover,
+    &:active {
+      color: var(--text-contrast-color);
+    }
+
+    &:focus-visible {
+      outline: var(--cws-neon) solid var(--border-width-m);
+      outline-offset: var(--gap-4);
+      text-decoration: none !important;
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: var(--gap-4) var(--gap-12);
+  }
+
+  & .footer-stocks-and-socials-wrapper {
+    flex-grow: 1;
+  }
+
+  & .footer-copyright-and-links-wrapper {
+    flex-grow: 1000;
+  }
+
+  & .footer-copyright-and-links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-4) var(--gap-12);
+    white-space: nowrap;
+  }
+
+  & .footer-stocks-and-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-12) var(--gap-24);
+    justify-content: space-between;
+
+    & a {
+      white-space: preserve;
+    }
+
+    & li {
+      display: inline-flex;
+      line-height: 0;
+    }
+
+    & .icon {
+      --icon-size: 24px;
+
+      width: calc(var(--icon-size) * 24 / 24);
+    }
+  }
 }
 
-footer .footer p {
-  margin: 0;
+/* consumption disclaimer */
+.footer .section:nth-child(2) {
+  color: var(--pale-text-color);
+  font-size: .7778rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-8);
+
+  & a:any-link {
+    color: var(--text-link-color);
+    letter-spacing: .0025em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--text-link-decoration-color) !important;
+    transition: color var(--transition-subtle);
+
+    &:active,
+    &:hover {
+      color: var(--text-link-hover-color);
+      text-decoration-color: var(--text-link-decoration-hover-color);
+    }
+
+    &:focus-visible {
+      border-radius: .6667em;
+      outline: var(--text-contrast-color) solid .055em;
+      outline-offset: .15em;
+      padding-inline: .5em;
+      text-decoration: none;
+    }
+  }
 }
 
-footer .footer p:first-child {
-  font-weight: 600;
-}
+/* logo */
+.footer .section:last-child {
+  border-top: 1px solid #7a8084;
+  display: flex;
+  justify-content: center;
+  padding-block: var(--space-8);
 
-footer .footer a.button:any-link {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  color: #ffffff;
-  font-weight: 500;
-}
-
-/* treat wrappers as inline elements so links flow in one line */
-footer .footer .button-container {
-  display: contents;
-}
-
-/* push stock price group to far right */
-footer .footer a[title^="PREF"] {
-  margin-left: auto;
-}
-
-footer .footer a.button:hover {
-  text-decoration: underline;
-}
-
-/* move disclaimer text to new line and lighter color */
-footer .footer p:last-of-type,
-footer .footer p:last-of-type ~ p {
-  flex: 0 0 100%;
-  color: rgba(255,255,255,0.8);
-  margin-top: 16px;
-  line-height: 1.4;
-}
-
-
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  & .icon-volkswagen-group-logo {
+    height: clamp(12px, 2vw, 18px);
+    width: 100%;
   }
 }

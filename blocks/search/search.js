@@ -239,12 +239,19 @@ function searchIcon() {
   return icon;
 }
 
+function searchButton() {
+  const button = document.createElement('button');
+  button.classList.add('search-button');
+  button.append(searchIcon());
+  return button;
+}
+
 function searchBox(block, config) {
   const box = document.createElement('div');
   box.classList.add('search-box');
   box.append(
-    searchIcon(),
     searchInput(block, config),
+    searchButton(),
   );
 
   return box;
@@ -262,6 +269,7 @@ export default async function decorate(block) {
   if (searchParams.get('q')) {
     const input = block.querySelector('input');
     input.value = searchParams.get('q');
+    input.type = 'text';
     input.dispatchEvent(new Event('input'));
   }
 

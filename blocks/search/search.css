@@ -1,27 +1,76 @@
 /* search box */
+.search {
+  margin-inline: auto;
+  max-width: calc(var(--narrow-content-width) + var(--container-padding) * 2);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.search-button {
+  background: none;
+  border: none;
+  position: relative;
+  outline: 0;
+  padding: var(--gap-12) var(--gap-20);
+  transition: background-color var(--transition-subtle);
+
+  &:hover,
+  &:focus {
+    background: none;
+    border: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    border-left: var(--border-width-s) solid var(--grey-e);
+    inset: var(--gap-12) auto;
+    left: 0;
+  }
+
+  .icon {
+    --icon-size: 32px;
+    --icon-v-middle: calc(var(--icon-size) / 2);
+
+    display: inline-grid;
+    height: var(--icon-size);
+    vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
+  }
+}
+
 .search .search-box {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1ch;
   align-items: center;
+  background-color: #fff;
+  border: var(--border-width-m) solid var(--cws-neon);
+  border-radius: var(--border-radius-s);
+  color: var(--cws-deep-blue);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+
+  &:focus-within {
+    box-shadow: var(--box-shadow);
+  }
 }
 
 .search .search-box input {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0.5em;
+  border: none;
   border-radius: 4px;
-  border: 1px solid var(--dark-color);
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-size: var(--body-font-size-s);
+  color: var(--cws-deep-blue);
+  display: block;
+  font: inherit;
   transition: border-color 0.2s;
-}
+  width: 100%;
+  outline: none;
+  padding: var(--gap-12) var(--gap-20);
 
-.search .search-box input:hover {
-  border: 1px solid var(--text-color);
+  &::placeholder {
+    color: var(--pale-text-color);
+  }
 }
 
 /* search results */
