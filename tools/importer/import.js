@@ -324,6 +324,7 @@ export default {
     document.querySelector('.popover.-mini-cart')?.remove();
     document.querySelector('.popover.-globe')?.remove();
     document.querySelector('.layout--consumption-data')?.remove();
+    document.querySelector('.layout--footer-logo')?.remove();
     document.querySelector('body > a.sr-only.sr-only-focusable')?.remove();
   },
 
@@ -334,6 +335,7 @@ export default {
     document.querySelector('.popover.-mini-cart')?.remove();
     document.querySelector('.popover.-globe')?.remove();
     document.querySelector('.layout--consumption-data')?.remove();
+    document.querySelector('.layout--footer-logo')?.remove();
     document.querySelector('body > a.sr-only.sr-only-focusable')?.remove();
 
     /* eslint-disable-next-line prefer-const */

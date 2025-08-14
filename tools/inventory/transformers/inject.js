@@ -15,5 +15,6 @@
   document.querySelector('.popover.-mini-cart')?.remove();
   document.querySelector('.popover.-globe')?.remove();
   document.querySelector('.layout--consumption-data')?.remove();
+  document.querySelector('.layout--footer-logo')?.remove();
   document.querySelector('body > a.sr-only.sr-only-focusable')?.remove();
 })();
