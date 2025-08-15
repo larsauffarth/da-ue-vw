@@ -128,6 +128,12 @@
   --background-transition: var(--transition-quick);
 }
 
+@media (max-width: 38.7889rem) {
+  :root {
+    --column-gap: var(--row-spacing) !important;
+  }
+}
+
 /* fallback fonts */
 @font-face {
   font-family:"Volkswagen Group Font Fallback";
