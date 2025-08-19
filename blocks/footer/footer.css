@@ -72,6 +72,11 @@
     flex-wrap: wrap;
     gap: var(--gap-4) var(--gap-12);
     white-space: nowrap;
+
+      /* Copyright  */
+      & li:first-child {
+          flex-grow: 1;
+      }
   }
 
   & .footer-stocks-and-socials {
