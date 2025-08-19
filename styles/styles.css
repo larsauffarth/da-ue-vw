@@ -135,7 +135,9 @@
 }
 
 @media (width > 1140px) {
-  --nav-height: 62px;
+    :root {
+        --nav-height: 62px;
+    }
 }
 
 /* fallback fonts */
