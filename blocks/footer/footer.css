@@ -90,9 +90,39 @@
     }
 
     & .icon {
-      --icon-size: 24px;
+      &::after {
+        --icon-size: 24px;
+        --icon-v-middle: calc(var(--icon-size) / 2);
+        --mask: var(--icon-url) center / contain no-repeat;
 
-      width: calc(var(--icon-size) * 24 / 24);
+        content: '';
+        display: inline-grid;
+        background-color: currentcolor;
+        height: var(--icon-size);
+        vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
+        mask: var(--mask);
+        width: calc(var(--icon-size) * 24 / 24);
+      }
+
+      & img {
+        display: none;
+      }
+
+      &.icon-x {
+        --icon-url: url('../../icons/x.svg');
+      }
+
+      &.icon-tiktok {
+        --icon-url: url('../../icons/tiktok.svg');
+      }
+
+      &.icon-linkedin {
+        --icon-url: url('../../icons/linkedin.svg');
+      }
+
+      &.icon-youtube {
+        --icon-url: url('../../icons/youtube.svg');
+      }
     }
   }
 }
