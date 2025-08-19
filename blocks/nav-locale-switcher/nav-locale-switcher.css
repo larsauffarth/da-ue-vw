@@ -1,0 +1,47 @@
+.nav-locale-switcher {
+  display: flex;
+  gap: var(--gap-8);
+
+  & ul {
+    display: flex;
+    gap: var(--gap-8);
+  }
+
+  & a {
+    border-radius: var(--gap-4);
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    transition: color var(--transition-subtle);
+
+    &:active, &:hover {
+      color: var(--text-contrast-color);
+    }
+
+    &[data-current="true"]::after {
+      content: "";
+      display: block;
+      pointer-events: none;
+      position: absolute;
+      inset: auto 0 -3px;
+      border-bottom: var(--border-width-m) solid var(--cws-neon);
+    }
+  }
+
+  &::before {
+    --icon-size: 24px;
+    --icon-v-middle: calc(var(--icon-size) / 2);
+
+    background-color: var(--white);
+    content: '';
+    display: inline-grid;
+    height: var(--icon-size);
+    transition: color var(--transition-subtle);
+    vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
+    width: calc(var(--icon-size) * 24 / 24);
+    mask: url('../../icons/globe.svg') center / contain no-repeat;
+    padding: 0;
+  }
+}

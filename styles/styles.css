@@ -28,7 +28,7 @@
   --heading-font-size-m: 18px;
   --heading-font-size-s: 14.94px;
   --heading-font-size-xs: 12.06px;
-  --nav-height: 62px;
+  --nav-height: 43px;
   --header-height: var(--nav-height);
 
   /* From VW site */
@@ -128,6 +128,16 @@
   --background-transition: var(--transition-quick);
 }
 
+@media (max-width: 38.7889rem) {
+  :root {
+    --column-gap: var(--row-spacing) !important;
+  }
+}
+
+@media (width > 1140px) {
+  --nav-height: 62px;
+}
+
 /* fallback fonts */
 @font-face {
   font-family:"Volkswagen Group Font Fallback";
@@ -202,7 +212,7 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 body.appear {
@@ -280,8 +290,13 @@ a:hover {
   text-decoration: underline;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 /* buttons */
-a.button:any-link, button {
+a.button:any-link, .button {
   align-content: center;
   align-items: center;
   background-color: var(--button-background-color);
