@@ -533,6 +533,11 @@ header .nav-root ul a::after {
       }
     }
 
+      & > div:nth-child(2) .button {
+          color: var(--cws-neon);
+          padding: 0;
+      }
+
     & .nav-item-menu__submenu__breadcrumb {
       display: none;
     }
