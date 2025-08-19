@@ -1,5 +1,5 @@
 import { loadFragment } from '../fragment/fragment.js';
-import { fetchPlaceholders } from '../../scripts/aem.js';
+import { fetchPlaceholders, getMetadata } from '../../scripts/aem.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 1141px)');
@@ -129,8 +129,8 @@ function buildSubmenusFromNestedLists(navSection, linksContainer, rootLink, plac
  */
 export default async function decorate(block) {
   // load nav as fragment
-  // const navMeta = getMetadata('nav');
-  const navPath = '/nav-new';
+  const navMeta = getMetadata('nav');
+  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
   const placeholders = await fetchPlaceholders();
 
