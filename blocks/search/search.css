@@ -16,7 +16,7 @@
 
   &:hover,
   &:focus {
-    background: none;
+    background: var(--grey-e);
     border: none;
   }
 
