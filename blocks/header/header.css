@@ -410,6 +410,10 @@ header .nav-tools {
   padding-block: var(--header-padding-block);
 }
 
+header .nav-locale-switcher {
+    display: none;
+}
+
 /* brand */
 header .nav-brand {
   grid-area: brand;
@@ -484,6 +488,10 @@ header .nav-root ul a::after {
     width: 333px;
     padding: 0;
   }
+
+    header .nav-locale-switcher {
+        display: flex;
+    }
 
   /* primary navigation links wrapper */
   header .nav-root {
