@@ -264,8 +264,9 @@ export default async function decorate(block) {
   const placeholders = await fetchPlaceholders();
   const source = block.querySelector('a[href]')?.href || `${window.hlx.codeBasePath}/query-index.json`;
   block.innerHTML = '';
+  const config = { source, placeholders };
   block.append(
-    searchBox({ source, placeholders }),
+    searchBox(config),
     searchResultsContainer(block),
   );
   addEventListeners(block, config);
