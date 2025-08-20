@@ -1,5 +1,6 @@
 import { loadFragment } from '../fragment/fragment.js';
 import { getMetadata } from '../../scripts/aem.js';
+import { closeSearch } from '../nav-search/nav-search.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 1141px)');
@@ -149,6 +150,7 @@ export default async function decorate(block) {
       link.addEventListener('mouseover', hoverListener);
 
       link.addEventListener('click', (event) => {
+        closeSearch(nav.querySelector('.nav-search'));
         nav.setAttribute('aria-expanded', 'true');
         const expanded = navSection?.getAttribute('aria-expanded') === 'true';
         if (!expanded) {

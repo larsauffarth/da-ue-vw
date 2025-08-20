@@ -1,7 +1,7 @@
 import { searchBox } from '../search/search.js';
 import { decorateIcons, fetchPlaceholders } from '../../scripts/aem.js';
 
-function closeSearch(block) {
+export function closeSearch(block) {
   block.setAttribute('aria-expanded', false);
   // eslint-disable-next-line no-use-before-define
   window.removeEventListener('keydown', closeOnEscape);
