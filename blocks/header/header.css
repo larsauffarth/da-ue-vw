@@ -243,6 +243,7 @@ header .nav-tools {
   display: inline-flex;
   gap: var(--gap-20);
   grid-area: tools;
+  height: var(--header-height); /* Force height to ensure correct positioning of e.g. cart tooltip if search is expanded */
   justify-content: end;
   padding-block: var(--header-padding-block);
 

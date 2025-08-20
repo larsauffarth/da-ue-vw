@@ -215,7 +215,7 @@ function searchResultsContainer(block) {
   return results;
 }
 
-function searchInput(block, config) {
+function searchInput(config) {
   const input = document.createElement('input');
   input.setAttribute('type', 'search');
   input.className = 'search-input';
@@ -223,12 +223,6 @@ function searchInput(block, config) {
   const searchPlaceholder = config.placeholders.searchPlaceholder || 'Search...';
   input.placeholder = searchPlaceholder;
   input.setAttribute('aria-label', searchPlaceholder);
-
-  input.addEventListener('input', (e) => {
-    handleSearch(e, block, config);
-  });
-
-  input.addEventListener('keyup', (e) => { if (e.code === 'Escape') { clearSearch(block); } });
 
   return input;
 }
@@ -246,15 +240,24 @@ function searchButton() {
   return button;
 }
 
-function searchBox(block, config) {
+export function searchBox(config) {
   const box = document.createElement('div');
   box.classList.add('search-box');
   box.append(
-    searchInput(block, config),
+    searchInput(config),
     searchButton(),
   );
 
   return box;
+}
+
+function addEventListeners(block, config) {
+  const input = block.querySelector('input');
+  input.addEventListener('input', (e) => {
+    handleSearch(e, block, config);
+  });
+
+  input.addEventListener('keyup', (e) => { if (e.code === 'Escape') { clearSearch(block); } });
 }
 
 export default async function decorate(block) {
@@ -262,9 +265,10 @@ export default async function decorate(block) {
   const source = block.querySelector('a[href]')?.href || `${window.hlx.codeBasePath}/query-index.json`;
   block.innerHTML = '';
   block.append(
-    searchBox(block, { source, placeholders }),
+    searchBox({ source, placeholders }),
     searchResultsContainer(block),
   );
+  addEventListeners(block, config);
 
   if (searchParams.get('q')) {
     const input = block.querySelector('input');

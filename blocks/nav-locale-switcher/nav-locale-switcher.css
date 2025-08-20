@@ -106,6 +106,7 @@
       inset-block-start: var(--header-height);
       position: absolute;
       transition: opacity var(--fade-out-speed);
+      z-index: 1;
 
       &::after {
         background-color: var(--background-color);
