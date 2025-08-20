@@ -1,34 +1,18 @@
 import { searchBox } from '../search/search.js';
 import { decorateIcons, fetchPlaceholders } from '../../scripts/aem.js';
-
-export function closeSearch(block) {
-  block.setAttribute('aria-expanded', false);
-  // eslint-disable-next-line no-use-before-define
-  window.removeEventListener('keydown', closeOnEscape);
-  // eslint-disable-next-line no-use-before-define
-  document.removeEventListener('click', closeOnClickOutside);
-}
+import {
+  closeSearch,
+  closeSearchOnClickOutside,
+  closeSearchOnEscape,
+  toggleMenu,
+} from '../../scripts/nav-utils.js';
 
 function openSearch(block) {
   block.setAttribute('aria-expanded', true);
   // eslint-disable-next-line no-use-before-define
-  window.addEventListener('keydown', closeOnEscape);
+  window.addEventListener('keydown', closeSearchOnEscape);
   // eslint-disable-next-line no-use-before-define
-  document.addEventListener('click', closeOnClickOutside);
-}
-
-function closeOnEscape(e) {
-  const block = document.querySelector('header .nav-search');
-  if (e.code === 'Escape') {
-    closeSearch(block);
-  }
-}
-
-function closeOnClickOutside(e) {
-  const block = document.querySelector('header .nav-search');
-  if (!block.contains(e.target)) {
-    closeSearch(block);
-  }
+  document.addEventListener('click', closeSearchOnClickOutside);
 }
 
 export default async function decorate(block) {
@@ -60,6 +44,7 @@ export default async function decorate(block) {
     if (isExpanded) {
       closeSearch(block);
     } else {
+      toggleMenu(document.querySelector('nav'), document.querySelector('nav .nav-menu-items'), false);
       openSearch(block);
     }
   });

@@ -1,32 +1,9 @@
 import { loadFragment } from '../fragment/fragment.js';
 import { getMetadata } from '../../scripts/aem.js';
-import { closeSearch } from '../nav-search/nav-search.js';
+import { closeSearch, toggleMenu } from '../../scripts/nav-utils.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 1141px)');
-
-function closeOnEscape(e) {
-  if (e.code === 'Escape') {
-    const nav = document.getElementById('nav');
-    const navMenus = nav.querySelector('.nav-menu-items');
-    // eslint-disable-next-line no-use-before-define
-    toggleMenu(nav, navMenus, false);
-    if (isDesktop.matches) {
-      nav.querySelector('.nav-root a')?.focus();
-    } else {
-      nav.querySelector('.nav-hamburger button')?.focus();
-    }
-  }
-}
-
-function closeOnClickOutside(e) {
-  const nav = document.getElementById('nav');
-  if (!nav.contains(e.target)) {
-    const navMenus = nav.querySelector('.nav-menu-items');
-    // eslint-disable-next-line no-use-before-define
-    toggleMenu(nav, navMenus, false);
-  }
-}
 
 export function toggleAllNavSubMenus(sections, expanded = false) {
   sections.querySelectorAll('.nav-item-menu__submenu').forEach((section) => {
@@ -44,34 +21,6 @@ function toggleAllNavMenus(sections, expanded = false) {
     section.setAttribute('aria-expanded', expanded);
   });
   toggleAllNavSubMenus(sections, expanded);
-}
-
-/**
- * Toggles the entire nav
- * @param {Element} nav The container element
- * @param {Element} navSections The nav sections within the container element
- * @param {*} forceExpanded Optional param to force nav expand behavior when not null
- */
-function toggleMenu(nav, navSections, forceExpanded = null) {
-  const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
-  const button = nav.querySelector('.nav-hamburger button');
-  document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
-  nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
-
-  if (expanded) {
-    toggleAllNavMenus(navSections, false);
-  }
-
-  // enable menu collapse on escape keypress
-  if (!expanded || isDesktop.matches) {
-    // collapse menu on escape press
-    window.addEventListener('keydown', closeOnEscape);
-    document.addEventListener('click', closeOnClickOutside);
-  } else {
-    window.removeEventListener('keydown', closeOnEscape);
-    document.removeEventListener('click', closeOnClickOutside);
-  }
 }
 
 export function buildBackButton(placeholders, navSection) {
@@ -166,7 +115,7 @@ export default async function decorate(block) {
   // hamburger for mobile
   const hamburger = document.createElement('div');
   const hamburgerButton = document.createElement('button');
-  hamburgerButton.addEventListener('click', () => toggleMenu(nav, navMenuItems));
+  hamburgerButton.addEventListener('click', () => toggleMenu(nav, navMenuItems, isDesktop));
   hamburgerButton.setAttribute('aria-controls', 'nav');
   hamburger.classList.add('nav-hamburger');
   hamburger.append(hamburgerButton);
@@ -174,7 +123,7 @@ export default async function decorate(block) {
 
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navMenuItems, false);
-  isDesktop.addEventListener('change', () => toggleMenu(nav, navMenuItems, false));
+  isDesktop.addEventListener('change', () => toggleMenu(nav, navMenuItems, isDesktop, false));
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
