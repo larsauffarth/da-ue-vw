@@ -1,11 +1,15 @@
 .nav-cart-wrapper {
   align-items: center;
   display: flex;
+  position: relative;
 }
 
 .nav-cart {
   --icon-size: 24px;
   --icon-v-middle: calc(var(--icon-size) / 2);
+
+  display: flex;
+  justify-content: center;
 
   & button {
     align-items: center;
@@ -17,26 +21,81 @@
     padding: 0;
     width: var(--icon-size);
 
+    &::after {
+      background-color: var(--white);
+      content: '';
+      cursor: pointer;
+      display: inline-grid;
+      height: var(--icon-size);
+      transition: color var(--transition-subtle);
+      vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
+      width: var(--icon-size);
+      mask: url('../../icons/cart.svg') center / contain no-repeat;
+    }
+
     &:hover::after {
       background-color: var(--cws-neon);
     }
   }
 
-  & button::after {
-    background-color: var(--white);
-    content: '';
-    cursor: pointer;
-    display: inline-grid;
-    height: var(--icon-size);
-    transition: color var(--transition-subtle);
-    vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
-    width: var(--icon-size);
-    mask: url('../../icons/cart.svg') center / contain no-repeat;
+  & .nav-cart__dropdown__content {
+    color: var(--white);
+    display: flex;
+    font-size: 1rem;
+    gap: var(--gap-16);
+    justify-content: center;
+    padding: var(--gap-24) var(--gap-32);
+    width: min(400px, 75vw);
+  }
+
+  & .nav-cart__dropdown {
+    --background-color: var(--cws-green);
+    --fade-in-speed: var(--transition-quick);
+    --fade-out-speed: var(--transition-subtle);
+
+    /* Hack to avoid tooltip from overflowing the edge of the page, would probably have to be reworked to calculate tooltip position in JS */
+    --page-edge-adjustment: 40%;
+
+    background-color: var(--background-color);
+    border-radius: var(--border-radius-s);
+    box-shadow: var(--box-shadow);
+    color: var(--white);
+    display: flex;
+    opacity: 0;
+    inset-block-start: var(--header-height);
+    position: absolute;
+    transform: translateX(calc(-1 * var(--page-edge-adjustment)));
+    transition: opacity var(--fade-out-speed);
+    z-index: 1;
+
+    &::after {
+      background-color: var(--background-color);
+      content: '';
+      position: absolute;
+      width: .7rem;
+      height: .7rem;
+      transform: rotate(45deg) translateX(-100%);
+      inset-inline-start: calc(var(--page-edge-adjustment) + 50%);
+      top: .2rem;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    & .nav-cart__dropdown {
+      opacity: 1;
+      transition: opacity var(--fade-in-speed);
+    }
   }
 }
 
 @media (width > 1140px) {
   .nav-cart {
     --icon-size: 32px;
+  }
+}
+
+@media (width >= 1600px) {
+  .nav-cart .nav-cart__dropdown {
+    --page-edge-adjustment: 10%;
   }
 }
