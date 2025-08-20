@@ -337,6 +337,8 @@ header .nav-tools {
   }
 
   header .nav-menu-items {
+    align-items: center;
+      flex-direction: column;
     margin-inline: auto;
     max-width: calc(2000px + var(--container-padding) * 2);
   }

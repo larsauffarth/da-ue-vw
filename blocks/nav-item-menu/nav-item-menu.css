@@ -1,3 +1,7 @@
+.nav-item-menu-wrapper {
+  width: 100%;
+}
+
 .nav-item-menu {
   background-color: var(--background-color);
   display: none;
@@ -7,11 +11,8 @@
   overflow: clip auto;
   padding-block-end: 50px;
   scrollbar-width: none;
-  width: 100dvw;
 
   & > * {
-    margin-inline: auto;
-    max-width: calc(2000px + var(--container-padding) * 2);
     padding-inline: var(--container-padding);
     width: 100%;
   }
