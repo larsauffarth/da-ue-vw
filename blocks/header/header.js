@@ -140,6 +140,13 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
+  const currentUrl = window.location.href;
+  nav.querySelectorAll('a').forEach((link) => {
+    if (currentUrl === link.href) {
+      link.setAttribute('data-current', 'true');
+    }
+  });
+
   const navBrand = nav.querySelector('[data-nav-role="brand"]');
   navBrand.classList.add('nav-brand');
   const brandLink = navBrand.querySelector('.button');
@@ -150,14 +157,6 @@ export default async function decorate(block) {
 
   const navRoot = nav.querySelector('[data-nav-role="root"]');
   navRoot.classList.add('nav-root');
-  if (navRoot) {
-    const currentUrl = window.location.href;
-    navRoot.querySelectorAll('a').forEach((link) => {
-      if (currentUrl === link.href) {
-        link.setAttribute('data-current', 'true');
-      }
-    });
-  }
 
   const navTools = nav.querySelector('[data-nav-role="tools"]');
   navTools.classList.add('nav-tools');
