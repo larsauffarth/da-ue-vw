@@ -60,63 +60,51 @@ header nav {
 
   align-items: center;
   display: grid;
-  grid-template-areas: 'hamburger brand tools';
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: var(--nav-height);
+  grid-template:
+    'hamburger brand tools' var(--nav-height)
+    / 1fr auto 1fr;
   flex-basis: 100%;
   height: var( --nav-height);
   justify-content: space-between;
   padding-block: 0;
   margin-inline: auto;
   max-width: calc(2000px + var(--container-padding) * 2);
-  padding-left: var(--container-padding);
-  padding-right: var(--container-padding);
+  padding-inline: var(--container-padding);
 }
 
-@media (width <= 1140px) {
-  header nav[aria-expanded='true'] {
-    display: grid;
-    grid-template-areas:
-    'hamburger brand tools'
-    'sections sections sections'
-    'extras extras extras';
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: var(--nav-height) min-content min-content;
-    min-height: 100dvh;
-    overflow-y: auto;
-    padding-block-end: 50px;
+header .nav-root {
+  display: none;
+  flex: 1 1 auto;
+  font-size: 1.6667rem;
+  font-weight: 300;
+  grid-area: sections;
+  line-height: 2.2222rem;
+  max-height: calc(100vh - var(--header-height) - var(--fixed-bar-height));
+  overflow: hidden auto;
+  padding-block: var(--gap-20) 0;
+  position: relative;
+  transition: transform var(--transition-slow);
 
-    & .nav-tools {
-      visibility: hidden;
-    }
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-24);
+  }
 
-    & .nav-extras {
-      display: flex;
-    }
+  & a::after {
+    --icon-v-middle: calc(var(--icon-size) / 2);
+    --icon-size: 32px;
 
-    & .nav-hamburger {
-      --hamburger-icon-url: url('../../icons/close.svg');
-    }
-
-    &:has(.nav-item-menu[aria-expanded="true"]) {
-      grid-template-areas:
-    'hamburger brand tools'
-    'menu menu menu';
-
-      & .nav-root,
-      & .nav-extras,
-      & .nav-tools {
-        display: none;
-      }
-    }
-
-    & .nav-root {
-      display: block;
-    }
+    content: "";
+    display: inline-grid;
+    background-color: currentcolor;
+    height: var(--icon-size);
+    mask: url('../../icons/chevron-right.svg') center / contain no-repeat;
+    vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
+    width: calc(var(--icon-size) * 7 / 24);
   }
 }
 
-/* hamburger */
 header .nav-hamburger {
   --icon-size: 24px;
   --icon-v-middle: calc(var(--icon-size) / 2);
@@ -160,6 +148,25 @@ header .nav-menu-items {
   inset-inline: 0;
   justify-content: center;
   position: absolute;
+}
+
+header .nav-brand {
+  grid-area: brand;
+  padding-block: var(--header-padding-block);
+
+  & p {
+    border-radius: var(--gap-4);
+  }
+
+  & a {
+    align-items: center;
+    display: flex;
+  }
+
+  & .icon {
+    height: 27px;
+    width: var(--logo-min-width);
+  }
 }
 
 header .nav-extras {
@@ -244,62 +251,49 @@ header .nav-locale-switcher {
     display: none;
 }
 
-/* brand */
-header .nav-brand {
-  grid-area: brand;
-  padding-block: var(--header-padding-block);
+@media (width <= 1140px) {
+  header nav[aria-expanded='true'] {
+    display: grid;
+    grid-template:
+      'hamburger brand tools' var(--nav-height)
+      'sections sections sections' min-content
+      'extras extras extras' min-content
+      / 1fr auto 1fr;
+    min-height: 100dvh;
+    overflow-y: auto;
+    padding-block-end: 50px;
 
-  & p {
-    border-radius: var(--gap-4);
-  }
-
-  & a {
-    align-items: center;
-    display: flex;
-  }
-
-  & .icon {
-    height: 27px;
-    width: var(--logo-min-width);
-  }
-}
-
-/* sections */
-header .nav-root {
-  display: none;
-  flex: 1 1 auto;
-  grid-area: sections;
-  max-height: calc(100vh - var(--header-height) - var(--fixed-bar-height));
-  overflow: hidden auto;
-  padding-block: var(--gap-20) 0;
-  position: relative;
-  transition: transform var(--transition-slow);
-
-    & ul {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-24);
-        font-size: 1.6667rem;
-        line-height: 2.2222rem;
-        font-weight: 300;
-        list-style: none;
+    & .nav-tools {
+      visibility: hidden;
     }
+
+    & .nav-extras {
+      display: flex;
+    }
+
+    & .nav-hamburger {
+      --hamburger-icon-url: url('../../icons/close.svg');
+    }
+
+    & .nav-root {
+      display: block;
+    }
+
+    &:has(.nav-item-menu[aria-expanded="true"]) {
+      grid-template-areas:
+        'hamburger brand tools'
+        'menu menu menu';
+
+      & .nav-root,
+      & .nav-extras,
+      & .nav-tools {
+        display: none;
+      }
+    }
+  }
 }
 
-header .nav-root ul a::after {
-  --icon-v-middle: calc(var(--icon-size) / 2);
-  --icon-size: 32px;
-
-  content: "";
-  display: inline-grid;
-  background-color: currentcolor;
-  height: var(--icon-size);
-  mask: url('../../icons/chevron-right.svg') center / contain no-repeat;
-  vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
-  width: calc(var(--icon-size) * 7 / 24);
-}
-
-@media (width >= 1140px) {
+@media (width > 1140px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -307,26 +301,27 @@ header .nav-root ul a::after {
   }
 
   header .nav-brand {
-    padding: 0;
     margin-inline-end: var(--gap-40);
+    padding: 0;
   }
 
   header .nav-brand .icon {
     height: 38px;
     min-width: var(--logo-min-width);
-    width: 333px;
     padding: 0;
+    width: 333px;
   }
 
-    header .nav-locale-switcher {
-        display: flex;
-    }
+  header .nav-locale-switcher {
+    display: flex;
+  }
 
-  /* primary navigation links wrapper */
   header .nav-root {
     display: flex;
     flex: 1 1 auto;
-    margin-right: var(--space-5);
+    font-size: 18px;
+    font-weight: 500;
+    margin-inline-end: var(--space-5);
     padding: 0;
     visibility: visible;
 
@@ -335,22 +330,13 @@ header .nav-root ul a::after {
       gap: var(--gap-20);
     }
 
-    & ul li {
-      font-weight: 500;
-    }
-
-    & ul li a {
-      font-size: 18px;
-    }
-
-    & ul a::after {
+    & a::after {
       display: none;
     }
   }
 
   header .nav-menu-items {
-    max-width: calc(2000px + var(--container-padding) * 2);
     margin-inline: auto;
+    max-width: calc(2000px + var(--container-padding) * 2);
   }
 }
-
