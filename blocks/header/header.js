@@ -1,5 +1,5 @@
 import { loadFragment } from '../fragment/fragment.js';
-import { fetchPlaceholders, getMetadata } from '../../scripts/aem.js';
+import { getMetadata } from '../../scripts/aem.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 1141px)');
@@ -27,7 +27,7 @@ function closeOnClickOutside(e) {
   }
 }
 
-function toggleAllNavSubMenus(sections, expanded = false) {
+export function toggleAllNavSubMenus(sections, expanded = false) {
   sections.querySelectorAll('.nav-item-menu__submenu').forEach((section) => {
     section.setAttribute('aria-expanded', expanded);
   });
@@ -73,7 +73,7 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 }
 
-function buildBackButton(placeholders, navSection) {
+export function buildBackButton(placeholders, navSection) {
   const backButtonContainer = document.createElement('div');
   const backButton = document.createElement('button');
   backButtonContainer.append(backButton);
@@ -89,40 +89,6 @@ function buildBackButton(placeholders, navSection) {
   return backButtonContainer;
 }
 
-function buildSubmenuFromNestedList(parentBreadcrumbText, rootLink, links, placeholders) {
-  const submenu = document.createElement('div');
-  submenu.classList.add('nav-item-menu__submenu');
-
-  const breadcrumb = document.createElement('div');
-  breadcrumb.classList.add('nav-item-menu__submenu__breadcrumb');
-  breadcrumb.textContent = `${parentBreadcrumbText} > ${rootLink.textContent}`;
-
-  const backButton = buildBackButton(placeholders, submenu);
-
-  submenu.append(breadcrumb, backButton, links);
-
-  return submenu;
-}
-
-function buildSubmenusFromNestedLists(navSection, linksContainer, rootLink, placeholders) {
-  const listItemsWithNestedLists = linksContainer.querySelectorAll(':scope > div > ul > li:has(ul)');
-
-  listItemsWithNestedLists.forEach((listItem) => {
-    const link = listItem.querySelector(':scope > a');
-    const list = listItem.querySelector(':scope > ul');
-
-    link.classList.add('has-submenu');
-    const submenu = buildSubmenuFromNestedList(rootLink.textContent, link, list, placeholders);
-    navSection.append(submenu);
-
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-      toggleAllNavSubMenus(navSection, false);
-      submenu.setAttribute('aria-expanded', 'true');
-    });
-  });
-}
-
 /**
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
@@ -132,7 +98,6 @@ export default async function decorate(block) {
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
-  const placeholders = await fetchPlaceholders();
 
   // decorate nav DOM
   block.textContent = '';
@@ -170,15 +135,6 @@ export default async function decorate(block) {
     const navMenuItemsItems = navMenuItems.querySelectorAll('.nav-item-menu');
     navRoot.querySelectorAll('li > a').forEach((link, index) => {
       const navSection = navMenuItemsItems[index];
-      navSection.tabindex = -1;
-      const rootLink = navSection.querySelector(':scope > div:nth-child(2) a');
-      const linksContainer = navSection.querySelector(':scope > div:nth-child(3)');
-
-      const backButtonContainer = buildBackButton(placeholders, navSection);
-
-      navSection.insertBefore(backButtonContainer, linksContainer);
-
-      buildSubmenusFromNestedLists(navSection, linksContainer, rootLink, placeholders);
 
       const hoverListener = () => {
         if (!isDesktop.matches) {
