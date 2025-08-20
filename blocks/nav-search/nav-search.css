@@ -42,8 +42,8 @@
 
   .nav-search button {
     background-color: var(--cws-neon);
-    width: 64px;
-    height: 64px;
+    width: 62px;
+    height: 62px;
     margin-top: calc(var(--header-padding-block) * -1);
     margin-bottom: calc(var(--header-padding-block) * -1);
 
