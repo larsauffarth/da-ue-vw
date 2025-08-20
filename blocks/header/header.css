@@ -245,10 +245,10 @@ header .nav-tools {
   grid-area: tools;
   justify-content: end;
   padding-block: var(--header-padding-block);
-}
 
-header .nav-locale-switcher {
+  & .nav-locale-switcher {
     display: none;
+  }
 }
 
 @media (width <= 1140px) {
@@ -312,7 +312,7 @@ header .nav-locale-switcher {
     width: 333px;
   }
 
-  header .nav-locale-switcher {
+  header .nav-tools .nav-locale-switcher {
     display: flex;
   }
 

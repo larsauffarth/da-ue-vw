@@ -51,79 +51,79 @@
     padding: 0;
   }
 
-    &.compact {
-        --icon-size: 32px;
+  &.compact {
+    --icon-size: 32px;
 
-        justify-content: center;
+    justify-content: center;
 
-        &::before {
-            display: none;
-        }
-
-        & button {
-            align-items: center;
-            background: none;
-            border: none;
-            display: flex;
-            height: var(--icon-size);
-            justify-content: center;
-            padding: 0;
-            width: var(--icon-size);
-
-            &:hover::after {
-                background-color: var(--cws-neon);
-            }
-        }
-
-        & button::after {
-            background-color: var(--white);
-            content: '';
-            cursor: pointer;
-            display: inline-grid;
-            height: var(--icon-size);
-            transition: color var(--transition-subtle);
-            vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
-            width: var(--icon-size);
-            mask: url('../../icons/globe.svg') center / contain no-repeat;
-        }
-
-        & ul {
-            gap: var(--gap-12);
-            padding: var(--gap-8) var(--gap-16);
-        }
-
-        & .nav-locale-switcher__dropdown {
-            --background-color: var(--cws-green);
-            --fade-in-speed: var(--transition-quick);
-            --fade-out-speed: var(--transition-subtle);
-
-            background-color: var(--background-color);
-            border-radius: var(--border-radius-s);
-            box-shadow: var(--box-shadow);
-            color: var(--white);
-            display: flex;
-            opacity: 0;
-            inset-block-start: var(--header-height);
-            position: absolute;
-            transition: opacity var(--fade-out-speed);
-
-            &::after {
-                background-color: var(--background-color);
-                content: '';
-                position: absolute;
-                width: .7rem;
-                height: .7rem;
-                transform: rotate(45deg) translateX(-100%);
-                inset-inline-start: 50%;
-                top: .2rem;
-            }
-        }
-
-        &[aria-expanded="true"] {
-            & .nav-locale-switcher__dropdown {
-                opacity: 1;
-                transition: opacity var(--fade-in-speed);
-            }
-        }
+    &::before {
+      display: none;
     }
+
+    & button {
+      align-items: center;
+      background: none;
+      border: none;
+      display: flex;
+      height: var(--icon-size);
+      justify-content: center;
+      padding: 0;
+      width: var(--icon-size);
+
+      &::after {
+        background-color: var(--white);
+        content: '';
+        cursor: pointer;
+        display: inline-grid;
+        height: var(--icon-size);
+        transition: color var(--transition-subtle);
+        vertical-align: calc(var(--vertical-middle-of-capital-letters) - var(--icon-v-middle));
+        width: var(--icon-size);
+        mask: url('../../icons/globe.svg') center / contain no-repeat;
+      }
+
+      &:hover::after {
+        background-color: var(--cws-neon);
+      }
+    }
+
+    & ul {
+      gap: var(--gap-12);
+      padding: var(--gap-8) var(--gap-16);
+    }
+
+    & .nav-locale-switcher__dropdown {
+      --background-color: var(--cws-green);
+      --fade-in-speed: var(--transition-quick);
+      --fade-out-speed: var(--transition-subtle);
+
+      background-color: var(--background-color);
+      border-radius: var(--border-radius-s);
+      box-shadow: var(--box-shadow);
+      color: var(--white);
+      display: flex;
+      opacity: 0;
+      inset-block-start: var(--header-height);
+      position: absolute;
+      transition: opacity var(--fade-out-speed);
+
+      &::after {
+        background-color: var(--background-color);
+        content: '';
+        position: absolute;
+        width: .7rem;
+        height: .7rem;
+        transform: rotate(45deg) translateX(-100%);
+        inset-inline-start: 50%;
+        top: .2rem;
+      }
+    }
+
+    &[aria-expanded="true"] {
+      & .nav-locale-switcher__dropdown {
+        opacity: 1;
+        transition: opacity var(--fade-in-speed);
+      }
+    }
+  }
 }
