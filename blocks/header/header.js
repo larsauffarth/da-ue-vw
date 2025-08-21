@@ -115,7 +115,7 @@ export default async function decorate(block) {
   // hamburger for mobile
   const hamburger = document.createElement('div');
   const hamburgerButton = document.createElement('button');
-  hamburgerButton.addEventListener('click', () => toggleMenu(nav, navMenuItems, isDesktop));
+  hamburgerButton.addEventListener('click', () => toggleMenu(nav, navMenuItems));
   hamburgerButton.setAttribute('aria-controls', 'nav');
   hamburger.classList.add('nav-hamburger');
   hamburger.append(hamburgerButton);
@@ -123,7 +123,7 @@ export default async function decorate(block) {
 
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navMenuItems, false);
-  isDesktop.addEventListener('change', () => toggleMenu(nav, navMenuItems, isDesktop, false));
+  isDesktop.addEventListener('change', () => toggleMenu(nav, navMenuItems, false));
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
