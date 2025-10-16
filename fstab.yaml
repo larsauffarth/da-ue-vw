@@ -1,4 +1,4 @@
 mountpoints:
   /:
-    url: https://content.da.live/auffarth/da-ue-vw/
+    url: https://content.da.live/larsauffarth/da-ue-vw/
     type: markup
