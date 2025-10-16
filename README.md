@@ -4,8 +4,8 @@ This is a project created by AEMY.
 
 ## Environments
 
-- Preview: https://main--hmehta-adobe-250731--aemysites.aem.page/
-- Live: https://main--hmehta-adobe-250731--aemysites.aem.live/
+- Preview: https://main--da-ue-vw--larsauffarth.aem.page/
+- Live: https://main--da-ue-vw--larsauffarth.aem.live/
 
 ## Installation
 
