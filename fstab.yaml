@@ -1,2 +1,4 @@
 mountpoints:
-  /: https://adobe.sharepoint.com/:f:/r/sites/AEMDemos/Shared%20Documents/sites/aemy-sites/hmehta-adobe-250731
+  /:
+    url: https://content.da.live/auffarth/da-ue-vw/
+    type: markup
