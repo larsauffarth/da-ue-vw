@@ -361,25 +361,47 @@
         "label": "Style"
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "div:nth-child(1) > div a",
+        "label": "Video URL",
+        "description": "URL to video file (.mp4, .webm)"
+      },
+      {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
+        "name": "div:nth-child(2) > div img",
+        "label": "Poster Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
+        "name": "div:nth-child(2) > div img",
+        "attribute": "alt",
+        "label": "Image Alt Text",
         "value": ""
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "div:nth-child(3) > div > h1",
+        "label": "Heading",
+        "required": true
+      },
+      {
         "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "div:nth-child(3) > div > p",
+        "label": "Smart Links",
+        "description": "Add links for navigation"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "div:nth-child(4) > div",
+        "label": "Consumption Index",
+        "description": "Optional index number (e.g., 01)"
       }
     ]
   },
