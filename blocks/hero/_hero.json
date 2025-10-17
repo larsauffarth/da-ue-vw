@@ -46,7 +46,7 @@
         {
           "component": "text",
           "valueType": "string",
-          "name": "div:nth-child(3) h1",
+          "name": "h1",
           "label": "Heading",
           "required": true
         },
