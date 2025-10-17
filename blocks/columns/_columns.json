@@ -24,7 +24,7 @@
           "component": "text",
           "valueType": "string",
           "name": "classes",
-          "label": "Style"
+          "label": "Style Variant"
         },
         {
           "component": "text",

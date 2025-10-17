@@ -1,0 +1,65 @@
+{
+  "definitions": [
+    {
+      "title": "Hero Video",
+      "id": "herovideo",
+      "plugins": {
+        "da": {
+          "name": "hero",
+          "rows": 3,
+          "columns": 2
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "herovideo",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "classes",
+          "label": "Style Variant"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "div:nth-child(1) > div:nth-child(1) a",
+          "label": "Video URL",
+          "multi": false
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "div:nth-child(1) > div:nth-child(2) picture img",
+          "label": "Poster Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(1) > div:nth-child(2) picture img::attr(alt)",
+          "label": "Poster Alt Text",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-child(2)",
+          "value": "",
+          "label": "Heading & Links",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(3)",
+          "label": "Index Number",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
+

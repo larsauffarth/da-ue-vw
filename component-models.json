@@ -252,7 +252,7 @@
         "component": "text",
         "valueType": "string",
         "name": "classes",
-        "label": "Style"
+        "label": "Style Variant"
       },
       {
         "component": "text",
@@ -324,28 +324,74 @@
         "component": "text",
         "valueType": "string",
         "name": "classes",
-        "label": "Style"
+        "label": "Style Variant"
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
+        "name": "div:nth-child(1) picture img",
+        "label": "Background Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
+        "name": "div:nth-child(1) picture img::attr(alt)",
+        "label": "Image Alt Text",
         "value": ""
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "div:nth-child(2)",
         "value": "",
-        "label": "Text",
+        "label": "Hero Content",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "herovideo",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Style Variant"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "div:nth-child(1) > div:nth-child(1) a",
+        "label": "Video URL",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "div:nth-child(1) > div:nth-child(2) picture img",
+        "label": "Poster Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "div:nth-child(1) > div:nth-child(2) picture img::attr(alt)",
+        "label": "Poster Alt Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "div:nth-child(2)",
+        "value": "",
+        "label": "Heading & Links",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "div:nth-child(3)",
+        "label": "Index Number",
+        "value": ""
       }
     ]
   },
@@ -367,6 +413,31 @@
         "component": "text",
         "name": "linkText",
         "label": "Text"
+      }
+    ]
+  },
+  {
+    "id": "page-intro",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Style Variant"
+      },
+      {
+        "component": "richtext",
+        "name": "div:nth-child(1)",
+        "value": "",
+        "label": "Introduction Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "div:nth-child(2)",
+        "value": "",
+        "label": "Tag Links",
+        "valueType": "string"
       }
     ]
   },
@@ -401,14 +472,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "index",
-        "label": "Index"
+        "name": "div:nth-child(1)",
+        "label": "Search Index Path"
       },
       {
         "component": "multiselect",
         "name": "classes",
         "value": "",
-        "label": "Options",
+        "label": "Search Options",
         "valueType": "string",
         "options": [
           {

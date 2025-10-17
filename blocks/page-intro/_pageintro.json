@@ -1,11 +1,11 @@
 {
   "definitions": [
     {
-      "title": "Hero",
-      "id": "hero",
+      "title": "Page Intro",
+      "id": "page-intro",
       "plugins": {
         "da": {
-          "name": "hero",
+          "name": "page-intro",
           "rows": 2,
           "columns": 1
         }
@@ -14,7 +14,7 @@
   ],
   "models": [
     {
-      "id": "hero",
+      "id": "page-intro",
       "fields": [
         {
           "component": "text",
@@ -23,24 +23,17 @@
           "label": "Style Variant"
         },
         {
-          "component": "reference",
-          "valueType": "string",
-          "name": "div:nth-child(1) picture img",
-          "label": "Background Image",
-          "multi": false
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "div:nth-child(1) picture img::attr(alt)",
-          "label": "Image Alt Text",
-          "value": ""
+          "component": "richtext",
+          "name": "div:nth-child(1)",
+          "value": "",
+          "label": "Introduction Text",
+          "valueType": "string"
         },
         {
           "component": "richtext",
           "name": "div:nth-child(2)",
           "value": "",
-          "label": "Hero Content",
+          "label": "Tag Links",
           "valueType": "string"
         }
       ]
@@ -48,3 +41,4 @@
   ],
   "filters": []
 }
+
