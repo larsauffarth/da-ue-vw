@@ -61,7 +61,8 @@
 
   /* video wrapper */
   & > div:nth-child(2) {
-    height: max(40vh, 250px);
+    height: clamp(250px, 40vh, 600px);
+    max-height: 600px;
     position: relative;
   }
 }
