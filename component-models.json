@@ -279,14 +279,28 @@
         "valueType": "string",
         "name": "div > div:nth-child(1)",
         "value": "",
-        "label": "Column 1"
+        "label": "Column 1 Content"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "div > div:nth-child(1) img",
+        "label": "Column 1 Image",
+        "multi": false
       },
       {
         "component": "richtext",
         "valueType": "string",
         "name": "div > div:nth-child(2)",
         "value": "",
-        "label": "Column 2"
+        "label": "Column 2 Content"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "div > div:nth-child(2) img",
+        "label": "Column 2 Image",
+        "multi": false
       }
     ]
   },
