@@ -238,6 +238,17 @@
           }
         },
         {
+          "title": "Page Intro",
+          "id": "page-intro",
+          "plugins": {
+            "da": {
+              "name": "page-intro",
+              "rows": 2,
+              "columns": 1
+            }
+          }
+        },
+        {
           "title": "Modal",
           "id": "modal",
           "plugins": {

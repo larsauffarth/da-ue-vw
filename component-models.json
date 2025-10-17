@@ -350,6 +350,26 @@
     ]
   },
   {
+    "id": "page-intro",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "div:nth-child(1) > div > p",
+        "value": "",
+        "label": "Text",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "div:nth-child(2) > div > p",
+        "value": "",
+        "label": "Tags"
+      }
+    ]
+  },
+  {
     "id": "modal",
     "fields": [
       {

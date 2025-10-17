@@ -1,0 +1,39 @@
+{
+  "definitions": [
+    {
+      "title": "Page Intro",
+      "id": "page-intro",
+      "plugins": {
+        "da": {
+          "name": "page-intro",
+          "rows": 2,
+          "columns": 1
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "page-intro",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "div:nth-child(1) > div > p",
+          "value": "",
+          "label": "Text",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "div:nth-child(2) > div > p",
+          "value": "",
+          "label": "Tags"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
+
