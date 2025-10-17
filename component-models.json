@@ -273,6 +273,20 @@
             ]
           }
         ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "div > div:nth-child(1)",
+        "value": "",
+        "label": "Column 1"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "div > div:nth-child(2)",
+        "value": "",
+        "label": "Column 2"
       }
     ]
   },
