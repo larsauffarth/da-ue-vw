@@ -361,37 +361,46 @@
         "label": "Style"
       },
       {
-        "component": "richtext",
+        "component": "text",
         "valueType": "string",
-        "name": "video",
+        "name": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)",
+        "attribute": "href",
         "label": "Video URL",
-        "description": "Link to video file"
+        "description": "URL to video file"
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "div:nth-child(2)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)",
         "label": "Poster Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "div:nth-child(2)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)",
+        "attribute": "alt",
         "label": "Image Alt Text",
         "value": ""
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "h1",
+        "name": "div:nth-child(3)>div:nth-child(1)>h1:nth-child(1)",
         "label": "Heading",
         "required": true
       },
       {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "div:nth-child(3)>div:nth-child(1)>p:nth-child(2)",
+        "label": "Smart Links",
+        "description": "Add navigation links"
+      },
+      {
         "component": "text",
         "valueType": "string",
-        "name": "index",
+        "name": "div:nth-child(4)>div:nth-child(1)>p:nth-child(1)",
         "label": "Consumption Index",
         "description": "Optional index number (e.g., 01)"
       }
