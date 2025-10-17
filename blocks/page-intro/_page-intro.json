@@ -19,7 +19,7 @@
         {
           "component": "richtext",
           "valueType": "string",
-          "name": "div:nth-child(1) > div > p",
+          "name": "div:nth-child(1) > div",
           "value": "",
           "label": "Text",
           "required": true
@@ -27,7 +27,7 @@
         {
           "component": "richtext",
           "valueType": "string",
-          "name": "div:nth-child(2) > div > p",
+          "name": "div:nth-child(2) > div",
           "value": "",
           "label": "Tags"
         }

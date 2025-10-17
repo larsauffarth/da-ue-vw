@@ -249,24 +249,30 @@
     "id": "columns",
     "fields": [
       {
-        "component": "text",
-        "valueType": "string",
+        "component": "multiselect",
         "name": "classes",
-        "label": "Style"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
         "value": "",
-        "label": "Columns"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Column Styles",
+            "children": [
+              {
+                "name": "Columns 2 (text-image)",
+                "value": "columns2"
+              },
+              {
+                "name": "Columns 14 (image-text, dark)",
+                "value": "columns14"
+              },
+              {
+                "name": "Columns 17 (outlined)",
+                "value": "columns17"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -355,7 +361,7 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "div:nth-child(1) > div > p",
+        "name": "div:nth-child(1) > div",
         "value": "",
         "label": "Text",
         "required": true
@@ -363,7 +369,7 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "div:nth-child(2) > div > p",
+        "name": "div:nth-child(2) > div",
         "value": "",
         "label": "Tags"
       }
